@@ -109,6 +109,7 @@
     }
     #metaOutput,#output{
       min-height:380px;
+      padding-top:52px;
       background:#0f172a;
       color:#e5e7eb;
       border-color:#1e293b;
@@ -161,18 +162,14 @@
       padding-top:20px;
       border-top:1px solid var(--line);
     }
-    .output-head{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:12px;
-      margin-bottom:8px;
-    }
-    .output-head label{margin:0}
     .textblock{
       position:relative;
     }
     .copy-icon{
+      position:absolute;
+      top:10px;
+      right:10px;
+      z-index:3;
       width:34px;
       height:34px;
       min-width:34px;
@@ -244,16 +241,14 @@
     <div id="metaStatus" class="status" role="status" aria-live="polite"></div>
 
     <div class="output-wrap">
-      <div class="output-head">
-        <label for="metaOutput">Câu lệnh tạo Ô 1 và Ô 2</label>
+      <label for="metaOutput">Câu lệnh tạo Ô 1 và Ô 2</label>
+      <div class="textblock">
         <button id="metaCopy" class="copy-icon" type="button" disabled aria-label="Sao chép câu lệnh" title="Sao chép">
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <rect x="8" y="8" width="11" height="11" rx="2" stroke="currentColor" stroke-width="1.8"/>
             <path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
           </svg>
         </button>
-      </div>
-      <div class="textblock">
         <textarea id="metaOutput" readonly placeholder="Câu lệnh chuẩn hóa sẽ xuất hiện ở đây."></textarea>
       </div>
     </div>
@@ -286,16 +281,14 @@
     <div id="status" class="status" role="status" aria-live="polite"></div>
 
     <div class="output-wrap">
-      <div class="output-head">
-        <label for="output">Câu lệnh nghiên cứu hoàn chỉnh</label>
+      <label for="output">Câu lệnh nghiên cứu hoàn chỉnh</label>
+      <div class="textblock">
         <button id="copy" class="copy-icon" type="button" disabled aria-label="Sao chép câu lệnh nghiên cứu" title="Sao chép">
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <rect x="8" y="8" width="11" height="11" rx="2" stroke="currentColor" stroke-width="1.8"/>
             <path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
           </svg>
         </button>
-      </div>
-      <div class="textblock">
         <textarea id="output" readonly placeholder="Câu lệnh nghiên cứu sẽ xuất hiện ở đây sau khi bấm nút tạo."></textarea>
       </div>
     </div>
