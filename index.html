@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Trình tạo câu lệnh nghiên cứu Phật học theo phạm vi văn bản đóng</title>
+  <title>Trình tạo câu lệnh nghiên cứu Phật học theo phạm vi nguồn đóng</title>
   <style>
     :root{
       --bg:#f5f7fb;
@@ -161,6 +161,46 @@
       padding-top:20px;
       border-top:1px solid var(--line);
     }
+    .output-head{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+      margin-bottom:8px;
+    }
+    .output-head label{margin:0}
+    .textblock{
+      position:relative;
+    }
+    .copy-icon{
+      width:34px;
+      height:34px;
+      min-width:34px;
+      padding:0;
+      display:inline-grid;
+      place-items:center;
+      border-radius:9px;
+      color:#475467;
+      background:#fff;
+      border:1px solid var(--line-strong);
+      box-shadow:var(--shadow-soft);
+    }
+    .copy-icon:hover:not(:disabled){
+      color:var(--primary);
+      background:var(--primary-soft);
+      border-color:#c7d2fe;
+    }
+    .copy-icon svg{
+      width:17px;
+      height:17px;
+      display:block;
+      pointer-events:none;
+    }
+    .copy-icon.copied{
+      color:var(--ok);
+      background:var(--ok-soft);
+      border-color:var(--ok-line);
+    }
     
     @media(min-width:900px){
       .panel:not(.prep-panel) .grid{grid-template-columns:1fr 1fr}
@@ -197,7 +237,6 @@
 
     <div class="actions">
       <button id="metaGenerate" class="prep-primary" type="button">Tạo câu lệnh nhờ AI soạn hai ô</button>
-      <button id="metaCopy" class="secondary" type="button" disabled>Sao chép câu lệnh</button>
       <button id="metaDownload" class="secondary" type="button" disabled>Tải .txt</button>
       <button id="metaClear" class="secondary" type="button">Xóa phần này</button>
     </div>
@@ -205,8 +244,18 @@
     <div id="metaStatus" class="status" role="status" aria-live="polite"></div>
 
     <div class="output-wrap">
-      <label for="metaOutput">Câu lệnh tạo Ô 1 và Ô 2</label>
-      <textarea id="metaOutput" readonly placeholder="Câu lệnh chuẩn hóa sẽ xuất hiện ở đây."></textarea>
+      <div class="output-head">
+        <label for="metaOutput">Câu lệnh tạo Ô 1 và Ô 2</label>
+        <button id="metaCopy" class="copy-icon" type="button" disabled aria-label="Sao chép câu lệnh" title="Sao chép">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <rect x="8" y="8" width="11" height="11" rx="2" stroke="currentColor" stroke-width="1.8"/>
+            <path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
+      <div class="textblock">
+        <textarea id="metaOutput" readonly placeholder="Câu lệnh chuẩn hóa sẽ xuất hiện ở đây."></textarea>
+      </div>
     </div>
   </section>
 
@@ -230,7 +279,6 @@
 
     <div class="actions">
       <button id="generate" class="primary" type="button">Tạo câu lệnh nghiên cứu hoàn chỉnh</button>
-      <button id="copy" class="secondary" type="button" disabled>Sao chép câu lệnh</button>
       <button id="download" class="secondary" type="button" disabled>Tải xuống tệp văn bản</button>
       <button id="clear" class="secondary" type="button">Xóa hai ô</button>
     </div>
@@ -238,8 +286,18 @@
     <div id="status" class="status" role="status" aria-live="polite"></div>
 
     <div class="output-wrap">
-      <label for="output">Câu lệnh nghiên cứu hoàn chỉnh</label>
-      <textarea id="output" readonly placeholder="Câu lệnh nghiên cứu sẽ xuất hiện ở đây sau khi bấm nút tạo."></textarea>
+      <div class="output-head">
+        <label for="output">Câu lệnh nghiên cứu hoàn chỉnh</label>
+        <button id="copy" class="copy-icon" type="button" disabled aria-label="Sao chép câu lệnh nghiên cứu" title="Sao chép">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <rect x="8" y="8" width="11" height="11" rx="2" stroke="currentColor" stroke-width="1.8"/>
+            <path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
+      <div class="textblock">
+        <textarea id="output" readonly placeholder="Câu lệnh nghiên cứu sẽ xuất hiện ở đây sau khi bấm nút tạo."></textarea>
+      </div>
     </div>
 
     
@@ -286,7 +344,8 @@ rawTopic,
 "2. Nếu người dùng chỉ nêu một nhóm nguồn còn rộng, ví dụ “Nikāya”, “A-hàm”, “Tạng luật”, “kinh điển sơ kỳ”, thì được quyền chọn các bộ hoặc văn bản phù hợp BÊN TRONG chính nhóm nguồn mà người dùng đã nêu. Không tự nhảy sang nhóm nguồn khác nếu người dùng không yêu cầu.",
 "3. Nếu người dùng chưa nêu nguồn hoặc chỉ nêu đề tài nghiên cứu, được quyền đề xuất các nguồn sơ cấp phù hợp và có thể bổ sung các nguồn thứ cấp trực tiếp liên quan nếu chúng thật sự cần để làm rõ câu hỏi nghiên cứu.",
 "4. Nếu đề bài yêu cầu quan điểm học giả, công trình nghiên cứu, thiền sư hoặc lịch sử nghiên cứu, hãy đưa các nguồn thứ cấp phù hợp vào Ô 1. Ưu tiên tác giả + nhan đề công trình cụ thể; không bịa nhan đề.",
-"5. Phạm vi đề xuất phải đủ để nghiên cứu nhưng không được mở rộng theo kiểu “càng nhiều càng tốt”.",
+"5. Phạm vi đề xuất phải đủ để nghiên cứu nhưng không được mở rộng theo kiểu “càng nhiều càng tốt”. Khi người dùng nêu một nhóm nguồn rộng, chỉ chọn những nguồn trực tiếp nhất và đủ để trả lời câu hỏi; không đưa toàn bộ các truyền bản hoặc toàn bộ các bộ thuộc nhóm đó chỉ vì chúng tồn tại.",
+"5a. Với nguồn thứ cấp, ưu tiên các công trình nghiên cứu trực tiếp câu hỏi trung tâm. Chỉ thêm công trình liên quan gián tiếp khi nó cần thiết cho một tiểu vấn đề cụ thể mà các nguồn trực tiếp không đáp ứng.",
 "6. Sau khi Ô 1 được tạo ra, danh sách trong Ô 1 trở thành PHẠM VI KHÓA. AI nghiên cứu ở bước sau không được tự bổ sung bất kỳ nguồn nào ngoài Ô 1.",
 "7. Vì vậy, trong Ô 1 tuyệt đối không được viết các câu mở như: “có thể bổ sung nguồn khác nếu cần”, “có thể sử dụng thêm công trình liên quan”, “nếu cần thì mở rộng sang...”.",
 "8. Nếu trong quá trình nghiên cứu sau này thấy cần nguồn ngoài Ô 1, chỉ được nêu rằng phạm vi hiện tại chưa đủ và đề nghị người dùng mở rộng phạm vi; không được tự mở rộng.",
@@ -326,7 +385,8 @@ rawTopic,
 "# NGUYÊN TẮC BIÊN TẬP",
 "1. Giữ đúng ý định nghiên cứu của người dùng; không đổi câu hỏi thành một đề tài khác.",
 "2. Làm rõ những điểm mơ hồ bằng cách cấu trúc lại yêu cầu, nhưng không tự thêm giả định lịch sử hay giáo lý không có trong đề bài.",
-"3. Không viết lối nửa Việt nửa ngoại ngữ trong phần giải thích; tuy nhiên tên học thuật nguyên ngữ phải được giữ đầy đủ. Không thêm bản dịch hoặc cách gọi tiếng Anh chỉ để trang trí nếu tiếng Việt + nguyên ngữ Pāli/Sanskrit/Hán/Tạng đã đủ chính xác.",
+"2a. Nếu đề bài dùng cụm “đối tượng thực hành”, “đối tượng thiền” hoặc cách nói tương tự, phải phân biệt: (a) đối tượng/đề mục mà tâm hướng đến trong thực hành; và (b) chủ thể/người thực hành. Nếu đề bài chưa rõ đang hỏi nghĩa nào, hãy tạo hai mục riêng và ưu tiên không đánh đồng chúng.",
+"3. Không viết lối nửa Việt nửa ngoại ngữ trong phần giải thích; tuy nhiên tên học thuật nguyên ngữ phải được giữ đầy đủ. Không thêm bản dịch hoặc cách gọi tiếng Anh chỉ để trang trí nếu tiếng Việt + nguyên ngữ Pāli/Sanskrit/Hán/Tạng đã đủ chính xác. Không tự sinh một dạng nguyên ngữ nếu không chắc về hình thái hoặc cách dùng; khi chưa chắc, giữ cách gọi tiếng Việt và nêu rằng nguyên ngữ cần được xác minh.",
 "4. Không dùng chính câu trả lời này để nghiên cứu đề tài.",
 "5. Hai khối phải đủ hoàn chỉnh để người dùng có thể sao chép trực tiếp vào hai ô của công cụ mà không cần sửa nhiều.",
 "",
@@ -400,6 +460,9 @@ metaCopyBtn.addEventListener("click",async()=>{
   if(!metaOutputEl.value)return;
   try{await navigator.clipboard.writeText(metaOutputEl.value);}
   catch(e){metaOutputEl.focus();metaOutputEl.select();document.execCommand("copy");}
+  metaCopyBtn.classList.add("copied");
+  metaCopyBtn.title="Đã sao chép";
+  setTimeout(()=>{metaCopyBtn.classList.remove("copied");metaCopyBtn.title="Sao chép";},1200);
   setStatus(metaStatusEl,"Đã sao chép câu lệnh chuẩn hóa.","ok");
 });
 
@@ -439,6 +502,9 @@ copyBtn.addEventListener("click",async()=>{
   if(!outputEl.value)return;
   try{await navigator.clipboard.writeText(outputEl.value);}
   catch(e){outputEl.focus();outputEl.select();document.execCommand("copy");}
+  copyBtn.classList.add("copied");
+  copyBtn.title="Đã sao chép";
+  setTimeout(()=>{copyBtn.classList.remove("copied");copyBtn.title="Sao chép";},1200);
   setStatus(statusEl,"Đã sao chép câu lệnh nghiên cứu.","ok");
 });
 
