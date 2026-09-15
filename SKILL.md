@@ -2,7 +2,7 @@
 
 ## 1. Mục tiêu
 
-Tệp hướng dẫn này dùng để nghiên cứu, tổng hợp, đối chiếu, phân tích, phản biện và viết một đề tài Phật học **chỉ trong phạm vi các bộ kinh hoặc văn bản do người dùng chỉ định**.
+Tệp hướng dẫn này dùng để nghiên cứu, tổng hợp, đối chiếu, phân tích, phản biện và viết một đề tài Phật học **chỉ trong phạm vi các nguồn do người dùng cho phép**. Phạm vi ấy có thể chỉ gồm nguồn sơ cấp, hoặc có thể gồm cả nguồn sơ cấp và nguồn thứ cấp nếu người dùng đã đưa chúng vào danh sách được phép.
 
 Nguyên tắc tối cao:
 
@@ -17,7 +17,8 @@ Phạm vi do người dùng quy định là ranh giới bắt buộc, không ph�
 Trước khi nghiên cứu, phải xác định rõ:
 
 - **ĐỀ TÀI**: câu hỏi hoặc vấn đề cần nghiên cứu.
-- **PHẠM VI VĂN BẢN ĐƯỢC PHÉP**: tên chính xác các bộ kinh hoặc văn bản được dùng.
+- **PHẠM VI NGUỒN ĐƯỢC PHÉP**: tên chính xác các bộ kinh, văn bản, công trình nghiên cứu hoặc nguồn khác được dùng.
+- **VAI TRÒ CỦA NGUỒN** nếu phạm vi có cả nguồn sơ cấp và nguồn thứ cấp: phải phân biệt rõ nguồn nào dùng làm bằng chứng văn bản chính và nguồn nào dùng để trình bày, so sánh hoặc phản biện cách diễn giải.
 - **PHẠM VI CON** nếu có: phẩm, chương, kinh, thiên, giới, đoạn, chủ đề hoặc khoảng văn bản cụ thể.
 - **NGÔN NGỮ HOẶC BẢN DỊCH ĐƯỢC PHÉP** nếu người dùng có quy định.
 - **DẠNG KẾT QUẢ** nếu người dùng yêu cầu: khảo luận, bảng đối chiếu, bài nghiên cứu, dàn ý, chú giải và các dạng tương tự.
@@ -132,13 +133,15 @@ Nếu có, phải sửa cả hai loại lỗi trước khi trả lời.
 
 Ngay khi nhận được **PHẠM VI VĂN BẢN ĐƯỢC PHÉP**, phải thiết lập khóa phạm vi.
 
-### 4.1. Nguồn được phép dùng làm chứng cứ
+### 4.1. Nguồn được phép sử dụng
 
 Chỉ gồm:
 
-1. chính các bộ kinh hoặc văn bản người dùng nêu;
-2. các bản song song, bản dịch hoặc ấn bản của **cùng chính văn bản đó**, nếu người dùng không cấm;
-3. dữ liệu tối thiểu cần để nhận diện vị trí văn bản, như số kinh, phẩm, chương, quyển, đoạn, trang hoặc mã tham chiếu.
+1. chính các bộ kinh, văn bản, công trình hoặc nguồn được liệt kê trong phạm vi người dùng cho phép;
+2. các bản song song, bản dịch hoặc ấn bản của **cùng chính nguồn đó**, nếu người dùng không cấm;
+3. dữ liệu tối thiểu cần để nhận diện vị trí nguồn, như số kinh, phẩm, chương, quyển, đoạn, trang, số hiệu văn bản hoặc mã tham chiếu.
+
+Nếu phạm vi có cả nguồn sơ cấp và nguồn thứ cấp, cả hai đều thuộc phạm vi được phép nhưng **không có cùng chức năng chứng minh**.
 
 ### 4.2. Nguồn không được phép dùng làm chứng cứ, trừ khi người dùng bổ sung rõ ràng vào phạm vi
 
@@ -151,8 +154,8 @@ Bao gồm nhưng không giới hạn:
 - văn học Đại thừa hoặc ngoài Đại thừa không thuộc phạm vi;
 - sử liệu, bi ký, khảo cổ học;
 - từ điển, bách khoa, giáo trình;
-- công trình nghiên cứu hiện đại;
-- quan điểm của học giả;
+- công trình nghiên cứu hiện đại **không nằm trong phạm vi được phép**;
+- quan điểm của học giả, thiền sư hoặc nhà nghiên cứu **không nằm trong phạm vi được phép**;
 - truyền thống khẩu truyền;
 - kiến thức phổ thông;
 - kiến thức có sẵn trong hệ thống trí tuệ nhân tạo nhưng không thể truy ngược về phạm vi văn bản được phép.
@@ -165,13 +168,23 @@ Không được lập luận theo kiểu:
 
 > “Văn bản X nói A; theo chú giải, học giả hoặc truyền thống thì A thật ra có nghĩa B; vì vậy văn bản X chứng minh B.”
 
-Nếu B không thể được lập luận trực tiếp từ phạm vi văn bản được phép, không được gán B cho phạm vi ấy.
+Nếu B không thể được lập luận trực tiếp từ nguồn sơ cấp được phép, không được gán B cho nguồn sơ cấp ấy chỉ vì một nguồn thứ cấp diễn giải như vậy.
+
+### 4.4. Phân biệt vai trò nguồn sơ cấp và nguồn thứ cấp
+
+Nếu Ô 1 hoặc phạm vi nguồn có cả hai loại:
+
+- **Nguồn sơ cấp** dùng để xác định văn bản kinh, luật hoặc tư liệu gốc nói gì.
+- **Nguồn thứ cấp** dùng để trình bày, so sánh, đánh giá và phản biện cách giải thích của học giả, nhà nghiên cứu hoặc thiền sư đã được phép.
+- Không được dùng uy tín của nguồn thứ cấp để thay thế bằng chứng trực tiếp từ nguồn sơ cấp.
+- Khi một nguồn thứ cấp viện dẫn một nguồn khác không nằm trong phạm vi khóa, không được tự động đưa nguồn mới đó vào nghiên cứu.
+- Nếu nguồn thứ cấp đưa ra một kết luận vượt quá điều nguồn sơ cấp trong phạm vi chứng minh được, phải nói rõ đây là **cách diễn giải của tác giả**, không phải lời trực tiếp của kinh hay luật.
 
 ---
 
 ## 5. Quy tắc tìm kiếm tài liệu
 
-Được phép dùng công cụ tìm kiếm, cơ sở dữ liệu, thư mục hoặc trang mạng **chỉ để tìm và truy cập đúng các văn bản thuộc phạm vi được phép**.
+Được phép dùng công cụ tìm kiếm, cơ sở dữ liệu, thư mục hoặc trang mạng **chỉ để tìm, truy cập và kiểm tra đúng các nguồn thuộc phạm vi được phép**, bao gồm cả nguồn thứ cấp nếu chúng đã được liệt kê trong phạm vi.
 
 ### 5.1. Nguồn ngoài chỉ được dùng để định vị
 
@@ -232,16 +245,28 @@ Ngay cả khi biết một cách giải thích rất phổ biến, vẫn phải 
 
 ## 7. Quy tắc phản biện
 
-Phản biện trong phương pháp này phải là **phản biện nội tại**, không phải mượn học giả hay truyền thống bên ngoài.
+### 7.1. Đối với nội dung nguồn sơ cấp
 
-Đối với mỗi luận điểm quan trọng:
+Phản biện phải ưu tiên **phản biện nội tại** bằng chính các nguồn sơ cấp được phép:
 
 1. nêu bằng chứng mạnh nhất ủng hộ luận điểm;
-2. tìm các đoạn trong chính phạm vi được phép có thể giới hạn, làm yếu hoặc tạo cách hiểu khác;
+2. tìm các đoạn trong chính nguồn sơ cấp được phép có thể giới hạn, làm yếu hoặc tạo cách hiểu khác;
 3. kiểm tra xem luận điểm có dựa trên một đoạn đơn lẻ hay được lặp lại ở nhiều nơi;
 4. phân biệt phát biểu rõ ràng với diễn giải;
 5. nêu mức độ chắc chắn;
-6. nếu tồn tại nhiều cách hiểu đều phù hợp với phạm vi văn bản, phải trình bày chúng và không ép thành một kết luận duy nhất.
+6. nếu tồn tại nhiều cách hiểu đều phù hợp với nguồn sơ cấp, phải trình bày chúng và không ép thành một kết luận duy nhất.
+
+### 7.2. Khi phạm vi cho phép nguồn thứ cấp
+
+Được phép:
+
+- trình bày quan điểm của từng tác giả nằm trong phạm vi;
+- so sánh các cách giải thích;
+- chỉ ra điểm mạnh, điểm yếu và tiền đề của từng lập luận;
+- kiểm tra xem cách diễn giải của tác giả có được các nguồn sơ cấp trong phạm vi hỗ trợ đến mức nào;
+- phản biện một nguồn thứ cấp bằng nguồn sơ cấp hoặc bằng nguồn thứ cấp khác **nếu tất cả đều nằm trong phạm vi được phép**.
+
+Không được lấy số lượng học giả đồng ý làm bằng chứng quyết định, và không được dùng uy tín của học giả để thay thế chứng cứ văn bản.
 
 Không được dựng một quan điểm yếu giả tạo rồi bác bỏ để tạo cảm giác đã phản biện.
 
@@ -308,12 +333,14 @@ Không dừng ở đoạn đầu tiên phù hợp.
 
 ### Bước 3 — Lập Sổ Chứng Cứ
 
-Đối với mỗi đoạn, ghi:
+Đối với mỗi chứng cứ, ghi:
 
-- vị trí;
+- loại nguồn: sơ cấp hay thứ cấp;
+- vị trí hoặc thông tin nhận diện;
 - nội dung chính;
-- đoạn ấy ủng hộ luận điểm nào;
+- chứng cứ ấy ủng hộ luận điểm nào;
 - mức độ trực tiếp;
+- nếu là nguồn thứ cấp: tác giả đang diễn giải những nguồn sơ cấp nào trong phạm vi;
 - có cách hiểu khác hay không.
 
 ### Bước 4 — Phân tích
@@ -322,9 +349,11 @@ Chỉ sử dụng Sổ Chứng Cứ và chuỗi suy luận minh bạch.
 
 Không đưa thêm kiến thức ngoài phạm vi ở giai đoạn này.
 
-### Bước 5 — Phản biện nội tại
+### Bước 5 — Phản biện
 
-Tìm bằng chứng trong phạm vi được phép có thể chống lại hoặc giới hạn kết luận đang hình thành.
+Trước hết tìm phản chứng trong chính nguồn sơ cấp được phép.
+
+Nếu phạm vi có nguồn thứ cấp, sau đó mới so sánh và phản biện các cách diễn giải học thuật đã được cho phép.
 
 Nếu phản biện mạnh, phải điều chỉnh kết luận.
 
@@ -428,12 +457,15 @@ Không hòa giải khi phạm vi chưa cho phép.
 Từng bước, chỉ dựa trên dữ liệu đã trình bày.
 
 ### F. Phản biện nội tại
-Trình bày bằng chứng trong phạm vi có thể làm yếu hoặc giới hạn kết luận.
+Trình bày bằng chứng sơ cấp trong phạm vi có thể làm yếu hoặc giới hạn kết luận.
 
-### G. Kết luận
+### G. Đối chiếu nguồn thứ cấp
+Nếu phạm vi có nguồn thứ cấp, trình bày và đánh giá riêng các cách diễn giải; không trộn chúng với lời trực tiếp của nguồn sơ cấp.
+
+### H. Kết luận
 Nêu kết luận theo mức độ chắc chắn.
 
-### H. Giới hạn
+### I. Giới hạn
 Chỉ rõ những điều **không thể xác lập trong phạm vi hiện tại**.
 
 ---
@@ -457,7 +489,8 @@ Không dùng các khẳng định lịch sử mạnh như “chắc chắn”, �
 Không được:
 
 - mở rộng phạm vi vì cho rằng như vậy “đầy đủ hơn”;
-- dùng học giả để xác nhận một cách hiểu nếu học giả không nằm trong phạm vi được phép;
+- dùng học giả, thiền sư hoặc nhà nghiên cứu **ngoài phạm vi được phép** để xác nhận một cách hiểu;
+- dùng nguồn thứ cấp nằm trong phạm vi để thay thế lời trực tiếp hoặc bằng chứng của nguồn sơ cấp;
 - lấy chú giải để định nghĩa từ trong kinh rồi giả vờ định nghĩa ấy đến từ kinh;
 - lấy kiến thức lịch sử để sắp xếp các văn bản theo niên đại nếu phạm vi không cho phép;
 - dùng một truyền thống tông phái để giải thích văn bản thuộc phạm vi;
@@ -490,6 +523,9 @@ Trước khi xuất kết quả, phải tự kiểm tra:
 11. Tên bộ kinh, tên bài kinh, thuật ngữ học thuật và mã văn bản đã được giữ nguyên ngữ đầy đủ khi cần chưa?
 12. Khi có cả tên Việt và tên nguyên ngữ xác định được, tôi đã trình bày cả hai chưa?
 13. Có nguyên ngữ nào do tôi tự đoán hoặc chưa được xác minh không?
+14. Nếu phạm vi có nguồn thứ cấp, tôi đã tách rõ lời của nguồn sơ cấp với cách diễn giải của học giả chưa?
+15. Có nguồn thứ cấp nào đang bị dùng như bằng chứng thay cho nguồn sơ cấp không?
+16. Có nguồn nào ngoài danh sách khóa đã lọt vào qua trích dẫn của một công trình thứ cấp không?
 
 Chỉ được xuất bản câu trả lời khi các câu hỏi trên đã được xử lý.
 
@@ -505,6 +541,10 @@ Tính đầy đủ phải được hiểu là:
 
 Nếu câu hỏi không thể trả lời đầy đủ trong phạm vi, hãy nói rõ giới hạn thay vì phá khóa phạm vi.
 
+Nếu phạm vi có cả nguồn sơ cấp và nguồn thứ cấp, phải giữ thứ bậc chứng cứ:
+
+> **Nguồn sơ cấp xác định văn bản nói gì; nguồn thứ cấp cho biết người nghiên cứu giải thích văn bản đó như thế nào.**
+
 Quy tắc ngôn ngữ cũng có mức ưu tiên cao:
 
 > **Phần diễn giải phải được viết bằng tiếng Việt tự nhiên, thống nhất và dễ đọc; đồng thời tên bộ kinh, tên bài kinh, thuật ngữ và dữ liệu nguyên ngữ phải được giữ đầy đủ khi có giá trị học thuật. Không được hiểu “thuần Việt” là xóa nguyên ngữ.**
@@ -515,10 +555,10 @@ Quy tắc ngôn ngữ cũng có mức ưu tiên cao:
 
 Khi tệp hướng dẫn này được áp dụng, có thể dùng khung sau:
 
-> Tôi sẽ khóa phạm vi nghiên cứu vào đúng các văn bản bạn cung cấp. Mọi chứng cứ, phân tích, phản biện và kết luận sẽ chỉ dựa trên phạm vi đó. Nguồn bên ngoài, nếu được dùng để tìm vị trí văn bản, chỉ có chức năng định vị và không được đưa vào lập luận. Nếu phạm vi không đủ để xác lập một mệnh đề, tôi sẽ nói rõ điều đó thay vì dùng kiến thức ngoài phạm vi. Nếu phát hiện đã vượt phạm vi, tôi sẽ báo lỗi, nêu nguồn vi phạm, giải thích nguyên nhân và dựng lại kết luận sau khi loại bỏ phần đó. Toàn bộ phần diễn giải sẽ được viết bằng tiếng Việt tự nhiên, tránh lối nói nửa Việt nửa ngoại ngữ; đồng thời tên bộ kinh, tên bài kinh và thuật ngữ nguyên ngữ sẽ được nêu đầy đủ cùng tên Việt khi có thể xác định chính xác.
+> Tôi sẽ khóa phạm vi nghiên cứu vào đúng các văn bản bạn cung cấp. Mọi chứng cứ, phân tích, phản biện và kết luận sẽ chỉ dựa trên phạm vi đó. Nguồn bên ngoài, nếu được dùng để tìm vị trí văn bản, chỉ có chức năng định vị và không được đưa vào lập luận. Nếu phạm vi không đủ để xác lập một mệnh đề, tôi sẽ nói rõ điều đó thay vì dùng kiến thức ngoài phạm vi. Nếu phát hiện đã vượt phạm vi, tôi sẽ báo lỗi, nêu nguồn vi phạm, giải thích nguyên nhân và dựng lại kết luận sau khi loại bỏ phần đó. Nếu phạm vi có nguồn thứ cấp, tôi sẽ tách rõ bằng chứng sơ cấp với cách diễn giải học thuật và không dùng học giả thay cho lời kinh hoặc luật. Toàn bộ phần diễn giải sẽ được viết bằng tiếng Việt tự nhiên, tránh lối nói nửa Việt nửa ngoại ngữ; đồng thời tên bộ kinh, tên bài kinh và thuật ngữ nguyên ngữ sẽ được nêu đầy đủ cùng tên Việt khi có thể xác định chính xác.
 
 ---
 
 ## 20. Nguyên tắc cốt lõi rút gọn
 
-**PHẠM VI VĂN BẢN ĐÓNG → CHỨNG CỨ NỘI TẠI → LẬP LUẬN MINH BẠCH → PHẢN BIỆN NỘI TẠI → KIỂM TRA PHẠM VI → VĂN PHONG TIẾNG VIỆT + NGUYÊN NGỮ ĐẦY ĐỦ → KẾT LUẬN CÓ MỨC ĐỘ → BÁO LỖI NẾU VƯỢT PHẠM VI.**
+**PHẠM VI NGUỒN ĐÓNG → PHÂN BIỆT SƠ CẤP / THỨ CẤP → CHỨNG CỨ NỘI TẠI → LẬP LUẬN MINH BẠCH → PHẢN BIỆN → KIỂM TRA PHẠM VI → VĂN PHONG TIẾNG VIỆT + NGUYÊN NGỮ ĐẦY ĐỦ → KẾT LUẬN CÓ MỨC ĐỘ → BÁO LỖI NẾU VƯỢT PHẠM VI.**
