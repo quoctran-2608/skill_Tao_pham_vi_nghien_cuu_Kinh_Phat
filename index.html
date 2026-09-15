@@ -51,62 +51,44 @@
         linear-gradient(180deg,var(--bg) 0%,var(--bg-warm) 100%);
     }
     button,textarea{font:inherit}
-    .wrap{max-width:1120px;margin:0 auto;padding:44px 20px 64px}
+    .wrap{max-width:1080px;margin:0 auto;padding:32px 18px 52px}
     header{
-      position:relative;
-      overflow:hidden;
-      margin-bottom:28px;
-      padding:34px;
-      border:1px solid rgba(255,255,255,.8);
-      border-radius:28px;
-      color:#fff;
-      background:
-        linear-gradient(135deg,rgba(79,70,229,.98),rgba(76,29,149,.92) 58%,rgba(15,118,110,.90));
-      box-shadow:0 20px 50px rgba(79,70,229,.20);
+      margin-bottom:24px;
+      padding:8px 2px 2px;
     }
-    header:after{
-      content:"";
-      position:absolute;
-      width:240px;height:240px;
-      right:-80px;top:-90px;
-      border-radius:50%;
-      background:rgba(255,255,255,.10);
-      pointer-events:none;
-    }
-    h1{position:relative;z-index:1;margin:0 0 12px;font-size:clamp(2rem,4.5vw,3.2rem);line-height:1.08;letter-spacing:-.035em;max-width:900px}
+    h1{margin:0 0 6px;font-size:clamp(1.8rem,4vw,2.55rem);line-height:1.12;letter-spacing:-.03em;max-width:900px}
     h2{margin:0 0 8px;font-size:clamp(1.25rem,2vw,1.55rem);line-height:1.3;letter-spacing:-.015em}
     .subtitle{margin:0;color:var(--muted);max-width:900px}
-    header .subtitle{position:relative;z-index:1;color:rgba(255,255,255,.86);font-size:1.02rem;max-width:860px}
-    .badge,.step-badge{
-      display:inline-flex;align-items:center;gap:7px;
-      padding:6px 10px;border-radius:999px;
-      font-size:.76rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;
+    header .subtitle{color:var(--muted);font-size:.98rem;max-width:860px}
+    .step-badge{
+      display:inline-flex;
+      align-items:center;
+      padding:5px 9px;
+      margin-bottom:10px;
+      border-radius:999px;
+      font-size:.74rem;
+      font-weight:800;
+      letter-spacing:.04em;
+      color:var(--primary);
+      background:var(--primary-soft);
+      border:1px solid #c7d2fe;
     }
-    .badge{position:relative;z-index:1;margin-bottom:14px;background:rgba(255,255,255,.14);color:#fff;border:1px solid rgba(255,255,255,.22)}
-    .step-badge{margin-bottom:12px;background:var(--primary-soft);color:var(--primary);border:1px solid #c7d2fe}
     .panel{
-      background:rgba(255,255,255,.92);
-      border:1px solid rgba(208,213,221,.9);
-      border-radius:var(--radius-xl);
-      padding:28px;
-      box-shadow:var(--shadow);
-      backdrop-filter:blur(10px);
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:18px;
+      padding:24px;
+      box-shadow:0 8px 24px rgba(16,24,40,.05);
     }
-    .panel + .panel{margin-top:26px}
-    .prep-panel{border-color:var(--violet-line);background:linear-gradient(180deg,#fcfbff 0%,#fff 35%)}
+    .panel + .panel{margin-top:18px}
+    .prep-panel{border-color:var(--violet-line);background:#fff}
     .prep-panel .step-badge{background:var(--violet-soft);border-color:var(--violet-line);color:#6941c6}
     .grid{display:grid;gap:20px}
     label{display:block;margin-bottom:8px;font-weight:760;color:#344054}
-    .hint,.note,.flow{color:var(--muted);font-size:.92rem}
+    .hint,.note{color:var(--muted);font-size:.9rem}
     .hint{margin:7px 0 0}
     .note{margin:18px 0 0}
-    .flow{
-      margin:14px 0 0;
-      padding:10px 12px;
-      border-radius:10px;
-      background:#f8fafc;
-      border:1px dashed var(--line-strong);
-    }
+    
     textarea{
       width:100%;
       min-height:150px;
@@ -173,37 +155,13 @@
     }
     .status.warn{display:block;color:var(--warn);background:var(--warn-soft);border:1px solid var(--warn-line)}
     .status.ok{display:block;color:var(--ok);background:var(--ok-soft);border:1px solid var(--ok-line)}
-    .language-rule,.prep-rule{
-      margin:18px 0 22px;
-      padding:15px 16px;
-      border-radius:14px;
-      font-size:.95rem;
-    }
-    .language-rule{
-      color:#0f5f59;
-      border:1px solid var(--teal-line);
-      background:linear-gradient(180deg,#f0fdf9,var(--teal-soft));
-    }
-    .prep-rule{
-      color:#5b3b8a;
-      border:1px solid var(--violet-line);
-      background:linear-gradient(180deg,#faf8ff,var(--violet-soft));
-    }
-    .language-rule strong,.prep-rule strong{display:block;margin-bottom:4px;color:inherit}
+    
     .output-wrap{
-      margin-top:26px;
-      padding-top:24px;
+      margin-top:20px;
+      padding-top:20px;
       border-top:1px solid var(--line);
     }
-    .panel:before{
-      content:"";
-      display:block;
-      width:44px;height:4px;
-      margin-bottom:18px;
-      border-radius:999px;
-      background:linear-gradient(90deg,var(--primary),#7c3aed);
-    }
-    .prep-panel:before{background:linear-gradient(90deg,#7c3aed,#a855f7)}
+    
     @media(min-width:900px){
       .panel:not(.prep-panel) .grid{grid-template-columns:1fr 1fr}
       .panel:not(.prep-panel) .grid textarea{min-height:330px}
@@ -224,61 +182,49 @@
 <body>
 <main class="wrap">
   <header>
-    <div class="badge">✦ KHÓA PHẠM VI VĂN BẢN</div>
     <h1>Trình tạo câu lệnh nghiên cứu Phật học</h1>
-    <p class="subtitle">Biến một ý tưởng thô thành phạm vi nghiên cứu rõ ràng, rồi ghép với SKILL.md để tạo câu lệnh hoàn chỉnh cho ChatGPT hoặc hệ thống trí tuệ nhân tạo khác.</p>
+    <p class="subtitle">Chọn một trong hai bước bên dưới.</p>
   </header>
 
   <section class="panel prep-panel">
-    <div class="step-badge">① BƯỚC CHUẨN BỊ · TÙY CHỌN</div>
-    <h2>Từ một đề bài thô, nhờ AI soạn sẵn nội dung cho hai ô</h2>
-    <p class="subtitle">Bạn chỉ cần nhập ý tưởng hoặc câu hỏi ban đầu. Công cụ sẽ tạo một câu lệnh để dán vào ChatGPT hoặc AI khác. AI đó phải trả về đúng hai khối nội dung: phạm vi văn bản được phép và đề bài nghiên cứu đã chuẩn hóa.</p>
-    <p class="flow">Đề bài thô → tạo câu lệnh chuẩn hóa → dán vào AI → nhận 2 khối → sao chép vào Ô 1 và Ô 2 bên dưới.</p>
-
-    <div class="prep-rule">
-      <strong>Nguyên tắc của bước này</strong>
-      AI chỉ được thiết kế phạm vi và viết lại đề bài. AI chưa được trả lời câu hỏi nghiên cứu. Nếu đề bài đã nêu rõ nguồn thì phải giữ đúng; nếu chưa nêu, chỉ đề xuất phạm vi tối thiểu đủ dùng, không gom nguồn quá rộng.
-    </div>
+    <div class="step-badge">① TỪ ĐỀ BÀI THÔ</div>
+    <h2>Nhờ AI soạn sẵn Ô 1 và Ô 2</h2>
+    <p class="subtitle">Nhập ý tưởng của bạn, rồi tạo câu lệnh để dán vào AI.</p>
 
     <label for="rawTopic">Đề bài thô hoặc ý tưởng nghiên cứu</label>
     <textarea id="rawTopic" placeholder="Ví dụ: Tôi muốn nghiên cứu trong Phật giáo sơ kỳ về bốn tầng thiền sắc giới, xem chỉ thực hành bốn thiền có đủ để chứng ngộ đạo quả hay không, đối tượng và phương pháp thực hành là gì, đồng thời cần đối chiếu Nikāya, A-hàm và Luật." spellcheck="false"></textarea>
-    <p class="hint">Có thể viết rất tự nhiên, chưa cần cấu trúc. AI ở bước sau sẽ tự chuẩn hóa thành hai ô.</p>
+    <p class="hint">Viết tự nhiên, chưa cần cấu trúc.</p>
 
     <div class="actions">
       <button id="metaGenerate" class="prep-primary" type="button">Tạo câu lệnh nhờ AI soạn hai ô</button>
       <button id="metaCopy" class="secondary" type="button" disabled>Sao chép câu lệnh</button>
-      <button id="metaDownload" class="secondary" type="button" disabled>Tải xuống tệp văn bản</button>
+      <button id="metaDownload" class="secondary" type="button" disabled>Tải .txt</button>
       <button id="metaClear" class="secondary" type="button">Xóa phần này</button>
     </div>
 
     <div id="metaStatus" class="status" role="status" aria-live="polite"></div>
 
     <div class="output-wrap">
-      <label for="metaOutput">Câu lệnh để dán vào AI nhằm tạo Ô 1 và Ô 2</label>
+      <label for="metaOutput">Câu lệnh tạo Ô 1 và Ô 2</label>
       <textarea id="metaOutput" readonly placeholder="Câu lệnh chuẩn hóa sẽ xuất hiện ở đây."></textarea>
     </div>
   </section>
 
   <section class="panel">
-    <div class="step-badge">② BƯỚC THỰC THI</div>
-    <h2>Tạo câu lệnh nghiên cứu hoàn chỉnh từ hai ô</h2>
-
-    <div class="language-rule">
-      <strong>Văn phong: tiếng Việt tự nhiên. Nguyên ngữ học thuật: giữ đầy đủ.</strong>
-      Phần diễn giải phải tránh lối viết nửa Việt nửa ngoại ngữ; nhưng tên bộ kinh, tên bài kinh, thuật ngữ Pāli, Sanskrit, Hán, Tạng và mã văn bản phải được giữ đầy đủ khi có giá trị học thuật, tốt nhất kèm tên Việt.
-    </div>
+    <div class="step-badge">② TẠO CÂU LỆNH NGHIÊN CỨU</div>
+    <h2>Nhập phạm vi và đề bài</h2>
 
     <div class="grid">
       <div>
         <label for="corpus">1. Các bộ kinh hoặc văn bản được phép sử dụng</label>
         <textarea id="corpus" placeholder="1. Dīgha Nikāya (Trường Bộ)&#10;2. Majjhima Nikāya (Trung Bộ)&#10;3. Saṃyutta Nikāya (Tương Ưng Bộ)&#10;4. Aṅguttara Nikāya (Tăng Chi Bộ)&#10;5. Dīrgha Āgama / Trường A-hàm&#10;6. Madhyama Āgama / Trung A-hàm&#10;7. Saṃyukta Āgama / Tạp A-hàm&#10;8. Ekottarika Āgama / Tăng Nhất A-hàm&#10;9. Theravāda Vinaya Piṭaka / Luật tạng Pāli, gồm Suttavibhaṅga và Khandhaka." spellcheck="false"></textarea>
-        <p class="hint">Nên ghi đầy đủ tên nguyên ngữ và tên Việt. Chỉ những văn bản được nhập ở đây mới thuộc phạm vi được phép.</p>
+        <p class="hint">Nên ghi cả tên nguyên ngữ và tên Việt.</p>
       </div>
 
       <div>
         <label for="task">2. Đề bài nghiên cứu hoặc yêu cầu viết</label>
         <textarea id="task" placeholder="Ví dụ: Hãy khảo sát các đoạn nói về bốn tầng thiền sắc giới, phân tích phương pháp thực hành, quan hệ với trí tuệ và giải thoát, đồng thời tìm cả những đoạn có thể giới hạn giả thuyết rằng chỉ cần bốn tầng thiền là đủ để chứng ngộ." spellcheck="false"></textarea>
-        <p class="hint">Có thể yêu cầu tìm kiếm, đối chiếu, phân tích, phản biện và viết thành bài; nhưng nội dung đề bài không tự động cho phép mở rộng phạm vi văn bản.</p>
+        <p class="hint">Nêu rõ câu hỏi, yêu cầu đối chiếu và phản biện nếu cần.</p>
       </div>
     </div>
 
@@ -296,7 +242,7 @@
       <textarea id="output" readonly placeholder="Câu lệnh nghiên cứu sẽ xuất hiện ở đây sau khi bấm nút tạo."></textarea>
     </div>
 
-    <p class="note">Công cụ chạy hoàn toàn trong trình duyệt và không tự gửi dữ liệu tới máy chủ. Mức độ tuân thủ cuối cùng vẫn phụ thuộc vào cơ chế ưu tiên chỉ thị của từng hệ thống trí tuệ nhân tạo.</p>
+    
   </section>
 </main>
 
