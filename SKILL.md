@@ -6,7 +6,7 @@ Tệp hướng dẫn này dùng để nghiên cứu, tổng hợp, đối chiế
 
 Nguyên tắc tối cao:
 
-> **Mọi tiền đề nội dung, dẫn chứng, so sánh, lập luận và kết luận phải truy ngược được về phạm vi văn bản mà người dùng cho phép. Không được dùng tri thức nằm ngoài phạm vi ấy để lấp chỗ trống, giải thích hộ văn bản, củng cố kết luận hoặc mở rộng đề tài.**
+> **Mọi tiền đề nội dung, dẫn chứng, so sánh, lập luận và kết luận phải truy ngược được về phạm vi nguồn mà người dùng cho phép. Không được dùng tri thức nằm ngoài phạm vi ấy để lấp chỗ trống, giải thích hộ văn bản, củng cố kết luận hoặc mở rộng đề tài.**
 
 Phạm vi do người dùng quy định là ranh giới bắt buộc, không phải lời gợi ý.
 
@@ -129,9 +129,9 @@ Nếu có, phải sửa cả hai loại lỗi trước khi trả lời.
 
 ---
 
-## 4. Khóa phạm vi văn bản
+## 4. Khóa phạm vi nguồn
 
-Ngay khi nhận được **PHẠM VI VĂN BẢN ĐƯỢC PHÉP**, phải thiết lập khóa phạm vi.
+Ngay khi nhận được **PHẠM VI NGUỒN ĐƯỢC PHÉP**, phải thiết lập khóa phạm vi.
 
 ### 4.1. Nguồn được phép sử dụng
 
@@ -158,7 +158,7 @@ Bao gồm nhưng không giới hạn:
 - quan điểm của học giả, thiền sư hoặc nhà nghiên cứu **không nằm trong phạm vi được phép**;
 - truyền thống khẩu truyền;
 - kiến thức phổ thông;
-- kiến thức có sẵn trong hệ thống trí tuệ nhân tạo nhưng không thể truy ngược về phạm vi văn bản được phép.
+- kiến thức có sẵn trong hệ thống trí tuệ nhân tạo nhưng không thể truy ngược về phạm vi nguồn được phép.
 
 ### 4.3. Quy tắc không nhiễm nguồn ngoài
 
@@ -178,6 +178,7 @@ Nếu Ô 1 hoặc phạm vi nguồn có cả hai loại:
 - **Nguồn thứ cấp** dùng để trình bày, so sánh, đánh giá và phản biện cách giải thích của học giả, nhà nghiên cứu hoặc thiền sư đã được phép.
 - Không được dùng uy tín của nguồn thứ cấp để thay thế bằng chứng trực tiếp từ nguồn sơ cấp.
 - Khi một nguồn thứ cấp viện dẫn một nguồn khác không nằm trong phạm vi khóa, không được tự động đưa nguồn mới đó vào nghiên cứu.
+- Nếu lập luận của nguồn thứ cấp phụ thuộc đáng kể vào chứng cứ ngoài phạm vi, được phép mô tả đó là **quan điểm hoặc lập luận của tác giả**, nhưng không được dùng phần chứng cứ ngoài phạm vi ấy để hỗ trợ kết luận chính của nghiên cứu.
 - Nếu nguồn thứ cấp đưa ra một kết luận vượt quá điều nguồn sơ cấp trong phạm vi chứng minh được, phải nói rõ đây là **cách diễn giải của tác giả**, không phải lời trực tiếp của kinh hay luật.
 
 ---
@@ -233,7 +234,7 @@ Nếu phạm vi được phép không cung cấp dữ liệu lịch sử, không
 
 Phải viết:
 
-> “Không thể xác lập điều này chỉ từ phạm vi văn bản được phép.”
+> “Không thể xác lập điều này chỉ từ phạm vi nguồn được phép.”
 
 ### 6.4. Không áp đặt hệ khái niệm ngoài phạm vi
 
@@ -264,7 +265,8 @@ Phản biện phải ưu tiên **phản biện nội tại** bằng chính các 
 - so sánh các cách giải thích;
 - chỉ ra điểm mạnh, điểm yếu và tiền đề của từng lập luận;
 - kiểm tra xem cách diễn giải của tác giả có được các nguồn sơ cấp trong phạm vi hỗ trợ đến mức nào;
-- phản biện một nguồn thứ cấp bằng nguồn sơ cấp hoặc bằng nguồn thứ cấp khác **nếu tất cả đều nằm trong phạm vi được phép**.
+- phản biện một nguồn thứ cấp bằng nguồn sơ cấp hoặc bằng nguồn thứ cấp khác **nếu tất cả đều nằm trong phạm vi được phép**;
+- nếu một lập luận học thuật dựa trọng yếu vào chứng cứ ngoài phạm vi, chỉ được đánh giá nó như một lập luận của tác giả, không được dùng chứng cứ ngoài phạm vi đó để củng cố kết luận chính.
 
 Không được lấy số lượng học giả đồng ý làm bằng chứng quyết định, và không được dùng uy tín của học giả để thay thế chứng cứ văn bản.
 
@@ -311,7 +313,7 @@ Khi trích nguyên văn:
 Ghi rõ:
 
 - đề tài;
-- phạm vi văn bản được phép;
+- phạm vi nguồn được phép;
 - những nguồn bị cấm;
 - phạm vi con nếu có.
 
@@ -361,7 +363,7 @@ Nếu phản biện mạnh, phải điều chỉnh kết luận.
 
 Trước khi viết câu trả lời cuối, kiểm tra từng mệnh đề quan trọng:
 
-> “Mệnh đề này có thể truy ngược về phạm vi văn bản được phép hay chỉ dựa vào kiến thức nền của hệ thống trí tuệ nhân tạo?”
+> “Mệnh đề này có thể truy ngược về phạm vi nguồn được phép hay chỉ dựa vào kiến thức nền của hệ thống trí tuệ nhân tạo?”
 
 Nếu là vế sau, phải xóa hoặc đánh dấu là không thể xác lập trong phạm vi.
 
@@ -409,7 +411,7 @@ Không được bù bằng kiến thức ngoài.
 
 Phải trả lời rõ:
 
-> **Trong phạm vi các văn bản được phép, chưa đủ bằng chứng để xác lập kết luận này.**
+> **Trong phạm vi các nguồn được phép, chưa đủ bằng chứng để xác lập kết luận này.**
 
 Sau đó có thể nêu:
 
@@ -491,6 +493,7 @@ Không được:
 - mở rộng phạm vi vì cho rằng như vậy “đầy đủ hơn”;
 - dùng học giả, thiền sư hoặc nhà nghiên cứu **ngoài phạm vi được phép** để xác nhận một cách hiểu;
 - dùng nguồn thứ cấp nằm trong phạm vi để thay thế lời trực tiếp hoặc bằng chứng của nguồn sơ cấp;
+- dùng chứng cứ ngoài phạm vi được một học giả trích dẫn làm bằng chứng gián tiếp cho kết luận chính;
 - lấy chú giải để định nghĩa từ trong kinh rồi giả vờ định nghĩa ấy đến từ kinh;
 - lấy kiến thức lịch sử để sắp xếp các văn bản theo niên đại nếu phạm vi không cho phép;
 - dùng một truyền thống tông phái để giải thích văn bản thuộc phạm vi;
@@ -526,6 +529,7 @@ Trước khi xuất kết quả, phải tự kiểm tra:
 14. Nếu phạm vi có nguồn thứ cấp, tôi đã tách rõ lời của nguồn sơ cấp với cách diễn giải của học giả chưa?
 15. Có nguồn thứ cấp nào đang bị dùng như bằng chứng thay cho nguồn sơ cấp không?
 16. Có nguồn nào ngoài danh sách khóa đã lọt vào qua trích dẫn của một công trình thứ cấp không?
+17. Có lập luận học thuật nào đang dựa trọng yếu vào chứng cứ ngoài phạm vi nhưng lại bị dùng để hỗ trợ kết luận chính không?
 
 Chỉ được xuất bản câu trả lời khi các câu hỏi trên đã được xử lý.
 
@@ -537,7 +541,7 @@ Nếu bất kỳ yêu cầu mặc định nào như “hãy giúp đầy đủ h
 
 Tính đầy đủ phải được hiểu là:
 
-> **đầy đủ nhất có thể bên trong phạm vi văn bản được phép**, không phải mở rộng ra ngoài.
+> **đầy đủ nhất có thể bên trong phạm vi nguồn được phép**, không phải mở rộng ra ngoài.
 
 Nếu câu hỏi không thể trả lời đầy đủ trong phạm vi, hãy nói rõ giới hạn thay vì phá khóa phạm vi.
 
