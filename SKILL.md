@@ -54,6 +54,10 @@ Ví dụ, trong lời giải thích nên dùng:
 - **kết quả đầu ra** hoặc **câu trả lời** thay cho “output”;
 - **câu lệnh** thay cho “prompt” khi đang giải thích bằng tiếng Việt.
 
+Bài nghiên cứu phải **học thuật nhưng dễ đọc** đối với người đọc phổ thông có quan tâm nghiêm túc đến Phật học. Ưu tiên câu tiếng Việt tự nhiên, trực tiếp và rõ nghĩa. **Không biến giọng văn kỹ thuật của tệp hướng dẫn này thành giọng văn của bài nghiên cứu.** Những từ như “mệnh đề”, “tiền đề”, “phản chứng”, “xác lập” chỉ dùng khi thật sự cần cho độ chính xác; nếu có cách diễn đạt tiếng Việt tự nhiên hơn mà không mất nghĩa, phải ưu tiên cách đó.
+
+Không được để lọt các cụm tiếng Anh thông dụng hoặc nhãn phân tích bằng tiếng Anh vào câu văn Việt khi không cần thiết.
+
 ### 3.2. Không được loại bỏ nguyên ngữ học thuật
 
 Quy tắc viết tiếng Việt **không có nghĩa là xóa hoặc hạn chế tên Pāli, Sanskrit, Hán, Tạng hay các ngôn ngữ gốc khác**.
@@ -283,7 +287,9 @@ Mỗi luận điểm quan trọng phải gắn với vị trí cụ thể trong 
 
 > **Tên bộ → mã số kinh/văn bản → tên bài kinh hoặc tên phần văn bản cụ thể → đoạn, quyển, trang hoặc mã tham chiếu khi xác định được.**
 
-Không chỉ ghi một mã số trơ nếu tên bài kinh hoặc tên phần văn bản có thể xác định đáng tin cậy.
+**Ngay lần đầu tiên một bài kinh hoặc văn bản cụ thể được nhắc đến trong bài**, phải ghi đầy đủ nhất có thể: **mã số + tên nguyên ngữ xác định được + tên Việt nếu có**. Ví dụ, không chỉ viết “MN 36” nếu có thể xác định đáng tin cậy **MN 36 Mahāsaccaka Sutta (Đại kinh Saccaka)**. Từ những lần nhắc sau mới được dùng mã số rút gọn.
+
+Không chỉ ghi một mã số trơ nếu tên bài kinh hoặc tên phần văn bản có thể xác định đáng tin cậy. Nếu chưa chắc tên kinh, không được đoán.
 
 Với mỗi chứng cứ quyết định, không chỉ liệt kê dẫn nguồn: phải trình bày đủ nội dung liên quan, bối cảnh cần thiết trước/sau và giải thích chính xác chứng cứ ấy ủng hộ, giới hạn hay phản bác mệnh đề nào.
 
@@ -322,6 +328,13 @@ Không dừng ở đoạn đầu tiên phù hợp.
 - các đoạn lặp lại;
 - các đoạn có vẻ căng thẳng hoặc giới hạn nhau;
 - trường hợp ngoại lệ.
+
+Đối với **mỗi bộ, văn bản hoặc nhóm nguồn** trong phạm vi, không được coi là đã khảo sát đủ chỉ vì đã tìm thấy một vài đoạn liên quan. Trước khi kết luận, phải cố gắng xác định:
+1. đoạn hoặc văn bản mạnh nhất **ủng hộ** mệnh đề trung tâm;
+2. đoạn hoặc văn bản mạnh nhất **giới hạn hoặc phản bác** mệnh đề ấy;
+3. trường hợp **khó phân loại, ngoại lệ hoặc tạo mô hình khác** nếu có.
+
+Không được bỏ qua một đoạn có sức quyết định chỉ vì một đoạn khác trong cùng bộ đã được chọn làm ví dụ đại diện.
 
 Không cần liệt kê mọi chỗ chỉ lặp lại cùng một công thức mà không thêm dữ liệu mới. Nhưng **mọi văn bản có sức quyết định, tạo phản chứng, ngoại lệ, mô hình riêng hoặc khác biệt truyền bản có ý nghĩa phải được trình bày đủ chi tiết**.
 
