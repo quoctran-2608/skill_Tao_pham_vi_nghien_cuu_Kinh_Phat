@@ -317,26 +317,55 @@ Không mở rộng phạm vi nếu người dùng chưa cho phép.
 
 ### Bước 2 — Thu thập chứng cứ trong phạm vi
 
-Tìm tất cả đoạn có liên quan trực tiếp đến đề tài trong phạm vi được phép.
+Mục tiêu của bước này là **rà đủ rộng trước khi chọn chứng cứ để viết**. Không được đồng nhất “đã tìm thấy vài ví dụ tiêu biểu” với “đã khảo sát xong phạm vi”.
 
-Không dừng ở đoạn đầu tiên phù hợp.
+Thực hiện ít nhất ba lượt nghiên cứu sau, trong giới hạn công cụ và dữ liệu có thể truy cập:
+
+#### Lượt 1 — Rà rộng toàn phạm vi
+
+Tìm các đoạn liên quan trực tiếp và gián tiếp có khả năng làm thay đổi câu trả lời, không chỉ các đoạn chứa đúng từ khóa của đề bài.
 
 Ưu tiên bao quát:
 
 - phát biểu trực tiếp;
-- ví dụ, dụ ngôn, định nghĩa;
-- các đoạn lặp lại;
-- các đoạn có vẻ căng thẳng hoặc giới hạn nhau;
+- định nghĩa và công thức lặp;
+- ví dụ, trường hợp nhân vật hoặc tiến trình tu tập;
+- các đoạn mô tả kết quả, điều kiện trước đó và bước xảy ra sau đó;
+- các đoạn song song hoặc gần song song giữa những truyền bản được phép;
+- các đoạn có vẻ căng thẳng, giới hạn nhau hoặc tạo mô hình khác;
 - trường hợp ngoại lệ.
 
-Đối với **mỗi bộ, văn bản hoặc nhóm nguồn** trong phạm vi, không được coi là đã khảo sát đủ chỉ vì đã tìm thấy một vài đoạn liên quan. Trước khi kết luận, phải cố gắng xác định:
-1. đoạn hoặc văn bản mạnh nhất **ủng hộ** mệnh đề trung tâm;
-2. đoạn hoặc văn bản mạnh nhất **giới hạn hoặc phản bác** mệnh đề ấy;
-3. trường hợp **khó phân loại, ngoại lệ hoặc tạo mô hình khác** nếu có.
+Không dừng ở đoạn đầu tiên phù hợp, không dừng sau khi một bộ đã có “một ví dụ đại diện”, và không kết luận sớm chỉ vì vài nguồn đầu tiên đã cùng chỉ về một hướng.
+
+#### Lượt 2 — Truy tìm có chủ đích những gì có thể làm sai kết luận sơ bộ
+
+Sau khi hình thành một nhận định tạm thời, quay lại từng bộ hoặc nhóm nguồn và tìm riêng:
+
+- văn bản ủng hộ mạnh nhất cho nhận định ấy;
+- văn bản có khả năng làm yếu, giới hạn hoặc đảo ngược nhận định;
+- trường hợp không khớp với mô hình đang hình thành;
+- công thức rút gọn, trường hợp im lặng về bước trung gian, hoặc trình tự khác có thể dẫn đến một cách hiểu khác;
+- nếu câu hỏi liên quan tính đủ, tính cần, đồng nhất hay nhân quả, các trường hợp có thể phá chính quan hệ đó.
+
+**Không được coi ba mục trên là hạn ngạch “mỗi bộ chỉ cần ba văn bản”.** Đây là các hướng phải kiểm tra; nếu một bộ có nhiều văn bản độc lập đều có sức quyết định, phải giữ lại tất cả.
+
+#### Lượt 3 — Đọc sâu các văn bản quyết định
+
+Với mỗi văn bản có khả năng thay đổi kết luận, phải đọc đủ bối cảnh cần thiết **trước — trong — sau** đoạn được trích để xác định:
+
+- văn bản đang nói về ai và trong hoàn cảnh nào;
+- điều gì đã xảy ra trước chứng cứ đang xét;
+- chính đoạn đó nói trực tiếp điều gì;
+- điều gì xảy ra ngay sau đó;
+- quan hệ nhân quả có được văn bản nói rõ hay chỉ do người đọc suy ra;
+- có bước trung gian nào không được phép lược bỏ;
+- đoạn ấy ủng hộ, giới hạn hay gây khó cho kết luận ở mức nào.
 
 Không được bỏ qua một đoạn có sức quyết định chỉ vì một đoạn khác trong cùng bộ đã được chọn làm ví dụ đại diện.
 
-Không cần liệt kê mọi chỗ chỉ lặp lại cùng một công thức mà không thêm dữ liệu mới. Nhưng **mọi văn bản có sức quyết định, tạo phản chứng, ngoại lệ, mô hình riêng hoặc khác biệt truyền bản có ý nghĩa phải được trình bày đủ chi tiết**.
+Chỉ được xem việc rà nguồn đã đủ cho câu hỏi trung tâm khi một lượt kiểm tra bổ sung không còn làm xuất hiện **một mô hình mới, phản chứng quan trọng, ngoại lệ đáng kể hoặc văn bản có khả năng thay đổi kết luận**. Nếu vì giới hạn truy cập hoặc công cụ mà chưa đạt được mức này, phải nói rõ giới hạn bao phủ thay vì trình bày như đã khảo sát hết.
+
+Không cần liệt kê mọi chỗ chỉ lặp lại cùng một công thức mà không thêm dữ liệu mới. Nhưng **mọi văn bản có sức quyết định, tạo phản chứng, ngoại lệ, mô hình riêng hoặc khác biệt truyền bản có ý nghĩa phải được giữ lại để phân tích**.
 
 Độ dài của bài phải do lượng và độ phức tạp của chứng cứ quyết định. Không rút ngắn chỉ để câu trả lời gọn nếu việc rút ngắn làm mất chứng cứ, bối cảnh, tên/mã văn bản hoặc chuỗi lập luận cần thiết.
 
@@ -383,6 +412,16 @@ Rà lại toàn bộ câu trả lời:
 ### Bước 8 — Viết kết quả
 
 Chỉ sau khi hoàn tất kiểm tra phạm vi và kiểm tra ngôn ngữ mới được xuất kết quả.
+
+Khi viết, phải phân biệt rõ **bản đồ chứng cứ** với **phân tích chứng cứ**:
+
+- bảng có thể dùng để giúp người đọc nhìn nhanh toàn cảnh, nhưng **không được dùng bảng thay cho phần phân tích bằng văn xuôi**;
+- mỗi văn bản có sức quyết định đối với câu hỏi trung tâm phải được trình bày thành một **hồ sơ chứng cứ** đủ sâu;
+- hồ sơ ấy nên gồm: nhận diện văn bản; bối cảnh liên quan; nội dung chính; trình tự trước–trong–sau nếu có; điều văn bản trực tiếp cho phép nói; điều chỉ có thể suy ra; và ảnh hưởng của nó đối với kết luận;
+- nếu nhiều văn bản độc lập tạo ra những mô hình khác nhau, phải dành phần trình bày tương xứng cho từng mô hình, không gom tất cả vào một câu tổng hợp;
+- không được nén nhiều chứng cứ quyết định thành một danh sách mã kinh hoặc một hàng bảng chỉ để làm câu trả lời ngắn hơn.
+
+Đối với đề tài được yêu cầu nghiên cứu toàn diện, **ưu tiên sự đầy đủ và khả năng kiểm tra chứng cứ hơn sự ngắn gọn**. Nếu lượng chứng cứ lớn, câu trả lời được phép và nên dài tương xứng.
 
 ---
 
@@ -524,6 +563,9 @@ Trước khi xuất kết quả, phải tự kiểm tra:
 11. Tên bộ kinh, tên bài kinh, thuật ngữ học thuật và mã văn bản đã được giữ nguyên ngữ đầy đủ khi cần chưa?
 12. Khi có cả tên Việt và tên nguyên ngữ xác định được, tôi đã trình bày cả hai chưa?
 13. Có nguyên ngữ nào do tôi tự đoán hoặc chưa được xác minh không?
+14. Tôi đã thực sự rà lại từng nhóm nguồn sau khi hình thành kết luận sơ bộ, hay chỉ dừng ở vài ví dụ đầu tiên?
+15. Có văn bản quyết định nào đang bị nén vào bảng hoặc danh sách mà chưa được phân tích đủ sâu trong phần văn xuôi không?
+16. Độ dài bài viết có tương xứng với lượng chứng cứ và độ phức tạp của câu hỏi không?
 
 Chỉ được xuất bản câu trả lời khi các câu hỏi trên đã được xử lý.
 
