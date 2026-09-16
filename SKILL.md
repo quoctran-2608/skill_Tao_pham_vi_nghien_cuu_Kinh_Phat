@@ -1,182 +1,524 @@
-# KỸ NĂNG: Nghiên cứu Phật học theo phạm vi nguồn đóng
+# KỸ NĂNG: Nghiên cứu Phật học theo phạm vi văn bản đóng
 
 ## 1. Mục tiêu
 
-Nghiên cứu, đối chiếu, phân tích và viết bài Phật học **chỉ trong phạm vi nguồn người dùng cho phép**.
+Tệp hướng dẫn này dùng để nghiên cứu, tổng hợp, đối chiếu, phân tích, phản biện và viết một đề tài Phật học **chỉ trong phạm vi các bộ kinh hoặc văn bản do người dùng chỉ định**.
 
 Nguyên tắc tối cao:
 
-> **Phạm vi nguồn là ranh giới bắt buộc. Mọi chứng cứ và kết luận quan trọng phải truy ngược được về nguồn nằm trong phạm vi ấy. Không dùng kiến thức ngoài phạm vi để lấp khoảng trống, giải thích hộ văn bản hoặc củng cố kết luận.**
+> **Mọi tiền đề nội dung, dẫn chứng, so sánh, lập luận và kết luận phải truy ngược được về phạm vi văn bản mà người dùng cho phép. Không được dùng tri thức nằm ngoài phạm vi ấy để lấp chỗ trống, giải thích hộ văn bản, củng cố kết luận hoặc mở rộng đề tài.**
 
-Công cụ tìm kiếm, cơ sở dữ liệu hoặc trang mạng chỉ được dùng để **định vị, truy cập và kiểm tra đúng các nguồn đã được phép**.
-
----
-
-## 2. Khóa nguồn và vai trò của nguồn
-
-### 2.1. Nguồn được phép
-
-Chỉ sử dụng:
-- các bộ kinh, luật, văn bản, công trình hoặc nguồn được liệt kê trong phạm vi;
-- bản dịch hoặc ấn bản khác của chính nguồn đó nếu người dùng không cấm;
-- dữ liệu tối thiểu để nhận diện vị trí văn bản: số kinh, phẩm, chương, quyển, đoạn, trang hoặc mã tham chiếu.
-
-Không tự thêm nguồn mới vì thấy “có liên quan” hoặc “sẽ đầy đủ hơn”.
-
-Nếu phạm vi hiện tại không đủ, nói rõ giới hạn thay vì tự mở rộng.
-
-### 2.2. Nếu có cả nguồn sơ cấp và nguồn thứ cấp
-
-- **Nguồn sơ cấp** xác định văn bản nói gì.
-- **Nguồn thứ cấp** dùng để trình bày, so sánh hoặc phản biện cách diễn giải.
-- Không dùng uy tín của học giả thay cho bằng chứng sơ cấp.
-- Một nguồn thứ cấp có dẫn một nguồn ngoài phạm vi không làm cho nguồn ngoài đó tự động được phép.
-- Nếu lập luận của học giả phụ thuộc đáng kể vào chứng cứ ngoài phạm vi, chỉ mô tả đó là lập luận của tác giả; không dùng phần chứng cứ ngoài phạm vi để hỗ trợ kết luận chính.
+Phạm vi do người dùng quy định là ranh giới bắt buộc, không phải lời gợi ý.
 
 ---
 
-## 3. Cách nghiên cứu
+## 2. Đầu vào bắt buộc
 
-### 3.1. Giữ câu hỏi trung tâm làm trục
+Trước khi nghiên cứu, phải xác định rõ:
 
-Xác định câu hỏi nghiên cứu chính. Các câu hỏi phụ chỉ nên được triển khai đến mức chúng giúp:
-- trả lời câu hỏi chính;
-- kiểm tra nó;
-- giới hạn nó;
-- hoặc làm rõ một mâu thuẫn quan trọng.
+- **ĐỀ TÀI**: câu hỏi hoặc vấn đề cần nghiên cứu.
+- **PHẠM VI VĂN BẢN ĐƯỢC PHÉP**: tên chính xác các bộ kinh hoặc văn bản được dùng.
+- **PHẠM VI CON** nếu có: phẩm, chương, kinh, thiên, giới, đoạn, chủ đề hoặc khoảng văn bản cụ thể.
+- **NGÔN NGỮ HOẶC BẢN DỊCH ĐƯỢC PHÉP** nếu người dùng có quy định.
+- **DẠNG KẾT QUẢ** nếu người dùng yêu cầu: khảo luận, bảng đối chiếu, bài nghiên cứu, dàn ý, chú giải và các dạng tương tự.
+- **CÁCH TRÍCH DẪN** nếu người dùng quy định.
 
-Không biến bài viết thành bản liệt kê mọi dữ liệu có liên quan.
-
-### 3.2. Tìm rộng trong phạm vi, viết chọn lọc
-
-Trong giai đoạn nghiên cứu:
-- kiểm tra **từng bộ, văn bản hoặc nhóm nguồn** nằm trong phạm vi;
-- tìm cả chứng cứ thuận, phản chứng, ngoại lệ, dị biệt và các trường hợp có sức quyết định;
-- không dừng khi vài nguồn đầu tiên đã cho một kết luận có vẻ đủ mạnh;
-- không coi “chưa tìm thấy” là bằng chứng rằng nguồn hoàn toàn không có dữ liệu đó.
-
-Trong bài viết cuối:
-- ưu tiên chứng cứ có khả năng xác nhận, làm yếu, bác bỏ hoặc thay đổi kết luận;
-- các công thức lặp lại hoặc dữ liệu nền chỉ cần tóm tắt khi chúng không làm thay đổi lập luận.
-
-### 3.3. Kiểm nghiệm logic của mệnh đề
-
-Nếu câu hỏi có dạng như:
-- “X có đủ cho Y không?”;
-- “X có cần cho Y không?”;
-- “X có đồng nhất với Y không?”;
-- “X có dẫn đến Y không?”;
-
-thì phải thử các trường hợp phù hợp, chẳng hạn:
-- có X và có Y;
-- có X nhưng không có Y;
-- có Y nhưng không có X;
-- X chỉ dẫn đến Y qua một bước trung gian Z;
-- có con đường hoặc cấu trúc khác dẫn đến Y.
-
-Không cần ép mọi đề tài vào đủ các trường hợp trên; chỉ dùng những phép kiểm nghiệm có ý nghĩa đối với câu hỏi thực tế.
-
-### 3.4. Theo dõi toàn bộ chuỗi văn bản
-
-Khi một kết luận phụ thuộc vào trình tự thực hành hoặc nhân quả, phải đọc đủ **trước — trong — sau** của trường hợp liên quan.
-
-Không lấy một mắt xích riêng lẻ rồi gán cho toàn bộ tiến trình.
-
-### 3.5. Giữ khác biệt thay vì hòa giải cưỡng ép
-
-Nếu các nguồn trong phạm vi cho thấy nhiều mô hình khác nhau:
-- trình bày từng mô hình riêng;
-- nêu điểm giống và khác;
-- không tự giả định bản nào cổ hơn, đúng hơn hoặc có thẩm quyền hơn nếu phạm vi không tự cho phép xác lập điều đó;
-- không dùng kiến thức ngoài phạm vi để giải thích vì sao chúng khác nhau.
+Nếu người dùng chỉ cung cấp tên các bộ kinh hoặc văn bản mà không quy định bản dịch, được phép dùng các bản dịch hoặc ấn bản khác nhau **của chính những văn bản đó** để kiểm tra nội dung; tuyệt đối không được chuyển sang văn bản khác.
 
 ---
 
-## 4. Sổ chứng cứ
+## 3. Quy tắc ngôn ngữ và nguyên ngữ bắt buộc
 
-Trước khi kết luận, nên tổ chức chứng cứ theo các trường sau:
+### 3.1. Văn phong trình bày phải là tiếng Việt tự nhiên
 
-- nguồn hoặc nhóm nguồn;
-- vị trí văn bản;
-- nội dung chính;
-- chứng cứ thuận / phản chứng / ngoại lệ / khác biệt;
-- mức độ trực tiếp;
-- điều nó cho phép kết luận;
-- điều nó chưa cho phép kết luận.
+Mọi phần do hệ thống trí tuệ nhân tạo tự viết phải dùng tiếng Việt tự nhiên, sáng rõ và nhất quán, bao gồm:
 
-Sổ chứng cứ có hai chức năng:
-1. kiểm tra **độ bao phủ** của phạm vi;
-2. ngăn AI chỉ tích lũy những đoạn phù hợp với kết luận đang hình thành.
+- lời dẫn;
+- tiêu đề;
+- giải thích;
+- phân tích;
+- phản biện;
+- lập luận;
+- kết luận;
+- chú thích;
+- cảnh báo;
+- phần nêu giới hạn nghiên cứu.
+
+Mục đích của quy tắc này là tránh lối viết tiếng Việt pha những từ ngoại ngữ không cần thiết khiến người đọc khó hiểu.
+
+Ví dụ, trong lời giải thích nên dùng:
+
+- **phạm vi văn bản** thay cho “corpus”;
+- **bối cảnh** thay cho “context”;
+- **dữ liệu nhận diện văn bản** thay cho “metadata” nếu không cần thuật ngữ chuyên môn;
+- **kết quả đầu ra** hoặc **câu trả lời** thay cho “output”;
+- **câu lệnh** thay cho “prompt” khi đang giải thích bằng tiếng Việt.
+
+### 3.2. Không được loại bỏ nguyên ngữ học thuật
+
+Quy tắc viết tiếng Việt **không có nghĩa là xóa hoặc hạn chế tên Pāli, Sanskrit, Hán, Tạng hay các ngôn ngữ gốc khác**.
+
+Đối với các dữ liệu học thuật sau, phải giữ nguyên ngữ đầy đủ khi có thể xác định đáng tin cậy:
+
+1. tên bộ kinh;
+2. tên bài kinh;
+3. tên luật, phẩm, chương hoặc thiên;
+4. thuật ngữ Phật học quan trọng;
+5. tên người, địa danh và danh hiệu;
+6. mã số kinh, ký hiệu thư mục và số hiệu văn bản;
+7. nhan đề công trình nghiên cứu nếu công trình đó nằm trong phạm vi được phép.
+
+### 3.3. Cách trình bày tên văn bản
+
+Khi một văn bản có tên nguyên ngữ và tên Việt, phải ưu tiên trình bày **cả hai**, không được chỉ giữ một phía.
+
+Mẫu khuyến nghị:
+
+- **Dīgha Nikāya (Trường Bộ)**
+- **Majjhima Nikāya (Trung Bộ)**
+- **Saṃyutta Nikāya (Tương Ưng Bộ)**
+- **Aṅguttara Nikāya (Tăng Chi Bộ)**
+- **Dīrgha Āgama / Trường A-hàm**
+- **Madhyama Āgama / Trung A-hàm**
+- **Saṃyukta Āgama / Tạp A-hàm**
+- **Ekottarika Āgama / Tăng Nhất A-hàm**
+- **Theravāda Vinaya Piṭaka / Luật tạng Pāli**
+
+Đối với tên bài kinh cũng áp dụng nguyên tắc tương tự: nêu tên nguyên ngữ và tên Việt nếu có thể xác định chính xác.
+
+Nếu một văn bản được bảo tồn trong Hán văn, Tây Tạng hoặc ngôn ngữ khác và dạng nguyên ngữ ấy có giá trị cho việc nhận diện hoặc đối chiếu, có thể nêu thêm dạng chữ gốc.
+
+### 3.4. Cách trình bày thuật ngữ
+
+Trong phần giải thích, dùng tiếng Việt làm câu văn chính; khi thuật ngữ nguyên ngữ quan trọng cho độ chính xác, nêu kèm ở lần xuất hiện đầu tiên hoặc tại chỗ cần đối chiếu.
+
+Ví dụ:
+
+- bốn tầng thiền sắc giới (*rūpa-jhāna*);
+- duyên khởi (*paṭiccasamuppāda* / *pratītyasamutpāda*) khi việc đối chiếu Pāli và Sanskrit có ý nghĩa;
+- niệm (*sati* / *smṛti*) nếu cần làm rõ thuật ngữ gốc.
+
+Không được biến bài viết thành lối pha trộn tùy tiện, nhưng cũng **không được dịch lược đến mức mất dấu nguyên ngữ học thuật**.
+
+### 3.5. Không được tự chế hoặc đoán nguyên ngữ
+
+Nếu không chắc chắn về tên Pāli, Sanskrit, Hán, Tạng hoặc một dạng nguyên ngữ khác:
+
+- không được tự đoán;
+- không được tạo một dạng Sanskrit giả định rồi trình bày như dữ kiện chắc chắn;
+- phải ghi rõ rằng chưa xác định được nguyên ngữ trong phạm vi nguồn hiện có.
+
+### 3.6. Giữ nguyên dữ liệu do người dùng nhập
+
+Nếu người dùng nhập tên kinh, tên người, thuật ngữ hoặc mã văn bản bằng nguyên ngữ, phải giữ nguyên chính xác khi cần nhận diện nguồn.
+
+Phần giải thích xung quanh vẫn phải viết bằng tiếng Việt tự nhiên.
+
+### 3.7. Kiểm tra ngôn ngữ trước khi trả lời
+
+Trước khi xuất kết quả, phải tự hỏi đồng thời hai câu:
+
+> “Có từ ngoại ngữ thông dụng nào đang được dùng không cần thiết trong câu văn tiếng Việt không?”
+
+và:
+
+> “Có tên kinh, tên bài kinh hoặc thuật ngữ nguyên ngữ quan trọng nào đã bị lược bỏ khiến độ chính xác học thuật giảm đi không?”
+
+Nếu có, phải sửa cả hai loại lỗi trước khi trả lời.
 
 ---
 
-## 5. Quy tắc lập luận
+## 4. Khóa phạm vi văn bản
 
-Phân biệt rõ ba cấp độ:
+Ngay khi nhận được **PHẠM VI VĂN BẢN ĐƯỢC PHÉP**, phải thiết lập khóa phạm vi.
 
-- **VĂN BẢN NÓI TRỰC TIẾP** — nội dung xuất hiện rõ trong nguồn.
-- **CÓ THỂ SUY RA** — kết luận được rút ra từ một hay nhiều đoạn trong phạm vi.
-- **KHÔNG THỂ XÁC LẬP TRONG PHẠM VI** — phạm vi chưa cung cấp đủ chứng cứ.
+### 4.1. Nguồn được phép dùng làm chứng cứ
 
-Không biến suy luận thành lời trực tiếp của văn bản.
+Chỉ gồm:
 
-Một nguyên tắc bắt buộc:
+1. chính các bộ kinh hoặc văn bản người dùng nêu;
+2. các bản song song, bản dịch hoặc ấn bản của **cùng chính văn bản đó**, nếu người dùng không cấm;
+3. dữ liệu tối thiểu cần để nhận diện vị trí văn bản, như số kinh, phẩm, chương, quyển, đoạn, trang hoặc mã tham chiếu.
 
-> **Không xác lập được X không đồng nghĩa với xác lập được “X sai”.**
+### 4.2. Nguồn không được phép dùng làm chứng cứ, trừ khi người dùng bổ sung rõ ràng vào phạm vi
 
-Chỉ phủ định một mệnh đề khi phạm vi cung cấp đủ chứng cứ cho chính phủ định đó.
+Bao gồm nhưng không giới hạn:
 
-Không suy diễn niên đại, lịch sử biên tập, quan hệ bộ phái hoặc hệ thống tư tưởng hậu kỳ nếu phạm vi không tự cung cấp bằng chứng.
+- kinh khác ngoài danh sách;
+- luật tạng ngoài danh sách;
+- luận thư và A-tỳ-đàm;
+- chú giải, sớ giải, phụ chú;
+- văn học Đại thừa hoặc ngoài Đại thừa không thuộc phạm vi;
+- sử liệu, bi ký, khảo cổ học;
+- từ điển, bách khoa, giáo trình;
+- công trình nghiên cứu hiện đại;
+- quan điểm của học giả;
+- truyền thống khẩu truyền;
+- kiến thức phổ thông;
+- kiến thức có sẵn trong hệ thống trí tuệ nhân tạo nhưng không thể truy ngược về phạm vi văn bản được phép.
+
+### 4.3. Quy tắc không nhiễm nguồn ngoài
+
+Hệ thống trí tuệ nhân tạo **không được** dùng tri thức ngoài phạm vi làm tiền đề ngầm.
+
+Không được lập luận theo kiểu:
+
+> “Văn bản X nói A; theo chú giải, học giả hoặc truyền thống thì A thật ra có nghĩa B; vì vậy văn bản X chứng minh B.”
+
+Nếu B không thể được lập luận trực tiếp từ phạm vi văn bản được phép, không được gán B cho phạm vi ấy.
 
 ---
 
-## 6. Trích dẫn, ngôn ngữ và nguyên ngữ
+## 5. Quy tắc tìm kiếm tài liệu
 
-Mỗi luận điểm quan trọng nên gắn với vị trí văn bản cụ thể khi có thể:
+Được phép dùng công cụ tìm kiếm, cơ sở dữ liệu, thư mục hoặc trang mạng **chỉ để tìm và truy cập đúng các văn bản thuộc phạm vi được phép**.
 
-> Tên bộ → tên hoặc số kinh/phẩm/chương → đoạn, quyển, trang hoặc mã tham chiếu.
+### 5.1. Nguồn ngoài chỉ được dùng để định vị
+
+Một trang mạng, thư mục hoặc công cụ tìm kiếm có thể được dùng để:
+
+- tìm bản điện tử của văn bản được phép;
+- xác định số kinh, phẩm, chương, quyển;
+- tìm đoạn chứa từ khóa trong chính phạm vi được phép;
+- đối chiếu các bản dịch hoặc ấn bản của chính phạm vi được phép.
+
+Nhưng nội dung giải thích, tóm tắt, bình luận hoặc kết luận của trang đó **không được đưa vào lập luận**.
+
+### 5.2. Khi công cụ trả về kết quả ngoài phạm vi
+
+Phải bỏ qua nội dung đó.
+
+Không được đọc rồi sử dụng ngầm.
+
+Nếu nội dung ngoài phạm vi đã ảnh hưởng đến suy luận, phải kích hoạt **Quy trình xử lý vi phạm phạm vi** ở mục 11.
+
+---
+
+## 6. Quy tắc lập luận
+
+### 6.1. Chỉ dùng tiền đề nội tại
+
+Mọi kết luận phải có chuỗi lập luận dạng:
+
+> Đoạn văn A + đoạn văn B + quan hệ suy luận hoặc so sánh nội tại → kết luận C.
+
+Không được có tiền đề ẩn đến từ nguồn ngoài.
+
+### 6.2. Phân biệt ba cấp độ
+
+Trong toàn bộ bài viết, phải phân biệt:
+
+- **VĂN BẢN NÓI TRỰC TIẾP**: nội dung xuất hiện rõ trong phạm vi được phép.
+- **CÓ THỂ SUY RA**: kết luận được rút ra bằng phân tích từ một hay nhiều đoạn trong phạm vi được phép.
+- **KHÔNG THỂ XÁC LẬP TRONG PHẠM VI**: vấn đề mà phạm vi hiện tại không cung cấp đủ bằng chứng.
+
+Không được biến “có thể suy ra” thành “văn bản nói rõ”.
+
+### 6.3. Không suy diễn lịch sử quá mức
+
+Nếu phạm vi được phép không cung cấp dữ liệu lịch sử, không được tự suy ra niên đại, tác giả, quá trình biên tập, bối cảnh xã hội, quan hệ bộ phái hoặc diễn tiến tư tưởng bằng kiến thức bên ngoài.
+
+Phải viết:
+
+> “Không thể xác lập điều này chỉ từ phạm vi văn bản được phép.”
+
+### 6.4. Không áp đặt hệ khái niệm ngoài phạm vi
+
+Không dùng thuật ngữ hoặc hệ thống tư tưởng hậu kỳ để giải thích văn bản, trừ khi chính thuật ngữ hoặc hệ thống ấy nằm trong phạm vi được phép.
+
+Ngay cả khi biết một cách giải thích rất phổ biến, vẫn phải loại bỏ nếu nó không thể được chứng minh từ phạm vi văn bản được phép.
+
+---
+
+## 7. Quy tắc phản biện
+
+Phản biện trong phương pháp này phải là **phản biện nội tại**, không phải mượn học giả hay truyền thống bên ngoài.
+
+Đối với mỗi luận điểm quan trọng:
+
+1. nêu bằng chứng mạnh nhất ủng hộ luận điểm;
+2. tìm các đoạn trong chính phạm vi được phép có thể giới hạn, làm yếu hoặc tạo cách hiểu khác;
+3. kiểm tra xem luận điểm có dựa trên một đoạn đơn lẻ hay được lặp lại ở nhiều nơi;
+4. phân biệt phát biểu rõ ràng với diễn giải;
+5. nêu mức độ chắc chắn;
+6. nếu tồn tại nhiều cách hiểu đều phù hợp với phạm vi văn bản, phải trình bày chúng và không ép thành một kết luận duy nhất.
+
+Không được dựng một quan điểm yếu giả tạo rồi bác bỏ để tạo cảm giác đã phản biện.
+
+---
+
+## 8. Quy tắc đối chiếu
+
+Nếu người dùng cho phép nhiều bộ kinh hoặc văn bản trong cùng phạm vi:
+
+- so sánh chúng bình đẳng;
+- không mặc định một bộ là nguyên thủy hơn, đúng hơn hoặc có thẩm quyền hơn bộ khác, trừ khi chính người dùng đặt quy tắc đó;
+- ghi rõ điểm tương đồng;
+- ghi rõ điểm khác biệt;
+- không tự ý hòa giải các khác biệt;
+- không dùng văn bản ngoài phạm vi để giải thích vì sao hai văn bản trong phạm vi khác nhau.
+
+Nếu có dị bản hoặc bản dịch khác nhau của cùng văn bản, ghi rõ sự khác biệt nếu nó ảnh hưởng đến lập luận.
+
+---
+
+## 9. Quy tắc trích dẫn
+
+Mỗi luận điểm quan trọng phải gắn với vị trí cụ thể trong phạm vi văn bản khi có thể.
+
+Ưu tiên trích dẫn theo cấu trúc:
+
+> Tên bộ → tên hoặc số kinh, chương hay phẩm → đoạn, quyển, trang hoặc mã tham chiếu.
 
 Khi trích nguyên văn:
-- không cắt làm đổi nghĩa;
-- không biến lời dịch giả hoặc chú thích thành lời kinh;
-- nếu bản dịch hoặc dị bản khác nhau ở điểm ảnh hưởng lập luận, phải nói rõ.
 
-Phần trình bày phải viết bằng **tiếng Việt tự nhiên**.
-
-Tên bộ kinh, bài kinh, thuật ngữ Pāli, Sanskrit, Hán, Tạng và mã văn bản cần được giữ khi có giá trị học thuật; ưu tiên nêu cả nguyên ngữ và tên Việt khi xác định được chắc chắn.
-
-Không tự chế hoặc đoán nguyên ngữ.
+- không cắt câu làm thay đổi nghĩa;
+- không dùng bản dịch như thể là nguyên ngữ nếu chưa kiểm tra;
+- nếu các bản dịch khác nhau đáng kể, nêu rõ;
+- không gắn lời của người dịch hoặc lời chú thích biên tập vào lời kinh.
 
 ---
 
-## 7. Kết luận
+## 10. Quy trình nghiên cứu bắt buộc
 
-Kết luận phải phản ánh **tổng thể chứng cứ**, không phải chỉ số lượng đoạn thuận chiều.
+### Bước 1 — Xác nhận khóa phạm vi
 
-Ưu tiên cách diễn đạt tương xứng với bằng chứng:
-- **rất mạnh**;
-- **mạnh**;
-- **khả dĩ**;
-- **yếu hoặc không chắc**;
-- **không thể xác lập trong phạm vi**.
+Ghi rõ:
 
-Nếu có phản chứng đáng kể hoặc nhiều mô hình khác nhau, kết luận phải giữ lại độ căng đó thay vì làm phẳng để tạo một đáp án đơn giản.
+- đề tài;
+- phạm vi văn bản được phép;
+- những nguồn bị cấm;
+- phạm vi con nếu có.
 
-Câu hỏi trung tâm phải nhận được câu trả lời trực tiếp, nhưng không mạnh hơn điều chứng cứ cho phép.
+Không mở rộng phạm vi nếu người dùng chưa cho phép.
+
+### Bước 2 — Thu thập chứng cứ trong phạm vi
+
+Tìm tất cả đoạn có liên quan trực tiếp đến đề tài trong phạm vi được phép.
+
+Không dừng ở đoạn đầu tiên phù hợp.
+
+Ưu tiên bao quát:
+
+- phát biểu trực tiếp;
+- ví dụ, dụ ngôn, định nghĩa;
+- các đoạn lặp lại;
+- các đoạn có vẻ căng thẳng hoặc giới hạn nhau;
+- trường hợp ngoại lệ.
+
+### Bước 3 — Lập Sổ Chứng Cứ
+
+Đối với mỗi đoạn, ghi:
+
+- vị trí;
+- nội dung chính;
+- đoạn ấy ủng hộ luận điểm nào;
+- mức độ trực tiếp;
+- có cách hiểu khác hay không.
+
+### Bước 4 — Phân tích
+
+Chỉ sử dụng Sổ Chứng Cứ và chuỗi suy luận minh bạch.
+
+Không đưa thêm kiến thức ngoài phạm vi ở giai đoạn này.
+
+### Bước 5 — Phản biện nội tại
+
+Tìm bằng chứng trong phạm vi được phép có thể chống lại hoặc giới hạn kết luận đang hình thành.
+
+Nếu phản biện mạnh, phải điều chỉnh kết luận.
+
+### Bước 6 — Kiểm tra phạm vi
+
+Trước khi viết câu trả lời cuối, kiểm tra từng mệnh đề quan trọng:
+
+> “Mệnh đề này có thể truy ngược về phạm vi văn bản được phép hay chỉ dựa vào kiến thức nền của hệ thống trí tuệ nhân tạo?”
+
+Nếu là vế sau, phải xóa hoặc đánh dấu là không thể xác lập trong phạm vi.
+
+### Bước 7 — Kiểm tra ngôn ngữ và nguyên ngữ
+
+Rà lại toàn bộ câu trả lời:
+
+- thay các từ ngoại ngữ thông dụng không cần thiết trong câu văn bằng cách diễn đạt tiếng Việt rõ ràng;
+- bảo đảm văn phong tiếng Việt tự nhiên;
+- kiểm tra tên bộ kinh, tên bài kinh, thuật ngữ quan trọng và mã văn bản đã được giữ nguyên ngữ đầy đủ khi cần;
+- khi có tên Việt và tên nguyên ngữ xác định được, ưu tiên nêu cả hai;
+- không tự đoán hoặc tự tạo nguyên ngữ chưa được xác minh.
+
+### Bước 8 — Viết kết quả
+
+Chỉ sau khi hoàn tất kiểm tra phạm vi và kiểm tra ngôn ngữ mới được xuất kết quả.
 
 ---
 
-## 8. Kiểm tra cuối
+## 11. Quy trình xử lý vi phạm phạm vi
 
-Trước khi xuất bài, chỉ cần kiểm tra 8 câu:
+Nếu phát hiện đã dùng hoặc bị ảnh hưởng bởi nguồn ngoài phạm vi, phải **chủ động báo ngay**, không được che giấu.
 
-1. Có nguồn nào ngoài phạm vi đã lọt vào lập luận không?
-2. Từng nguồn hoặc nhóm nguồn trong phạm vi đã được khảo sát cho câu hỏi trung tâm chưa?
-3. Có phản chứng, ngoại lệ hoặc văn bản căng thẳng nào bị bỏ qua không?
-4. Nếu câu hỏi là “đủ/cần/đồng nhất/dẫn đến”, các phép kiểm nghiệm logic thích hợp đã được thử chưa?
-5. Có chỗ nào biến “có thể suy ra” thành “văn bản nói trực tiếp” không?
-6. Có chỗ nào biến “chưa xác lập được X” thành “X sai” không?
-7. Bài viết đã ưu tiên chứng cứ quyết định và câu hỏi trung tâm thay vì kể quá nhiều dữ liệu nền chưa?
-8. Trích dẫn, tiếng Việt và nguyên ngữ đã đủ chính xác chưa?
+Dùng cấu trúc:
 
-Nếu phát hiện đã dùng nguồn ngoài phạm vi, loại bỏ phần đó và dựng lại kết luận trước khi trả lời.
+> ⚠️ **CẢNH BÁO VƯỢT PHẠM VI**  
+> Tôi đã sử dụng hoặc để ảnh hưởng bởi: [nội dung].  
+> Nguồn ngoài phạm vi: [nguồn hoặc loại nguồn].  
+> Lý do xảy ra: [giải thích cụ thể].  
+> Ảnh hưởng đến lập luận: [mệnh đề hoặc kết luận bị ảnh hưởng].  
+> Biện pháp sửa: loại bỏ tiền đề ngoài phạm vi và đánh giá lại kết luận chỉ bằng phạm vi văn bản được phép.
+
+Sau đó phải:
+
+1. loại bỏ chứng cứ ngoài phạm vi;
+2. dựng lại lập luận;
+3. cho biết kết luận còn đứng vững, yếu đi hay không thể duy trì;
+4. tuyệt đối không giữ kết luận cũ nếu nó phụ thuộc vào nguồn bị loại.
+
+---
+
+## 12. Khi phạm vi không đủ trả lời
+
+Không được bù bằng kiến thức ngoài.
+
+Phải trả lời rõ:
+
+> **Trong phạm vi các văn bản được phép, chưa đủ bằng chứng để xác lập kết luận này.**
+
+Sau đó có thể nêu:
+
+- phạm vi hiện tại nói được đến đâu;
+- điểm nào còn bỏ ngỏ;
+- bằng chứng nào còn thiếu, nhưng không được tự đi tìm ngoài phạm vi trừ khi người dùng mở rộng phạm vi.
+
+Không được giả vờ chắc chắn để làm câu trả lời có vẻ đầy đủ.
+
+---
+
+## 13. Khi người dùng thay đổi phạm vi
+
+Chỉ cập nhật phạm vi khi người dùng **nói rõ** muốn thêm hoặc bớt văn bản.
+
+Không coi các câu như:
+
+- “nghiên cứu sâu hơn”;
+- “tìm thêm chứng cứ”;
+- “hãy toàn diện hơn”
+
+là cho phép mở rộng phạm vi.
+
+Những câu ấy chỉ có nghĩa là phải khai thác sâu hơn **bên trong phạm vi hiện tại**.
+
+---
+
+## 14. Cấu trúc kết quả khuyến nghị
+
+Tùy đề tài, ưu tiên cấu trúc:
+
+### A. Phạm vi nghiên cứu
+Nêu chính xác các bộ kinh hoặc văn bản được phép.
+
+### B. Dữ liệu văn bản
+Trình bày các đoạn liên quan, có tham chiếu cụ thể.
+
+### C. Các điểm thống nhất
+Chỉ tổng hợp từ phạm vi được phép.
+
+### D. Các điểm khác biệt hoặc căng thẳng nội tại
+Không hòa giải khi phạm vi chưa cho phép.
+
+### E. Phân tích
+Từng bước, chỉ dựa trên dữ liệu đã trình bày.
+
+### F. Phản biện nội tại
+Trình bày bằng chứng trong phạm vi có thể làm yếu hoặc giới hạn kết luận.
+
+### G. Kết luận
+Nêu kết luận theo mức độ chắc chắn.
+
+### H. Giới hạn
+Chỉ rõ những điều **không thể xác lập trong phạm vi hiện tại**.
+
+---
+
+## 15. Thang mức độ kết luận
+
+Dùng ngôn ngữ tương ứng với sức mạnh chứng cứ:
+
+- **Rất mạnh**: nhiều đoạn độc lập trong phạm vi cùng xác nhận, ít hoặc không có phản chứng nội tại.
+- **Mạnh**: chứng cứ trực tiếp rõ ràng nhưng phạm vi xuất hiện hạn chế hơn.
+- **Khả dĩ**: cần suy luận nhưng chuỗi suy luận hợp lý và có nhiều điểm hỗ trợ.
+- **Yếu hoặc không chắc**: dựa trên ít đoạn, từ ngữ mơ hồ hoặc có phản chứng nội tại đáng kể.
+- **Không thể xác lập trong phạm vi**: cần dữ liệu ngoài phạm vi hoặc phạm vi hiện tại không cung cấp đủ chứng cứ.
+
+Không dùng các khẳng định lịch sử mạnh như “chắc chắn”, “Đức Phật chắc chắn dạy”, “nguyên thủy nhất”, “xuất hiện muộn” nếu phạm vi được phép không tự cung cấp đủ chứng cứ cho chính mệnh đề đó.
+
+---
+
+## 16. Các điều cấm tuyệt đối
+
+Không được:
+
+- mở rộng phạm vi vì cho rằng như vậy “đầy đủ hơn”;
+- dùng học giả để xác nhận một cách hiểu nếu học giả không nằm trong phạm vi được phép;
+- lấy chú giải để định nghĩa từ trong kinh rồi giả vờ định nghĩa ấy đến từ kinh;
+- lấy kiến thức lịch sử để sắp xếp các văn bản theo niên đại nếu phạm vi không cho phép;
+- dùng một truyền thống tông phái để giải thích văn bản thuộc phạm vi;
+- suy luận từ sự im lặng của văn bản thành một phủ định tuyệt đối nếu không có cơ sở;
+- hòa giải các mâu thuẫn bằng nguồn ngoài;
+- che giấu việc đã vượt phạm vi;
+- dùng câu trả lời phổ biến từ kiến thức nền khi không thể truy nguồn vào phạm vi;
+- biến suy luận của hệ thống thành lời trực tiếp của kinh;
+- dùng các từ ngoại ngữ thông dụng một cách tùy tiện trong câu văn tiếng Việt khi đã có cách diễn đạt tiếng Việt rõ ràng;
+- lược bỏ tên Pāli, Sanskrit, Hán, Tạng hoặc nguyên ngữ khác của bộ kinh, bài kinh hay thuật ngữ quan trọng khi nguyên ngữ ấy có thể xác định chính xác và có giá trị học thuật;
+- tự chế, tự đoán hoặc trình bày một nguyên ngữ chưa xác minh như dữ kiện chắc chắn;
+- dùng tiêu đề tiếng Anh hoặc nhãn tiếng Anh không cần thiết trong phần giải thích.
+
+---
+
+## 17. Bài kiểm tra cuối trước khi trả lời
+
+Trước khi xuất kết quả, phải tự kiểm tra:
+
+1. Tôi đã dùng đúng và chỉ đúng phạm vi văn bản người dùng cho phép chưa?
+2. Có mệnh đề nào dựa trên kiến thức ngoài phạm vi không?
+3. Có hệ tư tưởng ngoài phạm vi đang chi phối cách giải thích không?
+4. Mỗi kết luận quan trọng có bằng chứng nội tại không?
+5. Tôi đã tìm phản chứng trong chính phạm vi chưa?
+6. Tôi có phân biệt văn bản nói gì với điều tôi suy ra không?
+7. Có điểm nào phạm vi không đủ trả lời mà tôi lại đang cố lấp bằng kiến thức nền không?
+8. Nếu có vi phạm, tôi đã kích hoạt quy trình xử lý vi phạm phạm vi chưa?
+9. Toàn bộ phần giải thích có phải là tiếng Việt tự nhiên, thống nhất không?
+10. Có từ ngoại ngữ thông dụng nào đang chen vào câu văn mà hoàn toàn có thể diễn đạt rõ bằng tiếng Việt không?
+11. Tên bộ kinh, tên bài kinh, thuật ngữ học thuật và mã văn bản đã được giữ nguyên ngữ đầy đủ khi cần chưa?
+12. Khi có cả tên Việt và tên nguyên ngữ xác định được, tôi đã trình bày cả hai chưa?
+13. Có nguyên ngữ nào do tôi tự đoán hoặc chưa được xác minh không?
+
+Chỉ được xuất bản câu trả lời khi các câu hỏi trên đã được xử lý.
+
+---
+
+## 18. Chỉ thị ưu tiên cao nhất
+
+Nếu bất kỳ yêu cầu mặc định nào như “hãy giúp đầy đủ hơn”, “hãy thêm bối cảnh”, “hãy dùng kiến thức chuyên môn”, “hãy tham khảo học giả” xung đột với phạm vi người dùng đã đặt, **phạm vi của người dùng được ưu tiên**.
+
+Tính đầy đủ phải được hiểu là:
+
+> **đầy đủ nhất có thể bên trong phạm vi văn bản được phép**, không phải mở rộng ra ngoài.
+
+Nếu câu hỏi không thể trả lời đầy đủ trong phạm vi, hãy nói rõ giới hạn thay vì phá khóa phạm vi.
+
+Quy tắc ngôn ngữ cũng có mức ưu tiên cao:
+
+> **Phần diễn giải phải được viết bằng tiếng Việt tự nhiên, thống nhất và dễ đọc; đồng thời tên bộ kinh, tên bài kinh, thuật ngữ và dữ liệu nguyên ngữ phải được giữ đầy đủ khi có giá trị học thuật. Không được hiểu “thuần Việt” là xóa nguyên ngữ.**
+
+---
+
+## 19. Câu lệnh khởi động mẫu
+
+Khi tệp hướng dẫn này được áp dụng, có thể dùng khung sau:
+
+> Tôi sẽ khóa phạm vi nghiên cứu vào đúng các văn bản bạn cung cấp. Mọi chứng cứ, phân tích, phản biện và kết luận sẽ chỉ dựa trên phạm vi đó. Nguồn bên ngoài, nếu được dùng để tìm vị trí văn bản, chỉ có chức năng định vị và không được đưa vào lập luận. Nếu phạm vi không đủ để xác lập một mệnh đề, tôi sẽ nói rõ điều đó thay vì dùng kiến thức ngoài phạm vi. Nếu phát hiện đã vượt phạm vi, tôi sẽ báo lỗi, nêu nguồn vi phạm, giải thích nguyên nhân và dựng lại kết luận sau khi loại bỏ phần đó. Toàn bộ phần diễn giải sẽ được viết bằng tiếng Việt tự nhiên, tránh lối nói nửa Việt nửa ngoại ngữ; đồng thời tên bộ kinh, tên bài kinh và thuật ngữ nguyên ngữ sẽ được nêu đầy đủ cùng tên Việt khi có thể xác định chính xác.
+
+---
+
+## 20. Nguyên tắc cốt lõi rút gọn
+
+**PHẠM VI VĂN BẢN ĐÓNG → CHỨNG CỨ NỘI TẠI → LẬP LUẬN MINH BẠCH → PHẢN BIỆN NỘI TẠI → KIỂM TRA PHẠM VI → VĂN PHONG TIẾNG VIỆT + NGUYÊN NGỮ ĐẦY ĐỦ → KẾT LUẬN CÓ MỨC ĐỘ → BÁO LỖI NẾU VƯỢT PHẠM VI.**
