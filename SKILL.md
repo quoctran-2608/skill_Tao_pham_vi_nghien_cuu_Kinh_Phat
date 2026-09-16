@@ -167,6 +167,14 @@ Không được lập luận theo kiểu:
 
 Nếu B không thể được lập luận trực tiếp từ phạm vi văn bản được phép, không được gán B cho phạm vi ấy.
 
+### 4.4. Nếu phạm vi có nguồn thứ cấp
+
+Nếu người dùng cho phép công trình nghiên cứu, học giả hoặc nguồn thứ cấp:
+- nguồn sơ cấp vẫn dùng để xác định văn bản nói gì;
+- nguồn thứ cấp dùng để trình bày, so sánh hoặc phản biện cách diễn giải;
+- không dùng uy tín học giả thay cho bằng chứng sơ cấp;
+- chứng cứ ngoài phạm vi được một nguồn thứ cấp viện dẫn không tự động trở thành nguồn được phép và không được dùng để hỗ trợ kết luận chính.
+
 ---
 
 ## 5. Quy tắc tìm kiếm tài liệu
@@ -214,6 +222,10 @@ Trong toàn bộ bài viết, phải phân biệt:
 
 Không được biến “có thể suy ra” thành “văn bản nói rõ”.
 
+> **Không xác lập được một mệnh đề không đồng nghĩa với xác lập được phủ định của mệnh đề ấy.**
+
+Nếu chứng cứ chỉ cho phép nói “chưa đủ để khẳng định X”, không được tự nâng thành “X sai”.
+
 ### 6.3. Không suy diễn lịch sử quá mức
 
 Nếu phạm vi được phép không cung cấp dữ liệu lịch sử, không được tự suy ra niên đại, tác giả, quá trình biên tập, bối cảnh xã hội, quan hệ bộ phái hoặc diễn tiến tư tưởng bằng kiến thức bên ngoài.
@@ -241,7 +253,8 @@ Phản biện trong phương pháp này phải là **phản biện nội tại**
 3. kiểm tra xem luận điểm có dựa trên một đoạn đơn lẻ hay được lặp lại ở nhiều nơi;
 4. phân biệt phát biểu rõ ràng với diễn giải;
 5. nêu mức độ chắc chắn;
-6. nếu tồn tại nhiều cách hiểu đều phù hợp với phạm vi văn bản, phải trình bày chúng và không ép thành một kết luận duy nhất.
+6. nếu tồn tại nhiều cách hiểu đều phù hợp với phạm vi văn bản, phải trình bày chúng và không ép thành một kết luận duy nhất;
+7. trước khi chốt kết luận, chủ động tìm **văn bản hoặc trường hợp khó xử nhất đối với chính kết luận đang hình thành** và kiểm tra xem nó có buộc phải sửa, thu hẹp hoặc bỏ kết luận đó hay không.
 
 Không được dựng một quan điểm yếu giả tạo rồi bác bỏ để tạo cảm giác đã phản biện.
 
