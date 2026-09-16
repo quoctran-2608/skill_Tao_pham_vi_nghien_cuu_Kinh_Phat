@@ -177,7 +177,12 @@ Nếu người dùng cho phép công trình nghiên cứu, học giả hoặc ng
 - nguồn sơ cấp vẫn dùng để xác định văn bản nói gì;
 - nguồn thứ cấp dùng để trình bày, so sánh hoặc phản biện cách diễn giải;
 - không dùng uy tín học giả thay cho bằng chứng sơ cấp;
-- chứng cứ ngoài phạm vi được một nguồn thứ cấp viện dẫn không tự động trở thành nguồn được phép và không được dùng để hỗ trợ kết luận chính.
+- chứng cứ ngoài phạm vi được một nguồn thứ cấp viện dẫn không tự động trở thành nguồn được phép và không được dùng để hỗ trợ kết luận chính;
+- khi quy một quan điểm, giả thuyết, kết luận hoặc cách phân kỳ cho **một học giả cụ thể**, phải ưu tiên truy về **công trình trực tiếp nơi học giả đó thực sự trình bày hoặc lập luận cho quan điểm ấy**; không dựa chỉ vào một tác giả khác tóm tắt lại nếu có thể tiếp cận nguồn trực tiếp;
+- khi có thể xác định, phải ghi **tác giả → tên công trình → năm → trang, chương, mục hoặc vị trí liên quan** để người đọc có thể kiểm tra lại;
+- phải phân biệt rõ: **điều học giả trực tiếp khẳng định**, **cách người viết tóm tắt quan điểm ấy**, và **suy luận của chính bài nghiên cứu**;
+- các cụm như **“đồng thuận học giới”, “đa số học giả”, “được giới nghiên cứu chấp nhận”, “quan điểm phổ biến”** không được suy ra từ một học giả đơn lẻ. Muốn dùng các cách nói này, phải có nhiều công trình độc lập cùng hỗ trợ hoặc một tổng quan học thuật có cơ sở cho phép đánh giá tình trạng nghiên cứu;
+- nếu học giới có bất đồng đáng kể, phải mô tả mức độ đồng thuận và các hướng phản biện thay vì làm phẳng thành một kết luận duy nhất.
 
 ---
 
@@ -292,6 +297,14 @@ Mỗi luận điểm quan trọng phải gắn với vị trí cụ thể trong 
 Không chỉ ghi một mã số trơ nếu tên bài kinh hoặc tên phần văn bản có thể xác định đáng tin cậy. Nếu chưa chắc tên kinh, không được đoán.
 
 Với mỗi chứng cứ quyết định, không chỉ liệt kê dẫn nguồn: phải trình bày đủ nội dung liên quan, bối cảnh cần thiết trước/sau và giải thích chính xác chứng cứ ấy ủng hộ, giới hạn hay phản bác mệnh đề nào.
+
+Nếu phạm vi cho phép **nguồn thứ cấp hoặc công trình học giả**, các nhận định học thuật quan trọng phải có khả năng truy ngược tương tự. Khi có thể, dùng dạng:
+
+> **Tác giả → tên công trình → năm → trang, chương, mục hoặc vị trí liên quan.**
+
+Không chỉ dồn toàn bộ tài liệu vào một thư mục cuối bài rồi để các nhận định trong thân bài không có điểm tựa cụ thể. Một danh mục tài liệu tham khảo đầy đủ **không thay thế** việc gắn đúng công trình với đúng nhận định mà nó hỗ trợ.
+
+Khi phát biểu về **đồng thuận hoặc xu hướng của học giới**, phải dẫn đủ số nguồn hoặc một tổng quan thích hợp để chứng minh chính mức độ đồng thuận đang được tuyên bố; không dùng một nguồn đơn lẻ để đại diện cho toàn ngành.
 
 Khi trích nguyên văn:
 
