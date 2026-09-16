@@ -188,20 +188,35 @@ Nếu người dùng cho phép công trình nghiên cứu, học giả hoặc ng
 
 ## 5. Quy tắc tìm kiếm tài liệu
 
-Được phép dùng công cụ tìm kiếm, cơ sở dữ liệu, thư mục hoặc trang mạng **chỉ để tìm và truy cập đúng các văn bản thuộc phạm vi được phép**.
+Được phép dùng công cụ tìm kiếm, cơ sở dữ liệu, thư mục, mục lục học thuật hoặc trang mạng để **định vị và truy cập đúng các nguồn thuộc phạm vi được phép**, bao gồm cả nguồn sơ cấp và nguồn thứ cấp nếu Ô 1 đã cho phép.
 
-### 5.1. Nguồn ngoài chỉ được dùng để định vị
+### 5.1. Công cụ tìm kiếm và nguồn trung gian chỉ có chức năng định vị
 
-Một trang mạng, thư mục hoặc công cụ tìm kiếm có thể được dùng để:
+Một trang kết quả tìm kiếm, mục lục, trang giới thiệu sách, thư mục, bản ghi cơ sở dữ liệu hoặc nguồn trung gian có thể được dùng để:
 
-- tìm bản điện tử của văn bản được phép;
-- xác định số kinh, phẩm, chương, quyển;
+- tìm bản điện tử của văn bản sơ cấp được phép;
+- xác định số kinh, phẩm, chương, quyển, mã văn bản hoặc ấn bản;
 - tìm đoạn chứa từ khóa trong chính phạm vi được phép;
-- đối chiếu các bản dịch hoặc ấn bản của chính phạm vi được phép.
+- đối chiếu các bản dịch hoặc ấn bản của chính văn bản được phép;
+- tìm đúng chuyên khảo, bài báo, chương sách, ấn bản phê bình hoặc công trình học thuật thuộc loại nguồn thứ cấp đã được cho phép;
+- xác định dữ liệu thư mục như tác giả, nhan đề, năm, nhà xuất bản, tạp chí, tập, số, trang.
 
-Nhưng nội dung giải thích, tóm tắt, bình luận hoặc kết luận của trang đó **không được đưa vào lập luận**.
+Nhưng **snippet tìm kiếm, trang giới thiệu, bản tóm tắt của bên thứ ba hoặc nội dung trung gian không được thay thế nguồn trực tiếp** khi dùng một nhận định làm chứng cứ.
 
-### 5.2. Khi công cụ trả về kết quả ngoài phạm vi
+### 5.2. Nếu phạm vi cho phép nguồn thứ cấp
+
+Khi đề tài yêu cầu học giả, công trình nghiên cứu, lịch sử nghiên cứu, niên đại, phân tầng văn bản hoặc đồng thuận học giới:
+
+- phải cố gắng truy cập **chính công trình học thuật trực tiếp** nằm trong phạm vi cho phép, không dừng ở tên công trình hoặc bản tóm tắt;
+- với nhận định quan trọng, phải đọc đủ phần liên quan để xác định học giả thực sự nói gì, trong điều kiện nào và với mức độ chắc chắn nào;
+- nếu công trình có thể truy cập đầy đủ, ưu tiên ghi trang, chương, mục hoặc vị trí cụ thể;
+- nếu chỉ truy cập được abstract, mục lục, trích đoạn ngắn hoặc metadata, chỉ được dùng chúng cho những gì chúng trực tiếp xác nhận; không được suy rộng thành lập trường chi tiết của tác giả;
+- nếu một nhận định quan trọng chỉ được biết qua tác giả thứ ba, phải ghi rõ đây là **dẫn gián tiếp** và tiếp tục tìm nguồn trực tiếp nếu có thể;
+- không được biến việc “đã tìm thấy tên một công trình” thành bằng chứng rằng công trình ấy ủng hộ một mệnh đề cụ thể.
+
+Nếu câu hỏi yêu cầu **tổng quan học giả hoặc lịch sử nghiên cứu**, không được mặc định tài liệu tiếng Anh đại diện cho toàn bộ học giới. Khi phù hợp với đề tài và trong giới hạn truy cập, phải chủ động rà các truyền thống nghiên cứu/ngôn ngữ học thuật quan trọng có liên quan. Không đặt hạn ngạch cứng theo quốc gia hay ngôn ngữ; mục tiêu là tránh bỏ sót có hệ thống. Nếu không thể bao quát một truyền thống quan trọng vì giới hạn truy cập hoặc ngôn ngữ, phải nói rõ giới hạn đó.
+
+### 5.3. Khi công cụ trả về kết quả ngoài phạm vi
 
 Phải bỏ qua nội dung đó.
 
@@ -384,13 +399,30 @@ Không cần liệt kê mọi chỗ chỉ lặp lại cùng một công thức m
 
 ### Bước 3 — Lập Sổ Chứng Cứ
 
-Đối với mỗi đoạn, ghi:
+Đối với mỗi chứng cứ sơ cấp quan trọng, ghi:
 
 - vị trí;
 - nội dung chính;
 - đoạn ấy ủng hộ luận điểm nào;
 - mức độ trực tiếp;
 - có cách hiểu khác hay không.
+
+Nếu phạm vi có **nguồn thứ cấp/học giả**, phải lập thêm **Sổ Chứng Cứ Học Thuật** cho các nhận định học thuật quan trọng. Với mỗi mục, ghi tối thiểu:
+
+- học giả;
+- tên công trình;
+- năm xuất bản;
+- trang, chương, mục hoặc vị trí liên quan nếu xác định được;
+- học giả trực tiếp khẳng định hoặc lập luận điều gì;
+- loại chứng cứ/phương pháp mà học giả sử dụng;
+- mức độ chắc chắn hoặc điều kiện mà chính học giả đặt ra;
+- bài nghiên cứu hiện tại đang dùng công trình ấy để hỗ trợ mệnh đề nào;
+- đó là nguồn trực tiếp hay dẫn gián tiếp;
+- có học giả/công trình độc lập nào đồng ý, giới hạn hoặc phản biện nhận định ấy hay không.
+
+Đối với các câu kiểu **“đồng thuận học giới”, “nhiều học giả”, “quan điểm phổ biến”**, Sổ Chứng Cứ Học Thuật phải ghi đủ các nguồn độc lập hoặc một tổng quan chuyên môn thích hợp để chứng minh chính mức độ đồng thuận đang được tuyên bố.
+
+Nếu đề tài yêu cầu **tổng quan học giả hoặc lịch sử nghiên cứu**, trước khi viết phải rà lại Sổ Chứng Cứ Học Thuật để xem có đang vô tình chỉ bao phủ một truyền thống học thuật/ngôn ngữ duy nhất hay không. Không phải ép đủ mọi quốc gia, nhưng phải chủ động tìm các truyền thống quan trọng có liên quan và ghi rõ giới hạn bao phủ nếu chưa đạt được.
 
 ### Bước 4 — Phân tích
 
@@ -579,6 +611,10 @@ Trước khi xuất kết quả, phải tự kiểm tra:
 14. Tôi đã thực sự rà lại từng nhóm nguồn sau khi hình thành kết luận sơ bộ, hay chỉ dừng ở vài ví dụ đầu tiên?
 15. Có văn bản quyết định nào đang bị nén vào bảng hoặc danh sách mà chưa được phân tích đủ sâu trong phần văn xuôi không?
 16. Độ dài bài viết có tương xứng với lượng chứng cứ và độ phức tạp của câu hỏi không?
+17. Nếu tôi viết “học giả X cho rằng…”, tôi đã gắn nhận định đó với đúng công trình trực tiếp và, khi có thể, đúng trang/chương/mục chưa?
+18. Nếu tôi viết “đồng thuận học giới”, “nhiều học giả”, “quan điểm phổ biến” hoặc cách diễn đạt tương tự, tôi có đủ nhiều nguồn độc lập hoặc một tổng quan học thuật thích hợp để chứng minh chính mức độ đồng thuận ấy chưa?
+19. Có nhận định học thuật quan trọng nào trong thân bài chỉ dựa vào snippet, abstract, trang giới thiệu hoặc tác giả thứ ba trong khi nguồn trực tiếp có thể truy cập không?
+20. Nếu đề tài yêu cầu tổng quan học giả hoặc lịch sử nghiên cứu, tôi đã chủ động kiểm tra xem việc tìm kiếm có bị lệch sang một ngôn ngữ/truyền thống học thuật duy nhất không, và đã nêu giới hạn bao phủ nếu chưa thể khảo sát các truyền thống quan trọng khác chưa?
 
 Chỉ được xuất bản câu trả lời khi các câu hỏi trên đã được xử lý.
 
