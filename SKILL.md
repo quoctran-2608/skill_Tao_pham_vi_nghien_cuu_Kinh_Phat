@@ -279,9 +279,13 @@ Nếu có dị bản hoặc bản dịch khác nhau của cùng văn bản, ghi 
 
 Mỗi luận điểm quan trọng phải gắn với vị trí cụ thể trong phạm vi văn bản khi có thể.
 
-Ưu tiên trích dẫn theo cấu trúc:
+Đối với chứng cứ có sức quyết định, phải cố gắng ghi đủ để người đọc có thể lần lại nguồn:
 
-> Tên bộ → tên hoặc số kinh, chương hay phẩm → đoạn, quyển, trang hoặc mã tham chiếu.
+> **Tên bộ → mã số kinh/văn bản → tên bài kinh hoặc tên phần văn bản cụ thể → đoạn, quyển, trang hoặc mã tham chiếu khi xác định được.**
+
+Không chỉ ghi một mã số trơ nếu tên bài kinh hoặc tên phần văn bản có thể xác định đáng tin cậy.
+
+Với mỗi chứng cứ quyết định, không chỉ liệt kê dẫn nguồn: phải trình bày đủ nội dung liên quan, bối cảnh cần thiết trước/sau và giải thích chính xác chứng cứ ấy ủng hộ, giới hạn hay phản bác mệnh đề nào.
 
 Khi trích nguyên văn:
 
@@ -318,6 +322,10 @@ Không dừng ở đoạn đầu tiên phù hợp.
 - các đoạn lặp lại;
 - các đoạn có vẻ căng thẳng hoặc giới hạn nhau;
 - trường hợp ngoại lệ.
+
+Không cần liệt kê mọi chỗ chỉ lặp lại cùng một công thức mà không thêm dữ liệu mới. Nhưng **mọi văn bản có sức quyết định, tạo phản chứng, ngoại lệ, mô hình riêng hoặc khác biệt truyền bản có ý nghĩa phải được trình bày đủ chi tiết**.
+
+Độ dài của bài phải do lượng và độ phức tạp của chứng cứ quyết định. Không rút ngắn chỉ để câu trả lời gọn nếu việc rút ngắn làm mất chứng cứ, bối cảnh, tên/mã văn bản hoặc chuỗi lập luận cần thiết.
 
 ### Bước 3 — Lập Sổ Chứng Cứ
 
