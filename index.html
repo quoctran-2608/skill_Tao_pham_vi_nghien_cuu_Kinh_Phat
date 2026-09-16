@@ -322,6 +322,27 @@ function setStatus(el,message,type){
   el.className="status "+type;
 }
 
+function showCopySuccess(button){
+  if(!button._copyIconMarkup) button._copyIconMarkup=button.innerHTML;
+  if(button._copyResetTimer) clearTimeout(button._copyResetTimer);
+
+  button.innerHTML=`
+    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <path d="M5 12.5l4.2 4.2L19 7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>`;
+  button.classList.add("copied");
+  button.title="Đã sao chép";
+  button.setAttribute("aria-label","Đã sao chép");
+
+  button._copyResetTimer=setTimeout(()=>{
+    button.innerHTML=button._copyIconMarkup;
+    button.classList.remove("copied");
+    button.title="Sao chép";
+    button.setAttribute("aria-label","Sao chép");
+    button._copyResetTimer=null;
+  },1200);
+}
+
 function buildPreparationPrompt(rawTopic){
   return [
 "# NHIỆM VỤ",
@@ -463,11 +484,20 @@ metaGenerateBtn.addEventListener("click",()=>{
 
 metaCopyBtn.addEventListener("click",async()=>{
   if(!metaOutputEl.value)return;
-  try{await navigator.clipboard.writeText(metaOutputEl.value);}
-  catch(e){metaOutputEl.focus();metaOutputEl.select();document.execCommand("copy");}
-  metaCopyBtn.classList.add("copied");
-  metaCopyBtn.title="Đã sao chép";
-  setTimeout(()=>{metaCopyBtn.classList.remove("copied");metaCopyBtn.title="Sao chép";},1200);
+  let copied=false;
+  try{
+    await navigator.clipboard.writeText(metaOutputEl.value);
+    copied=true;
+  }catch(e){
+    metaOutputEl.focus();
+    metaOutputEl.select();
+    copied=document.execCommand("copy");
+  }
+  if(!copied){
+    setStatus(metaStatusEl,"Không thể sao chép tự động. Vui lòng chọn và sao chép thủ công.","warn");
+    return;
+  }
+  showCopySuccess(metaCopyBtn);
   setStatus(metaStatusEl,"Đã sao chép câu lệnh chuẩn hóa.","ok");
 });
 
@@ -505,11 +535,20 @@ generateBtn.addEventListener("click",()=>{
 
 copyBtn.addEventListener("click",async()=>{
   if(!outputEl.value)return;
-  try{await navigator.clipboard.writeText(outputEl.value);}
-  catch(e){outputEl.focus();outputEl.select();document.execCommand("copy");}
-  copyBtn.classList.add("copied");
-  copyBtn.title="Đã sao chép";
-  setTimeout(()=>{copyBtn.classList.remove("copied");copyBtn.title="Sao chép";},1200);
+  let copied=false;
+  try{
+    await navigator.clipboard.writeText(outputEl.value);
+    copied=true;
+  }catch(e){
+    outputEl.focus();
+    outputEl.select();
+    copied=document.execCommand("copy");
+  }
+  if(!copied){
+    setStatus(statusEl,"Không thể sao chép tự động. Vui lòng chọn và sao chép thủ công.","warn");
+    return;
+  }
+  showCopySuccess(copyBtn);
   setStatus(statusEl,"Đã sao chép câu lệnh nghiên cứu.","ok");
 });
 
