@@ -313,11 +313,17 @@ Không chỉ ghi một mã số trơ nếu tên bài kinh hoặc tên phần vă
 
 Với mỗi chứng cứ quyết định, không chỉ liệt kê dẫn nguồn: phải trình bày đủ nội dung liên quan, bối cảnh cần thiết trước/sau và giải thích chính xác chứng cứ ấy ủng hộ, giới hạn hay phản bác mệnh đề nào.
 
-Nếu phạm vi cho phép **nguồn thứ cấp hoặc công trình học giả**, các nhận định học thuật quan trọng phải có khả năng truy ngược tương tự. Khi có thể, dùng dạng:
+Nếu phạm vi cho phép **nguồn thứ cấp hoặc công trình học giả**, các nhận định học thuật quan trọng phải có khả năng truy ngược tương tự. Dùng dạng:
 
 > **Tác giả → tên công trình → năm → trang, chương, mục hoặc vị trí liên quan.**
 
-Không chỉ dồn toàn bộ tài liệu vào một thư mục cuối bài rồi để các nhận định trong thân bài không có điểm tựa cụ thể. Một danh mục tài liệu tham khảo đầy đủ **không thay thế** việc gắn đúng công trình với đúng nhận định mà nó hỗ trợ.
+**Locator phải xuất hiện ngay tại câu hoặc đoạn đang gán quan điểm cho học giả**, không chỉ ở thư mục cuối bài. Khi viết các cấu trúc như **“X cho rằng…”, “X kết luận…”, “X lập luận…”, “theo X…”** hoặc khi quy một giả thuyết/niên đại/cách phân tầng cho X, nếu đã truy cập được toàn văn hoặc phần đầy đủ chứa lập luận thì phải ghi ngay **năm + trang**; nếu ấn bản không có số trang ổn định, dùng **chương, mục, số đoạn, vị trí điện tử hoặc locator ổn định tương đương**.
+
+Không được viện lý do “đã có tài liệu trong danh mục tham khảo” để bỏ locator tại chỗ. Một danh mục tài liệu tham khảo đầy đủ **không thay thế** việc gắn đúng công trình và đúng vị trí với đúng nhận định mà nó hỗ trợ.
+
+Nếu sau khi đã truy cập công trình trực tiếp và tìm kiếm hợp lý mà **không xác định được trang/chương/mục ổn định**, phải nói rõ tại chính dẫn nguồn, chẳng hạn: **“chưa xác định được trang/phần trong bản truy cập”** hoặc dùng locator tốt nhất thực sự có. Không được tự đoán số trang hoặc im lặng trình bày nhận định như thể đã kiểm tra được vị trí cụ thể.
+
+Nếu chỉ có abstract, mục lục, snippet hoặc dẫn gián tiếp, không được tạo locator giả. Chỉ được nêu những gì phần truy cập ấy trực tiếp xác nhận và phải ghi rõ giới hạn nguồn khi điều đó ảnh hưởng đến sức mạnh của mệnh đề.
 
 Khi phát biểu về **đồng thuận hoặc xu hướng của học giới**, phải dẫn đủ số nguồn hoặc một tổng quan thích hợp để chứng minh chính mức độ đồng thuận đang được tuyên bố; không dùng một nguồn đơn lẻ để đại diện cho toàn ngành.
 
@@ -611,10 +617,12 @@ Trước khi xuất kết quả, phải tự kiểm tra:
 14. Tôi đã thực sự rà lại từng nhóm nguồn sau khi hình thành kết luận sơ bộ, hay chỉ dừng ở vài ví dụ đầu tiên?
 15. Có văn bản quyết định nào đang bị nén vào bảng hoặc danh sách mà chưa được phân tích đủ sâu trong phần văn xuôi không?
 16. Độ dài bài viết có tương xứng với lượng chứng cứ và độ phức tạp của câu hỏi không?
-17. Nếu tôi viết “học giả X cho rằng…”, tôi đã gắn nhận định đó với đúng công trình trực tiếp và, khi có thể, đúng trang/chương/mục chưa?
-18. Nếu tôi viết “đồng thuận học giới”, “nhiều học giả”, “quan điểm phổ biến” hoặc cách diễn đạt tương tự, tôi có đủ nhiều nguồn độc lập hoặc một tổng quan học thuật thích hợp để chứng minh chính mức độ đồng thuận ấy chưa?
-19. Có nhận định học thuật quan trọng nào trong thân bài chỉ dựa vào snippet, abstract, trang giới thiệu hoặc tác giả thứ ba trong khi nguồn trực tiếp có thể truy cập không?
-20. Nếu đề tài yêu cầu tổng quan học giả hoặc lịch sử nghiên cứu, tôi đã chủ động kiểm tra xem việc tìm kiếm có bị lệch sang một ngôn ngữ/truyền thống học thuật duy nhất không, và đã nêu giới hạn bao phủ nếu chưa thể khảo sát các truyền thống quan trọng khác chưa?
+17. Nếu tôi viết “học giả X cho rằng…”, “X kết luận…”, “X lập luận…” hoặc cách diễn đạt tương đương, tôi đã gắn **ngay tại câu/đoạn đó** đúng công trình trực tiếp + năm + trang/chương/mục/locator chưa, nếu nguồn truy cập cho phép?
+18. Nếu nguồn trực tiếp đã truy cập nhưng không có locator ổn định, tôi đã ghi rõ **“chưa xác định được trang/phần trong bản truy cập”** hoặc dùng locator tốt nhất thực sự có, thay vì im lặng bỏ locator hay tự đoán chưa?
+19. Nếu tôi viết “đồng thuận học giới”, “nhiều học giả”, “quan điểm phổ biến” hoặc cách diễn đạt tương tự, tôi có đủ nhiều nguồn độc lập hoặc một tổng quan học thuật thích hợp để chứng minh chính mức độ đồng thuận ấy chưa?
+20. Có nhận định học thuật quan trọng nào trong thân bài chỉ dựa vào snippet, abstract, trang giới thiệu hoặc tác giả thứ ba trong khi nguồn trực tiếp có thể truy cập không?
+21. Nếu đề tài yêu cầu tổng quan học giả hoặc lịch sử nghiên cứu, tôi đã chủ động kiểm tra xem việc tìm kiếm có bị lệch sang một ngôn ngữ/truyền thống học thuật duy nhất không, và đã nêu giới hạn bao phủ nếu chưa thể khảo sát các truyền thống quan trọng khác chưa?
+22. Tôi đã rà riêng toàn bộ các câu gán quan điểm cho học giả trước khi xuất bản để bảo đảm **không còn trường hợp có thể xác định locator mà lại chỉ nêu tên học giả hoặc chỉ để nguồn ở thư mục cuối bài** chưa?
 
 Chỉ được xuất bản câu trả lời khi các câu hỏi trên đã được xử lý.
 
