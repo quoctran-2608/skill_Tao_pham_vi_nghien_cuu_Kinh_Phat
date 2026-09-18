@@ -54,9 +54,9 @@ Ví dụ, trong lời giải thích nên dùng:
 - **kết quả đầu ra** hoặc **câu trả lời** thay cho “output”;
 - **câu lệnh** thay cho “prompt” khi đang giải thích bằng tiếng Việt.
 
-Bài nghiên cứu phải **học thuật nhưng dễ đọc** đối với người đọc phổ thông có quan tâm nghiêm túc đến Phật học. Ưu tiên câu tiếng Việt tự nhiên, trực tiếp và rõ nghĩa. **Không biến giọng văn kỹ thuật của tệp hướng dẫn này thành giọng văn của bài nghiên cứu.** Những từ như “mệnh đề”, “tiền đề”, “phản chứng”, “xác lập” chỉ dùng khi thật sự cần cho độ chính xác; nếu có cách diễn đạt tiếng Việt tự nhiên hơn mà không mất nghĩa, phải ưu tiên cách đó.
+Bài nghiên cứu phải **rõ nghĩa và có thể đọc độc lập**, nhưng ở giai đoạn nghiên cứu phải ưu tiên độ chính xác của chứng cứ, phạm vi và lập luận hơn việc đánh bóng toàn bộ câu chữ. Không biến giọng văn kỹ thuật của tệp hướng dẫn này thành giọng văn của bài nghiên cứu.
 
-Không được để lọt các cụm tiếng Anh thông dụng hoặc nhãn phân tích bằng tiếng Anh vào câu văn Việt khi không cần thiết.
+Tránh các cụm tiếng Anh thông dụng hoặc nhãn phân tích bằng tiếng Anh khi có cách diễn đạt tiếng Việt rõ ràng; việc rà toàn bài để làm văn phong tự nhiên, thống nhất và dễ đọc hơn thuộc lượt hậu kiểm sau.
 
 ### 3.2. Không được loại bỏ nguyên ngữ học thuật
 
@@ -118,17 +118,16 @@ Nếu người dùng nhập tên kinh, tên người, thuật ngữ hoặc mã v
 
 Phần giải thích xung quanh vẫn phải viết bằng tiếng Việt tự nhiên.
 
-### 3.7. Kiểm tra ngôn ngữ trước khi trả lời
+### 3.7. Kiểm tra tối thiểu trước khi bàn giao
 
-Trước khi xuất kết quả, phải tự hỏi đồng thời hai câu:
+Trước khi xuất bản nghiên cứu, phải bảo đảm:
 
-> “Có từ ngoại ngữ thông dụng nào đang được dùng không cần thiết trong câu văn tiếng Việt không?”
+- câu văn đủ rõ để người đọc hiểu được lập luận;
+- không có lỗi ngôn ngữ làm thay đổi nghĩa học thuật;
+- tên kinh, mã văn bản, thuật ngữ nguyên ngữ và dữ liệu nhận diện quan trọng không bị lược mất;
+- không có nguyên ngữ do tự đoán hoặc chưa xác minh được trình bày như dữ kiện chắc chắn.
 
-và:
-
-> “Có tên kinh, tên bài kinh hoặc thuật ngữ nguyên ngữ quan trọng nào đã bị lược bỏ khiến độ chính xác học thuật giảm đi không?”
-
-Nếu có, phải sửa cả hai loại lỗi trước khi trả lời.
+Không cần thực hiện một lượt biên tập toàn văn chỉ để làm câu chữ đồng đều hoặc trau chuốt; lượt hậu kiểm sau sẽ xử lý tính tự nhiên, nhất quán và khả năng đọc của văn phong.
 
 ---
 
@@ -321,7 +320,9 @@ Nếu phạm vi cho phép **nguồn thứ cấp hoặc công trình học giả*
 
 Không được viện lý do “đã có tài liệu trong danh mục tham khảo” để bỏ locator tại chỗ. Một danh mục tài liệu tham khảo đầy đủ **không thay thế** việc gắn đúng công trình và đúng vị trí với đúng nhận định mà nó hỗ trợ.
 
-Nếu sau khi đã truy cập công trình trực tiếp và tìm kiếm hợp lý mà **không xác định được trang/chương/mục ổn định**, phải nói rõ tại chính dẫn nguồn, chẳng hạn: **“chưa xác định được trang/phần trong bản truy cập”** hoặc dùng locator tốt nhất thực sự có. Không được tự đoán số trang hoặc im lặng trình bày nhận định như thể đã kiểm tra được vị trí cụ thể.
+Trong quá trình nghiên cứu, phải **thu và gắn locator tốt nhất thực sự có ngay khi đọc nguồn**, để không làm mất dấu chứng cứ. Nếu sau khi đã truy cập công trình trực tiếp và tìm kiếm hợp lý mà **không xác định được trang/chương/mục ổn định**, phải nói rõ tại chính dẫn nguồn, chẳng hạn: **“chưa xác định được trang/phần trong bản truy cập”** hoặc dùng locator tốt nhất thực sự có. Không được tự đoán số trang hoặc im lặng trình bày nhận định như thể đã kiểm tra được vị trí cụ thể.
+
+Không cần dừng toàn bộ tiến trình nghiên cứu để thực hiện một lượt rà kiệt exhaustive mọi locator còn thiếu; lượt hậu kiểm sau sẽ rà riêng các attribution, locus sơ cấp, dẫn gián tiếp và khoảng locator còn mơ hồ. Quy tắc này không cho phép bỏ qua locator có thể lấy được ngay trong lúc đang đọc nguồn.
 
 Nếu chỉ có abstract, mục lục, snippet hoặc dẫn gián tiếp, không được tạo locator giả. Chỉ được nêu những gì phần truy cập ấy trực tiếp xác nhận và phải ghi rõ giới hạn nguồn khi điều đó ảnh hưởng đến sức mạnh của mệnh đề.
 
@@ -450,19 +451,19 @@ Trước khi viết câu trả lời cuối, kiểm tra từng mệnh đề quan
 
 Nếu là vế sau, phải xóa hoặc đánh dấu là không thể xác lập trong phạm vi.
 
-### Bước 7 — Kiểm tra ngôn ngữ và nguyên ngữ
+### Bước 7 — Kiểm tra dữ liệu nhận diện và độ rõ tối thiểu
 
-Rà lại toàn bộ câu trả lời:
+Trước khi viết kết quả:
 
-- thay các từ ngoại ngữ thông dụng không cần thiết trong câu văn bằng cách diễn đạt tiếng Việt rõ ràng;
-- bảo đảm văn phong tiếng Việt tự nhiên;
-- kiểm tra tên bộ kinh, tên bài kinh, thuật ngữ quan trọng và mã văn bản đã được giữ nguyên ngữ đầy đủ khi cần;
-- khi có tên Việt và tên nguyên ngữ xác định được, ưu tiên nêu cả hai;
+- bảo đảm tên bộ kinh, bài kinh, mã văn bản, thuật ngữ nguyên ngữ và locator đã thu được không bị thất lạc;
+- sửa các lỗi diễn đạt có thể làm sai hoặc mơ hồ nghĩa học thuật;
 - không tự đoán hoặc tự tạo nguyên ngữ chưa được xác minh.
+
+Không cần thực hiện ở bước này một lượt copy-edit toàn văn, chuẩn hóa toàn bộ thư mục hoặc săn lại mọi locator còn thiếu; những việc đó thuộc lượt hậu kiểm sau.
 
 ### Bước 8 — Viết kết quả
 
-Chỉ sau khi hoàn tất kiểm tra phạm vi và kiểm tra ngôn ngữ mới được xuất kết quả.
+Sau khi hoàn tất kiểm tra phạm vi, tính đầy đủ của chứng cứ và kiểm tra dữ liệu nhận diện tối thiểu, viết một **bản nghiên cứu hoàn chỉnh về nội dung**, đủ để đọc độc lập và đủ dữ liệu để hậu kiểm.
 
 Khi viết, phải phân biệt rõ **bản đồ chứng cứ** với **phân tích chứng cứ**:
 
@@ -597,34 +598,25 @@ Không được:
 
 ---
 
-## 17. Bài kiểm tra cuối trước khi trả lời
+## 17. Bài kiểm tra nghiên cứu cuối trước khi trả lời
 
-Trước khi xuất kết quả, phải tự kiểm tra:
+Trước khi xuất bản nghiên cứu, phải tự kiểm tra ở cấp **nội dung và chứng cứ**:
 
-1. Tôi đã dùng đúng và chỉ đúng phạm vi văn bản người dùng cho phép chưa?
-2. Có mệnh đề nào dựa trên kiến thức ngoài phạm vi không?
-3. Có hệ tư tưởng ngoài phạm vi đang chi phối cách giải thích không?
-4. Mỗi kết luận quan trọng có bằng chứng nội tại không?
-5. Tôi đã tìm phản chứng trong chính phạm vi chưa?
-6. Tôi có phân biệt văn bản nói gì với điều tôi suy ra không?
-7. Có điểm nào phạm vi không đủ trả lời mà tôi lại đang cố lấp bằng kiến thức nền không?
-8. Nếu có vi phạm, tôi đã kích hoạt quy trình xử lý vi phạm phạm vi chưa?
-9. Toàn bộ phần giải thích có phải là tiếng Việt tự nhiên, thống nhất không?
-10. Có từ ngoại ngữ thông dụng nào đang chen vào câu văn mà hoàn toàn có thể diễn đạt rõ bằng tiếng Việt không?
-11. Tên bộ kinh, tên bài kinh, thuật ngữ học thuật và mã văn bản đã được giữ nguyên ngữ đầy đủ khi cần chưa?
-12. Khi có cả tên Việt và tên nguyên ngữ xác định được, tôi đã trình bày cả hai chưa?
-13. Có nguyên ngữ nào do tôi tự đoán hoặc chưa được xác minh không?
-14. Tôi đã thực sự rà lại từng nhóm nguồn sau khi hình thành kết luận sơ bộ, hay chỉ dừng ở vài ví dụ đầu tiên?
-15. Có văn bản quyết định nào đang bị nén vào bảng hoặc danh sách mà chưa được phân tích đủ sâu trong phần văn xuôi không?
-16. Độ dài bài viết có tương xứng với lượng chứng cứ và độ phức tạp của câu hỏi không?
-17. Nếu tôi viết “học giả X cho rằng…”, “X kết luận…”, “X lập luận…” hoặc cách diễn đạt tương đương, tôi đã gắn **ngay tại câu/đoạn đó** đúng công trình trực tiếp + năm + trang/chương/mục/locator chưa, nếu nguồn truy cập cho phép?
-18. Nếu nguồn trực tiếp đã truy cập nhưng không có locator ổn định, tôi đã ghi rõ **“chưa xác định được trang/phần trong bản truy cập”** hoặc dùng locator tốt nhất thực sự có, thay vì im lặng bỏ locator hay tự đoán chưa?
-19. Nếu tôi viết “đồng thuận học giới”, “nhiều học giả”, “quan điểm phổ biến” hoặc cách diễn đạt tương tự, tôi có đủ nhiều nguồn độc lập hoặc một tổng quan học thuật thích hợp để chứng minh chính mức độ đồng thuận ấy chưa?
-20. Có nhận định học thuật quan trọng nào trong thân bài chỉ dựa vào snippet, abstract, trang giới thiệu hoặc tác giả thứ ba trong khi nguồn trực tiếp có thể truy cập không?
-21. Nếu đề tài yêu cầu tổng quan học giả hoặc lịch sử nghiên cứu, tôi đã chủ động kiểm tra xem việc tìm kiếm có bị lệch sang một ngôn ngữ/truyền thống học thuật duy nhất không, và đã nêu giới hạn bao phủ nếu chưa thể khảo sát các truyền thống quan trọng khác chưa?
-22. Tôi đã rà riêng toàn bộ các câu gán quan điểm cho học giả trước khi xuất bản để bảo đảm **không còn trường hợp có thể xác định locator mà lại chỉ nêu tên học giả hoặc chỉ để nguồn ở thư mục cuối bài** chưa?
+1. Tôi đã dùng đúng và chỉ đúng phạm vi nguồn người dùng cho phép chưa?
+2. Có mệnh đề quan trọng nào dựa trên kiến thức ngoài phạm vi, nguồn trung gian không hợp lệ hoặc hệ tư tưởng ngoài phạm vi không?
+3. Mỗi kết luận quan trọng có truy ngược được về chứng cứ đã thu thập không?
+4. Tôi đã chủ động tìm phản chứng, ngoại lệ và mô hình cạnh tranh sau khi hình thành kết luận sơ bộ chưa?
+5. Tôi có phân biệt rõ điều văn bản nói trực tiếp, điều có thể suy ra và điều chưa thể xác lập không?
+6. Các văn bản có sức quyết định đã được đọc đủ bối cảnh và phân tích bằng văn xuôi, thay vì chỉ bị nén vào bảng hoặc danh sách chưa?
+7. Kết luận và mức độ chắc chắn có đúng với sức mạnh của chứng cứ không, hay có câu nào đang mạnh hơn nguồn cho phép?
+8. Nếu tôi phát biểu về “đồng thuận học giới”, “nhiều học giả” hoặc xu hướng nghiên cứu, tôi có đủ nguồn độc lập hoặc tổng quan thích hợp để nói ở mức đó không?
+9. Nếu đề tài yêu cầu tổng quan học giả hoặc lịch sử nghiên cứu, việc tìm kiếm có bị lệch sang một ngôn ngữ hoặc truyền thống học thuật duy nhất không, và giới hạn bao phủ đã được nói rõ chưa?
+10. Những nguồn, locator, nguyên ngữ và dữ liệu nhận diện quan trọng đã thu được trong quá trình nghiên cứu có được giữ lại đủ để người đọc và lượt hậu kiểm sau truy lại không?
+11. Có điểm nào phạm vi không đủ trả lời mà tôi đang cố lấp bằng kiến thức nền thay vì nói rõ giới hạn không?
 
-Chỉ được xuất bản câu trả lời khi các câu hỏi trên đã được xử lý.
+Không cần tại bước này thực hiện một lượt rà toàn bài để chuẩn hóa mọi locator, thư mục, thuật ngữ trình bày hoặc văn phong. Lượt hậu kiểm sau chịu trách nhiệm kiểm tra attribution/locus còn thiếu, dẫn gián tiếp, mức độ diễn đạt, tính nhất quán thuật ngữ và khả năng đọc; nhưng nó không thay thế trách nhiệm nghiên cứu ở các câu hỏi trên.
+
+Chỉ được xuất bản bản nghiên cứu khi các câu hỏi trên đã được xử lý.
 
 ---
 
