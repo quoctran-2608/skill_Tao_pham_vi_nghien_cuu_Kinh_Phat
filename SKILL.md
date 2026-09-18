@@ -322,7 +322,7 @@ Không được viện lý do “đã có tài liệu trong danh mục tham kh�
 
 Trong quá trình nghiên cứu, phải **thu và gắn locator tốt nhất thực sự có ngay khi đọc nguồn**, để không làm mất dấu chứng cứ. Nếu sau khi đã truy cập công trình trực tiếp và tìm kiếm hợp lý mà **không xác định được trang/chương/mục ổn định**, phải nói rõ tại chính dẫn nguồn, chẳng hạn: **“chưa xác định được trang/phần trong bản truy cập”** hoặc dùng locator tốt nhất thực sự có. Không được tự đoán số trang hoặc im lặng trình bày nhận định như thể đã kiểm tra được vị trí cụ thể.
 
-Không cần dừng toàn bộ tiến trình nghiên cứu để thực hiện một lượt rà kiệt exhaustive mọi locator còn thiếu; lượt hậu kiểm sau sẽ rà riêng các attribution, locus sơ cấp, dẫn gián tiếp và khoảng locator còn mơ hồ. Quy tắc này không cho phép bỏ qua locator có thể lấy được ngay trong lúc đang đọc nguồn.
+Không cần dừng toàn bộ tiến trình nghiên cứu để thực hiện một lượt rà kiệt toàn bộ các locator còn thiếu; lượt hậu kiểm sau sẽ rà riêng các attribution, locus sơ cấp, dẫn gián tiếp và khoảng locator còn mơ hồ. Quy tắc này không cho phép bỏ qua locator có thể lấy được ngay trong lúc đang đọc nguồn.
 
 Nếu chỉ có abstract, mục lục, snippet hoặc dẫn gián tiếp, không được tạo locator giả. Chỉ được nêu những gì phần truy cập ấy trực tiếp xác nhận và phải ghi rõ giới hạn nguồn khi điều đó ảnh hưởng đến sức mạnh của mệnh đề.
 
@@ -459,7 +459,7 @@ Trước khi viết kết quả:
 - sửa các lỗi diễn đạt có thể làm sai hoặc mơ hồ nghĩa học thuật;
 - không tự đoán hoặc tự tạo nguyên ngữ chưa được xác minh.
 
-Không cần thực hiện ở bước này một lượt copy-edit toàn văn, chuẩn hóa toàn bộ thư mục hoặc săn lại mọi locator còn thiếu; những việc đó thuộc lượt hậu kiểm sau.
+Không cần thực hiện ở bước này một lượt biên tập toàn văn, chuẩn hóa toàn bộ thư mục hoặc săn lại mọi locator còn thiếu; những việc đó thuộc lượt hậu kiểm sau.
 
 ### Bước 8 — Viết kết quả
 
