@@ -107,7 +107,7 @@
       border-color:#818cf8;
       box-shadow:0 0 0 4px rgba(99,102,241,.12),inset 0 1px 2px rgba(16,24,40,.02);
     }
-    #metaOutput,#output{
+    #metaOutput,#output,#reviewOutput{
       min-height:380px;
       padding-top:52px;
       background:#0f172a;
@@ -117,7 +117,7 @@
       font-size:.89rem;
       line-height:1.55;
     }
-    #metaOutput::placeholder,#output::placeholder{color:#94a3b8}
+    #metaOutput::placeholder,#output::placeholder,#reviewOutput::placeholder{color:#94a3b8}\n    #reviewDraft{min-height:360px}
     .actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
     button{
       appearance:none;
@@ -220,7 +220,7 @@
 <main class="wrap">
   <header>
     <h1>Trình tạo câu lệnh nghiên cứu Phật học</h1>
-    <p class="subtitle">Chọn một trong hai bước bên dưới.</p>
+    <p class="subtitle">Ba bước: chuẩn hóa đề bài → tạo câu lệnh nghiên cứu → rà soát và hoàn thiện.</p>
   </header>
 
   <section class="panel prep-panel">
@@ -295,6 +295,37 @@
 
     
   </section>
+
+  <section class="panel">
+    <div class="step-badge">③ RÀ SOÁT &amp; HOÀN THIỆN</div>
+    <h2>Hậu kiểm bài nghiên cứu</h2>
+    <p class="subtitle">Stage C dùng Ô 1 và Ô 2 ở bước ② làm phạm vi khóa. Dán bài nghiên cứu đã hoàn thành vào ô dưới đây để tạo câu lệnh rà soát học thuật và biên tập.</p>
+
+    <label for="reviewDraft">Bài nghiên cứu cần rà soát</label>
+    <textarea id="reviewDraft" placeholder="Dán toàn bộ bài nghiên cứu do Stage B tạo vào đây." spellcheck="false"></textarea>
+    <p class="hint">Stage C không nghiên cứu lại từ đầu; chỉ hậu kiểm nguồn, mức độ khẳng định, thuật ngữ và khả năng đọc.</p>
+
+    <div class="actions">
+      <button id="reviewGenerate" class="primary" type="button">Tạo câu lệnh rà soát &amp; hoàn thiện</button>
+      <button id="reviewDownload" class="secondary" type="button" disabled>Tải .txt</button>
+      <button id="reviewClear" class="secondary" type="button">Xóa phần này</button>
+    </div>
+
+    <div id="reviewStatus" class="status" role="status" aria-live="polite"></div>
+
+    <div class="output-wrap">
+      <label for="reviewOutput">Câu lệnh Stage C</label>
+      <div class="textblock">
+        <button id="reviewCopy" class="copy-icon" type="button" disabled aria-label="Sao chép câu lệnh Stage C" title="Sao chép">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <rect x="8" y="8" width="11" height="11" rx="2" stroke="currentColor" stroke-width="1.8"/>
+            <path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0 2 2v8a2 2 0 0 0 2 2h2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          </svg>
+        </button>
+        <textarea id="reviewOutput" readonly placeholder="Câu lệnh hậu kiểm sẽ xuất hiện ở đây sau khi bấm nút tạo."></textarea>
+      </div>
+    </div>
+  </section>
 </main>
 
 <script>
@@ -316,6 +347,14 @@ const generateBtn=document.getElementById("generate");
 const copyBtn=document.getElementById("copy");
 const downloadBtn=document.getElementById("download");
 const clearBtn=document.getElementById("clear");
+
+const reviewDraftEl=document.getElementById("reviewDraft");
+const reviewOutputEl=document.getElementById("reviewOutput");
+const reviewStatusEl=document.getElementById("reviewStatus");
+const reviewGenerateBtn=document.getElementById("reviewGenerate");
+const reviewCopyBtn=document.getElementById("reviewCopy");
+const reviewDownloadBtn=document.getElementById("reviewDownload");
+const reviewClearBtn=document.getElementById("reviewClear");
 
 async function loadSkillContent(){
   const stamp=Date.now();
@@ -565,6 +604,61 @@ skillContent,
   ].join("\n");
 }
 
+function buildReviewPrompt(phamVi,deBai,baiNghienCuu){
+  return [
+"# NHIỆM VỤ",
+"Bạn đang thực hiện Stage C: hậu kiểm học thuật và biên tập một bài nghiên cứu Phật học đã hoàn thành. Không nghiên cứu lại đề tài từ đầu và không thay bài nghiên cứu bằng một bài mới.",
+"",
+"# PHẠM VI NGUỒN ĐÃ KHÓA",
+phamVi,
+"",
+"# ĐỀ BÀI NGHIÊN CỨU ĐÃ KHÓA",
+deBai,
+"",
+"# BẢN NGHIÊN CỨU CẦN RÀ SOÁT",
+baiNghienCuu,
+"",
+"# NGUYÊN TẮC BẢO TOÀN",
+"- Giữ nguyên phạm vi nguồn và câu hỏi nghiên cứu đã khóa. Không mở rộng corpus, không thêm học giả, văn bản hay học thuyết mới chỉ để làm bài có vẻ đầy đủ hơn.",
+"- Không thay đổi kết luận chính chỉ vì muốn văn phong trôi chảy hơn. Chỉ điều chỉnh kết luận hoặc mức độ khẳng định khi chính chứng cứ đã có hoặc việc xác minh lại nguồn trong phạm vi bắt buộc phải làm vậy.",
+"- Không xóa phản chứng, giới hạn, bất đồng học thuật hoặc các phân biệt cần thiết để làm bài ngắn và dễ đọc hơn.",
+"- Chỉ được truy cập lại các nguồn thuộc PHẠM VI NGUỒN ĐÃ KHÓA khi cần xác minh một lỗi cụ thể về attribution, locator, thư mục, nguyên ngữ hoặc mức độ khẳng định. Không khởi động một cuộc khảo sát nguồn mới.",
+"",
+"# LƯỢT 1 — KIỂM ĐỊNH HỌC THUẬT",
+"Rà toàn bài trước khi biên tập văn phong:",
+"1. Kiểm tra mọi câu kiểu “X cho rằng…”, “theo X…”, “X lập luận…”, “nghiên cứu của X…”, “một nghiên cứu cho thấy…”, “các học giả cho rằng…” và các cấu trúc tương đương.",
+"2. Với attribution quan trọng, ưu tiên nguồn trực tiếp và bổ sung locator tốt nhất thực sự xác minh được: tác giả → công trình → năm → trang/chương/mục/đoạn hoặc vị trí ổn định tương đương.",
+"3. Không được đoán hoặc tự tạo locator. Nếu đã tìm hợp lý trong nguồn được phép mà vẫn không xác định được vị trí ổn định, ghi rõ “chưa xác định được trang/phần trong bản truy cập” hoặc dùng locator tốt nhất thực sự có.",
+"4. Nếu một nhận định chỉ dựa trên nguồn trung gian trong khi nguồn trực tiếp nằm trong phạm vi và có thể truy cập, ưu tiên kiểm lại nguồn trực tiếp. Nếu vẫn chỉ có dẫn gián tiếp, phải nói rõ đó là dẫn gián tiếp.",
+"5. Kiểm tra các câu về “đồng thuận học giới”, “đa số học giả”, “quan điểm phổ biến” hoặc tương đương: không để một nguồn đơn lẻ đại diện cho toàn bộ học giới.",
+"6. Kiểm tra certainty drift: không biến “đề xuất”, “khả dĩ”, “có thể”, “chưa xác lập” thành “chứng minh”, “chắc chắn”, “đã xác lập”. Nếu câu trong bản thảo mạnh hơn nguồn, hạ nó về đúng mức.",
+"7. Giữ tách biệt: văn bản nói trực tiếp / điều có thể suy ra / giả thuyết lịch sử / điều chưa thể xác lập. Không biến tương đồng thành ảnh hưởng, ảnh hưởng khả dĩ thành vay mượn trực tiếp, hay sự im lặng thành phủ định.",
+"8. Kiểm tra tên văn bản, học giả, năm xuất bản, nguyên ngữ và dữ liệu thư mục có nhất quán với chính nguồn đã dùng hay không.",
+"9. Nếu đề bài đã quy định một thang mức độ kết luận, chuẩn hóa các nhãn đánh giá về đúng thang đó mà không làm thay đổi nội dung chứng cứ.",
+"",
+"# LƯỢT 2 — BIÊN TẬP ĐỂ DỄ ĐỌC MÀ KHÔNG LÀM NGHÈO HỌC THUẬT",
+"1. Viết tiếng Việt tự nhiên, trực tiếp, sáng rõ; chia câu quá dài, bỏ lặp và sửa chuyển đoạn khó theo dõi.",
+"2. Tránh các từ/cụm tiếng Anh thông dụng chen vào câu Việt khi có cách diễn đạt tiếng Việt rõ ràng; nhưng phải giữ nguyên ngữ Pāli, Sanskrit, Hán, Tạng và nhan đề học thuật khi chúng có giá trị kiểm chứng.",
+"3. Với thuật ngữ chuyên môn khó nhưng cần thiết, không xóa thuật ngữ. Hãy giải thích ngắn bằng tiếng Việt ở lần xuất hiện đầu tiên rồi mới dùng thuật ngữ chuyên môn.",
+"4. Không dùng máy móc các cách nói dịch sát hoặc mơ hồ như “Phật giáo sớm”, “kinh điển Phật giáo sớm” nếu người đọc không biết đang nói về giai đoạn lịch sử hay nhóm văn bản nào. Nếu phạm vi thực tế là một corpus xác định, ưu tiên gọi thẳng tên corpus, ví dụ “các Nikāya và Āgama được khảo sát”. Nếu thực sự nói về một giai đoạn lịch sử và chứng cứ cho phép, ưu tiên cách nói tự nhiên như “Phật giáo thời kỳ đầu”. Không tự động đổi thành “Phật giáo nguyên thủy”, vì cách gọi đó có thể hàm chứa một khẳng định mạnh hơn về tính nguyên thủy hoặc thẩm quyền.",
+"5. Kiểm tra các nhãn thời kỳ, hệ phái và thuật ngữ dịch: nếu một cách gọi có thể khiến người đọc hiểu rộng hoặc chắc chắn hơn chứng cứ, hãy dùng cách diễn đạt cụ thể hơn.",
+"6. Thống nhất cách gọi trong toàn bài nhưng không dùng từ đồng nghĩa về văn phong để hòa lẫn những thuật ngữ học thuật thực ra cần phân biệt.",
+"",
+"# GIỚI HẠN SỬA",
+"- Không tự thêm một luận điểm mới, một nguồn mới, một trường phái mới hoặc một kết luận mới.",
+"- Không viết lại nghiên cứu theo một hướng khác. Stage C là người kiểm định và biên tập bảo thủ, không phải Stage B lần hai.",
+"- Nếu phát hiện một vấn đề nội dung chỉ có thể giải quyết bằng nghiên cứu mới ngoài phạm vi, không tự giải quyết bằng kiến thức nền; phải hạ mức khẳng định hoặc nêu rõ giới hạn trong chính bài.",
+"- Không được làm mất dữ liệu có giá trị kiểm chứng chỉ để câu văn gọn hơn.",
+"",
+"# HÌNH THỨC KẾT QUẢ",
+"- Xuất toàn bộ BẢN NGHIÊN CỨU ĐÃ HOÀN THIỆN sau hậu kiểm, không chỉ liệt kê lỗi.",
+"- Đặt toàn bộ bài hoàn thiện trong MỘT writing block duy nhất với variant=\"document\" và title tiếng Việt phù hợp.",
+"- Không đặt một bản tóm tắt nghiên cứu riêng ngoài writing block.",
+"",
+"Bắt đầu hậu kiểm từ bản nghiên cứu đã cung cấp, sửa những gì có thể xác minh an toàn, rồi xuất bản hoàn thiện."
+  ].join("\n");
+}
+
 metaGenerateBtn.addEventListener("click",()=>{
   const rawTopic=rawTopicEl.value.trim();
   if(!rawTopic){
@@ -678,6 +772,63 @@ clearBtn.addEventListener("click",()=>{
   statusEl.className="status";
   statusEl.textContent="";
   corpusEl.focus();
+});
+
+reviewGenerateBtn.addEventListener("click",()=>{
+  const phamVi=corpusEl.value.trim();
+  const deBai=taskEl.value.trim();
+  const baiNghienCuu=reviewDraftEl.value.trim();
+  if(!phamVi||!deBai){
+    setStatus(reviewStatusEl,"Stage C cần Ô 1 và Ô 2 ở bước ② để giữ đúng phạm vi nghiên cứu.","warn");
+    return;
+  }
+  if(!baiNghienCuu){
+    setStatus(reviewStatusEl,"Vui lòng dán bài nghiên cứu cần rà soát.","warn");
+    return;
+  }
+  reviewOutputEl.value=buildReviewPrompt(phamVi,deBai,baiNghienCuu);
+  reviewCopyBtn.disabled=false;
+  reviewDownloadBtn.disabled=false;
+  setStatus(reviewStatusEl,"Đã tạo câu lệnh Stage C. Hãy sao chép và dán vào AI cùng phiên làm việc hoặc phiên mới để hậu kiểm bài nghiên cứu.","ok");
+});
+
+reviewCopyBtn.addEventListener("click",async()=>{
+  if(!reviewOutputEl.value)return;
+  let copied=false;
+  try{
+    await navigator.clipboard.writeText(reviewOutputEl.value);
+    copied=true;
+  }catch(e){
+    reviewOutputEl.focus();
+    reviewOutputEl.select();
+    copied=document.execCommand("copy");
+  }
+  if(!copied){
+    setStatus(reviewStatusEl,"Không thể sao chép tự động. Vui lòng chọn và sao chép thủ công.","warn");
+    return;
+  }
+  showCopySuccess(reviewCopyBtn);
+  setStatus(reviewStatusEl,"Đã sao chép câu lệnh Stage C.","ok");
+});
+
+reviewDownloadBtn.addEventListener("click",()=>{
+  if(!reviewOutputEl.value)return;
+  const blob=new Blob([reviewOutputEl.value],{type:"text/plain;charset=utf-8"});
+  const url=URL.createObjectURL(blob);
+  const a=document.createElement("a");
+  a.href=url;
+  a.download="cau-lenh-stage-c-ra-soat-hoan-thien.txt";
+  document.body.appendChild(a);a.click();a.remove();URL.revokeObjectURL(url);
+});
+
+reviewClearBtn.addEventListener("click",()=>{
+  reviewDraftEl.value="";
+  reviewOutputEl.value="";
+  reviewCopyBtn.disabled=true;
+  reviewDownloadBtn.disabled=true;
+  reviewStatusEl.className="status";
+  reviewStatusEl.textContent="";
+  reviewDraftEl.focus();
 });
 </script>
 </body>
