@@ -350,9 +350,37 @@ Ghi rõ:
 
 Không mở rộng phạm vi nếu người dùng chưa cho phép.
 
-### Bước 2 — Thu thập chứng cứ trong phạm vi
+### Bước 2 — Lập bản đồ nguồn rồi thu thập chứng cứ trong phạm vi
 
-Mục tiêu của bước này là **rà đủ rộng trước khi chọn chứng cứ để viết**. Không được đồng nhất “đã tìm thấy vài ví dụ tiêu biểu” với “đã khảo sát xong phạm vi”.
+Mục tiêu của bước này là **nhận diện đúng các tuyến nguồn cần khảo sát trước khi đọc sâu, rồi rà đủ rộng trước khi chọn chứng cứ để viết**. Không được đồng nhất “đã tìm thấy vài ví dụ tiêu biểu” với “đã khảo sát xong phạm vi”.
+
+#### Bước 2A — Lập bản đồ nguồn và học giới trước khi đọc sâu
+
+Trước khi đọc sâu những nguồn đầu tiên, phải dựa trên **PHẠM VI VĂN BẢN ĐƯỢC PHÉP** và **ĐỀ BÀI NGHIÊN CỨU** để lập một bản đồ làm việc ngắn gọn. Bản đồ này không mở rộng phạm vi; nó chỉ xác định những nhánh nào bên trong phạm vi đã khóa cần được rà để tránh tìm kiếm lệch ngay từ đầu.
+
+Với nguồn sơ cấp, xác định khi phù hợp:
+
+- những bộ, nhóm văn bản hoặc truyền thống văn bản nào trong phạm vi có khả năng chứa chứng cứ quyết định;
+- những ngôn ngữ, truyền bản, bản dịch, ấn bản, thủ bản hoặc bản song hành nào đã được Ô 1 cho phép và có thể làm thay đổi kết luận;
+- những khác biệt truyền bản hoặc lớp văn bản nào cần đối chiếu vì liên quan trực tiếp đến câu hỏi.
+
+Với nguồn nghiên cứu học thuật/thứ cấp, nếu Ô 1 cho phép, xác định khi phù hợp:
+
+- những chuyên ngành hoặc dòng nghiên cứu nào trực tiếp bàn vào vấn đề;
+- những ngôn ngữ hay truyền thống học thuật nào có đóng góp đáng kể đối với đúng đề tài;
+- những hướng giải thích cạnh tranh nào cần được tìm để tránh chỉ đọc một phía.
+
+Không được:
+
+- tự thêm một ngôn ngữ, truyền thống văn bản, học giả hay loại nguồn nằm ngoài Ô 1;
+- đặt hạn ngạch theo quốc gia hoặc ngôn ngữ;
+- mặc định nguồn tiếng Anh là điểm xuất phát duy nhất chỉ vì dễ truy cập;
+- bịa tên học giả hoặc công trình trước khi tra cứu xác minh;
+- coi cơ sở dữ liệu, thư viện số hoặc trang mạng dùng để định vị là chính chứng cứ học thuật nếu nguồn gốc thực sự của mệnh đề nằm ở văn bản hoặc công trình khác.
+
+Trước khi chuyển sang đọc sâu, phải thực hiện một lượt tìm kiếm thăm dò trên các nhánh **trọng yếu** của bản đồ này. Mục tiêu là biết những nguồn và tranh luận chính có thể tồn tại ở đâu, không phải đọc hết mọi thứ ngay lập tức. Nếu một nhánh quan trọng không thể truy cập vì giới hạn công cụ, ngôn ngữ hoặc quyền truy cập, phải ghi lại đó là **giới hạn bao phủ** và không được sau này trình bày kết quả như thể đã khảo sát đầy đủ nhánh ấy.
+
+Bản đồ này là ghi chú làm việc nội bộ; không bắt buộc phải chép nguyên vào bài nghiên cứu cuối cùng. Sau bước này mới thực hiện các lượt tìm kiếm và đọc sâu dưới đây.
 
 Thực hiện ít nhất ba lượt nghiên cứu sau, trong giới hạn công cụ và dữ liệu có thể truy cập:
 
@@ -429,7 +457,7 @@ Nếu phạm vi có **nguồn thứ cấp/học giả**, phải lập thêm **S�
 
 Đối với các câu kiểu **“đồng thuận học giới”, “nhiều học giả”, “quan điểm phổ biến”**, Sổ Chứng Cứ Học Thuật phải ghi đủ các nguồn độc lập hoặc một tổng quan chuyên môn thích hợp để chứng minh chính mức độ đồng thuận đang được tuyên bố.
 
-Nếu đề tài yêu cầu **tổng quan học giả hoặc lịch sử nghiên cứu**, trước khi viết phải rà lại Sổ Chứng Cứ Học Thuật để xem có đang vô tình chỉ bao phủ một truyền thống học thuật/ngôn ngữ duy nhất hay không. Không phải ép đủ mọi quốc gia, nhưng phải chủ động tìm các truyền thống quan trọng có liên quan và ghi rõ giới hạn bao phủ nếu chưa đạt được.
+Nếu đề tài yêu cầu **tổng quan học giả hoặc lịch sử nghiên cứu**, trước khi viết phải đối chiếu Sổ Chứng Cứ Học Thuật với bản đồ nguồn và học giới đã lập ở Bước 2A để xem các nhánh trọng yếu đã thực sự được rà hay chưa, và có đang vô tình chỉ bao phủ một truyền thống học thuật/ngôn ngữ duy nhất hay không. Không phải ép đủ mọi quốc gia; chỉ cần chủ động tìm những truyền thống có liên quan trực tiếp và ghi rõ giới hạn bao phủ nếu một nhánh quan trọng chưa được khảo sát đạt yêu cầu.
 
 ### Bước 4 — Phân tích
 
@@ -610,7 +638,7 @@ Trước khi xuất bản nghiên cứu, phải tự kiểm tra ở cấp **nộ
 6. Các văn bản có sức quyết định đã được đọc đủ bối cảnh và phân tích bằng văn xuôi, thay vì chỉ bị nén vào bảng hoặc danh sách chưa?
 7. Kết luận và mức độ chắc chắn có đúng với sức mạnh của chứng cứ không, hay có câu nào đang mạnh hơn nguồn cho phép?
 8. Nếu tôi phát biểu về “đồng thuận học giới”, “nhiều học giả” hoặc xu hướng nghiên cứu, tôi có đủ nguồn độc lập hoặc tổng quan thích hợp để nói ở mức đó không?
-9. Nếu đề tài yêu cầu tổng quan học giả hoặc lịch sử nghiên cứu, việc tìm kiếm có bị lệch sang một ngôn ngữ hoặc truyền thống học thuật duy nhất không, và giới hạn bao phủ đã được nói rõ chưa?
+9. Nếu đề tài yêu cầu tổng quan học giả hoặc lịch sử nghiên cứu, các nhánh trọng yếu trong bản đồ nguồn và học giới ở Bước 2A đã thực sự được rà chưa; việc tìm kiếm có bị lệch sang một ngôn ngữ hoặc truyền thống học thuật duy nhất không; và giới hạn bao phủ đã được nói rõ chưa?
 10. Những nguồn, locator, nguyên ngữ và dữ liệu nhận diện quan trọng đã thu được trong quá trình nghiên cứu có được giữ lại đủ để người đọc và lượt hậu kiểm sau truy lại không?
 11. Có điểm nào phạm vi không đủ trả lời mà tôi đang cố lấp bằng kiến thức nền thay vì nói rõ giới hạn không?
 
