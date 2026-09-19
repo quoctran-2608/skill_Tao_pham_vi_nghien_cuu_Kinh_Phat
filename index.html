@@ -162,6 +162,17 @@
       padding-top:20px;
       border-top:1px solid var(--line);
     }
+    .chat-note{
+      margin-top:14px;
+      padding:12px 14px;
+      border-radius:12px;
+      border:1px solid #f2d58a;
+      background:#fff8e6;
+      color:#6b4f00;
+      font-size:.94rem;
+      line-height:1.55;
+    }
+    .chat-note strong{color:#5b4300}
     .textblock{
       position:relative;
     }
@@ -252,6 +263,10 @@
         <textarea id="metaOutput" readonly placeholder="Câu lệnh chuẩn hóa sẽ xuất hiện ở đây."></textarea>
       </div>
     </div>
+
+    <div class="chat-note">
+      <strong>Khuyến nghị về hội thoại:</strong> sau khi dùng câu lệnh Stage A và nhận được Ô 1 + Ô 2, hãy quay lại bước ②. Khi chạy câu lệnh nghiên cứu Stage B, nên mở <strong>một chat mới</strong> thay vì tiếp tục hội thoại Stage A để giảm ảnh hưởng của đề bài thô và cách đóng khung ban đầu.
+    </div>
   </section>
 
   <section class="panel">
@@ -293,7 +308,9 @@
       </div>
     </div>
 
-    
+    <div class="chat-note">
+      <strong>Khuyến nghị về hội thoại:</strong> nên chạy câu lệnh Stage B trong <strong>một chat mới</strong>, không tiếp tục chat Stage A. Khi Stage B đã tạo xong bài nghiên cứu, quay lại bước ③ và nên chạy Stage C trong <strong>một chat mới khác</strong> để việc hậu kiểm độc lập hơn, giảm hiệu ứng neo vào lập luận và kết luận của Stage B.
+    </div>
   </section>
 
   <section class="panel">
@@ -614,25 +631,27 @@ deBai,
 baiNghienCuu,
 "",
 "# NGUYÊN TẮC BẢO TOÀN",
-"- Giữ nguyên phạm vi nguồn và câu hỏi nghiên cứu đã khóa. Không mở rộng corpus, không thêm học giả, văn bản hay học thuyết mới chỉ để làm bài có vẻ đầy đủ hơn.",
+"- Giữ nguyên phạm vi nguồn và câu hỏi nghiên cứu đã khóa. Không mở rộng phạm vi văn bản, không thêm học giả, văn bản hay học thuyết mới chỉ để làm bài có vẻ đầy đủ hơn.",
 "- Không thay đổi kết luận chính chỉ vì muốn văn phong trôi chảy hơn. Chỉ điều chỉnh kết luận hoặc mức độ khẳng định khi chính chứng cứ đã có hoặc việc xác minh lại nguồn trong phạm vi bắt buộc phải làm vậy.",
 "- Không xóa phản chứng, giới hạn, bất đồng học thuật hoặc các phân biệt cần thiết để làm bài ngắn và dễ đọc hơn.",
-"- Chỉ được truy cập lại các nguồn thuộc PHẠM VI NGUỒN ĐÃ KHÓA khi cần xác minh một lỗi cụ thể về attribution, locator, thư mục, nguyên ngữ hoặc mức độ khẳng định. Không khởi động một cuộc khảo sát nguồn mới.",
+"- Chỉ được truy cập lại các nguồn thuộc PHẠM VI NGUỒN ĐÃ KHÓA khi cần xác minh một lỗi cụ thể về câu quy quan điểm cho học giả, vị trí dẫn nguồn, thư mục, nguyên ngữ hoặc mức độ khẳng định. Không khởi động một cuộc khảo sát nguồn mới.",
 "",
 "# LƯỢT 1 — KIỂM ĐỊNH HỌC THUẬT",
 "Rà toàn bài trước khi biên tập văn phong:",
 "1. Kiểm tra mọi câu kiểu “X cho rằng…”, “theo X…”, “X lập luận…”, “nghiên cứu của X…”, “một nghiên cứu cho thấy…”, “các học giả cho rằng…” và các cấu trúc tương đương.",
-"2. Với attribution quan trọng, ưu tiên nguồn trực tiếp và bổ sung locator tốt nhất thực sự xác minh được: tác giả → công trình → năm → trang/chương/mục/đoạn hoặc vị trí ổn định tương đương.",
-"3. Không được đoán hoặc tự tạo locator. Nếu đã tìm hợp lý trong nguồn được phép mà vẫn không xác định được vị trí ổn định, ghi rõ “chưa xác định được trang/phần trong bản truy cập” hoặc dùng locator tốt nhất thực sự có. Một khoảng trang rộng hoặc cụm “khoảng tr.” chỉ được xem là vùng tìm kiếm gần đúng, không được trình bày như locator chính xác của một mệnh đề nếu chưa kiểm tra đúng đoạn.",
-"4. Với mỗi chứng cứ sơ cấp có sức quyết định — đặc biệt khi lập luận phụ thuộc vào một từ, cụm từ, câu hoặc khác biệt truyền bản — phải ưu tiên truy về chính văn bản sơ cấp và ghi locus trực tiếp tốt nhất có thể: mã văn bản/kinh → chương, phẩm, đoạn, quyển, folio, Taishō trang-dòng, câu kệ hoặc vị trí ổn định tương đương tùy loại nguồn. Nguồn thứ cấp không thay thế việc kiểm chứng sơ cấp nếu chính văn bản nằm trong phạm vi và có thể truy cập.",
+"2. Với mỗi câu quy một quan điểm, lập luận, niên đại, phân kỳ hoặc kết luận quan trọng cho học giả, ưu tiên nguồn trực tiếp và bổ sung vị trí dẫn nguồn tốt nhất thực sự xác minh được: tác giả → công trình → năm → trang/chương/mục/đoạn hoặc vị trí ổn định tương đương.",
+"3. Không được đoán hoặc tự tạo vị trí dẫn nguồn. Nếu đã tìm hợp lý trong nguồn được phép mà vẫn không xác định được vị trí ổn định, phải ghi rõ ngay tại nhận định đó “chưa xác định được trang/phần trong bản truy cập” hoặc dùng vị trí tốt nhất thực sự có. Một khoảng trang rộng hoặc cụm “khoảng tr.” chỉ được xem là vùng tìm kiếm gần đúng, không được trình bày như vị trí chính xác của một mệnh đề nếu chưa kiểm tra đúng đoạn.",
+"4. Với mỗi chứng cứ sơ cấp có sức quyết định — đặc biệt khi lập luận phụ thuộc vào một từ, cụm từ, câu hoặc khác biệt truyền bản — phải ưu tiên truy về chính văn bản sơ cấp và ghi vị trí trực tiếp tốt nhất có thể: mã văn bản/kinh → chương, phẩm, đoạn, quyển, folio, Taishō trang-dòng, câu kệ hoặc vị trí ổn định tương đương tùy loại nguồn. Nguồn thứ cấp không thay thế việc kiểm chứng sơ cấp nếu chính văn bản nằm trong phạm vi và có thể truy cập.",
 "5. Nếu một nhận định quan trọng về văn bản sơ cấp hiện chỉ biết qua học giả hoặc nguồn trung gian, phải đánh dấu rõ đây là kiểm chứng gián tiếp; chỉ nâng thành “văn bản nói trực tiếp” sau khi đã kiểm tra chính locus sơ cấp.",
 "6. Nếu một nhận định chỉ dựa trên nguồn trung gian trong khi nguồn trực tiếp nằm trong phạm vi và có thể truy cập, ưu tiên kiểm lại nguồn trực tiếp. Nếu vẫn chỉ có dẫn gián tiếp, phải nói rõ đó là dẫn gián tiếp.",
 "7. Kiểm tra các câu về “đồng thuận học giới”, “đa số học giả”, “quan điểm phổ biến” hoặc tương đương: không để một nguồn đơn lẻ đại diện cho toàn bộ học giới.",
-"8. Kiểm tra certainty drift: không biến “đề xuất”, “khả dĩ”, “có thể”, “chưa xác lập” thành “chứng minh”, “chắc chắn”, “đã xác lập”. Nếu câu trong bản thảo mạnh hơn nguồn, hạ nó về đúng mức.",
+"8. Kiểm tra sự trượt mức độ khẳng định: không biến “đề xuất”, “khả dĩ”, “có thể”, “chưa xác lập” thành “chứng minh”, “chắc chắn”, “đã xác lập”. Nếu câu trong bản thảo mạnh hơn nguồn, hạ nó về đúng mức.",
 "9. Giữ tách biệt: văn bản nói trực tiếp / điều có thể suy ra / giả thuyết lịch sử / điều chưa thể xác lập. Không biến tương đồng thành ảnh hưởng, ảnh hưởng khả dĩ thành vay mượn trực tiếp, hay sự im lặng thành phủ định.",
 "10. Với các từ như “tiếp xúc”, “tương tác”, “ảnh hưởng”, “vay mượn”, “phản ứng” hoặc tương đương, phải phân biệt quan hệ có thể thấy trực tiếp trong văn bản (đối thoại, tranh luận, tái định nghĩa, dùng chung từ vựng) với một quan hệ tiếp xúc lịch sử giữa tác giả/cộng đồng. Không gọi là “tiếp xúc lịch sử được chứng minh” nếu chứng cứ mới chỉ cho thấy hai diễn ngôn được đặt trong quan hệ tranh luận.",
 "11. Kiểm tra tên văn bản, học giả, năm xuất bản, nguyên ngữ và dữ liệu thư mục có nhất quán với chính nguồn đã dùng hay không.",
-"12. Nếu đề bài đã quy định một thang mức độ kết luận, chuẩn hóa các nhãn đánh giá về đúng thang đó mà không làm thay đổi nội dung chứng cứ.",
+"12. Nếu đề bài đã quy định một thang mức độ kết luận, mỗi nhãn đánh giá phải dùng đúng MỘT mức thuộc thang đã khóa. Không dùng nhãn lai như “Mạnh đến Rất mạnh”. Nếu sức mạnh khác nhau giữa các văn bản, chọn một mức cho mệnh đề tổng quát rồi giải thích trong văn xuôi rằng trường hợp riêng nào mạnh hơn hoặc yếu hơn.",
+"13. Trước khi sang lượt biên tập, thực hiện một lượt quét riêng toàn bài đối với các cấu trúc “X cho rằng…”, “theo X…”, “X lập luận…”, “X kết luận…”, “nghiên cứu của X…”, “một nghiên cứu…”, “các học giả…”. Mỗi attribution quan trọng phải kết thúc ở đúng một trong ba trạng thái: (a) công trình trực tiếp + năm + vị trí kiểm chứng được; (b) ghi rõ “chưa xác định được trang/phần trong bản truy cập”; hoặc (c) ghi rõ là dẫn gián tiếp và nêu nguồn trung gian. Không để lại attribution quan trọng ở trạng thái không có vị trí và cũng không nói rõ giới hạn.",
+"14. Rà tính nhất quán của danh mục tài liệu với thân bài. Nếu thân bài đã dùng một ấn bản, bản dịch, công trình phê bình văn bản hoặc nghiên cứu cụ thể làm căn cứ kiểm chứng, phải đưa nguồn đó vào danh mục tài liệu đã dùng; nếu danh mục chỉ chủ ý liệt kê chọn lọc, đổi tiêu đề thành “Một số tài liệu trọng yếu” hoặc cách gọi tương đương để không tạo cảm giác danh mục đã đầy đủ.",
 "",
 "# LƯỢT 2 — BIÊN TẬP ĐỂ DỄ ĐỌC MÀ KHÔNG LÀM NGHÈO HỌC THUẬT",
 "1. Viết tiếng Việt tự nhiên, trực tiếp, sáng rõ; chia câu quá dài, bỏ lặp và sửa chuyển đoạn khó theo dõi.",
@@ -641,6 +660,7 @@ baiNghienCuu,
 "4. Không dùng máy móc các cách nói dịch sát hoặc mơ hồ như “Phật giáo sớm”, “kinh điển Phật giáo sớm” nếu người đọc không biết đang nói về giai đoạn lịch sử hay nhóm văn bản nào. Nếu phạm vi thực tế là một corpus xác định, ưu tiên gọi thẳng tên corpus, ví dụ “các Nikāya và Āgama được khảo sát”. Nếu thực sự nói về một giai đoạn lịch sử và chứng cứ cho phép, ưu tiên cách nói tự nhiên như “Phật giáo thời kỳ đầu”. Không tự động đổi thành “Phật giáo nguyên thủy”, vì cách gọi đó có thể hàm chứa một khẳng định mạnh hơn về tính nguyên thủy hoặc thẩm quyền.",
 "5. Kiểm tra các nhãn thời kỳ, hệ phái và thuật ngữ dịch: nếu một cách gọi có thể khiến người đọc hiểu rộng hoặc chắc chắn hơn chứng cứ, hãy dùng cách diễn đạt cụ thể hơn.",
 "6. Thống nhất cách gọi trong toàn bài nhưng không dùng từ đồng nghĩa về văn phong để hòa lẫn những thuật ngữ học thuật thực ra cần phân biệt.",
+"7. Trước khi xuất bài, rà riêng các từ tiếng Anh kỹ thuật không cần thiết trong phần văn xuôi — chẳng hạn attribution, locus, corpus, certainty drift, apparatus, framework, output — và đổi sang cách diễn đạt tiếng Việt rõ nghĩa khi không làm mất độ chính xác. Có thể dùng “câu quy quan điểm cho học giả”, “vị trí văn bản/vị trí dẫn chứng”, “phạm vi hoặc nhóm văn bản”, “sự trượt mức độ khẳng định”, “bộ máy phê bình văn bản” tùy ngữ cảnh. Quy tắc này không áp dụng cho nguyên ngữ Pāli, Sanskrit, Hán, Tạng, tên riêng, nhan đề công trình hoặc thuật ngữ không nên dịch vì sẽ làm sai nghĩa.",
 "",
 "# GIỚI HẠN SỬA",
 "- Không tự thêm một luận điểm mới, một nguồn mới, một trường phái mới hoặc một kết luận mới.",
