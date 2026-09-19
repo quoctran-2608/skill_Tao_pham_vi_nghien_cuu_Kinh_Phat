@@ -1,0 +1,859 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Trình tạo câu lệnh nghiên cứu Phật học theo phạm vi nguồn đóng</title>
+  <style>
+    :root{
+      --bg:#f5f7fb;
+      --bg-warm:#fbf8f2;
+      --surface:#ffffff;
+      --surface-soft:#fafbff;
+      --ink:#1f2937;
+      --muted:#667085;
+      --line:#e4e7ec;
+      --line-strong:#d0d5dd;
+      --primary:#4f46e5;
+      --primary-hover:#4338ca;
+      --primary-soft:#eef2ff;
+      --violet-soft:#f5f3ff;
+      --violet-line:#ddd6fe;
+      --teal:#0f766e;
+      --teal-soft:#ecfdf8;
+      --teal-line:#a7f3d0;
+      --amber:#a15c07;
+      --amber-soft:#fff7e8;
+      --amber-line:#f3d39a;
+      --ok:#067647;
+      --ok-soft:#ecfdf3;
+      --ok-line:#abefc6;
+      --warn:#b54708;
+      --warn-soft:#fffaeb;
+      --warn-line:#fedf89;
+      --shadow:0 14px 40px rgba(16,24,40,.08);
+      --shadow-soft:0 6px 18px rgba(16,24,40,.05);
+      --radius-xl:24px;
+      --radius-lg:16px;
+      --radius-md:12px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      min-height:100vh;
+      color:var(--ink);
+      font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      line-height:1.6;
+      background:
+        radial-gradient(circle at 15% 0%, rgba(79,70,229,.08), transparent 30%),
+        radial-gradient(circle at 100% 10%, rgba(15,118,110,.07), transparent 25%),
+        linear-gradient(180deg,var(--bg) 0%,var(--bg-warm) 100%);
+    }
+    button,textarea{font:inherit}
+    .wrap{max-width:1080px;margin:0 auto;padding:32px 18px 52px}
+    header{
+      margin-bottom:24px;
+      padding:8px 2px 2px;
+    }
+    h1{margin:0 0 6px;font-size:clamp(1.8rem,4vw,2.55rem);line-height:1.12;letter-spacing:-.03em;max-width:900px}
+    h2{margin:0 0 8px;font-size:clamp(1.25rem,2vw,1.55rem);line-height:1.3;letter-spacing:-.015em}
+    .subtitle{margin:0;color:var(--muted);max-width:900px}
+    header .subtitle{color:var(--muted);font-size:.98rem;max-width:860px}
+    .step-badge{
+      display:inline-flex;
+      align-items:center;
+      padding:5px 9px;
+      margin-bottom:10px;
+      border-radius:999px;
+      font-size:.74rem;
+      font-weight:800;
+      letter-spacing:.04em;
+      color:var(--primary);
+      background:var(--primary-soft);
+      border:1px solid #c7d2fe;
+    }
+    .panel{
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:18px;
+      padding:24px;
+      box-shadow:0 8px 24px rgba(16,24,40,.05);
+    }
+    .panel + .panel{margin-top:18px}
+    .prep-panel{border-color:var(--violet-line);background:#fff}
+    .prep-panel .step-badge{background:var(--violet-soft);border-color:var(--violet-line);color:#6941c6}
+    .grid{display:grid;gap:20px}
+    label{display:block;margin-bottom:8px;font-weight:760;color:#344054}
+    .hint,.note{color:var(--muted);font-size:.9rem}
+    .hint{margin:7px 0 0}
+    .note{margin:18px 0 0}
+    
+    textarea{
+      width:100%;
+      min-height:150px;
+      resize:vertical;
+      padding:15px 16px;
+      color:var(--ink);
+      background:#fff;
+      border:1px solid var(--line-strong);
+      border-radius:var(--radius-md);
+      outline:none;
+      box-shadow:inset 0 1px 2px rgba(16,24,40,.02);
+      transition:border-color .18s ease, box-shadow .18s ease, transform .18s ease;
+    }
+    textarea::placeholder{color:#98a2b3}
+    textarea:focus{
+      border-color:#818cf8;
+      box-shadow:0 0 0 4px rgba(99,102,241,.12),inset 0 1px 2px rgba(16,24,40,.02);
+    }
+    #metaOutput,#output,#reviewOutput{
+      min-height:380px;
+      padding-top:52px;
+      background:#0f172a;
+      color:#e5e7eb;
+      border-color:#1e293b;
+      font-family:"SFMono-Regular",Consolas,"Liberation Mono",Menlo,monospace;
+      font-size:.89rem;
+      line-height:1.55;
+    }
+    #metaOutput::placeholder,#output::placeholder,#reviewOutput::placeholder{color:#94a3b8}\n    #reviewDraft{min-height:360px}
+    .actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+    button{
+      appearance:none;
+      border:1px solid transparent;
+      border-radius:11px;
+      padding:11px 16px;
+      font-weight:760;
+      cursor:pointer;
+      transition:transform .15s ease,box-shadow .15s ease,background .15s ease,border-color .15s ease;
+    }
+    button:hover:not(:disabled){transform:translateY(-1px)}
+    button:active:not(:disabled){transform:translateY(0)}
+    .primary{
+      color:#fff;background:var(--primary);
+      box-shadow:0 8px 16px rgba(79,70,229,.18);
+    }
+    .primary:hover:not(:disabled){background:var(--primary-hover)}
+    .prep-primary{
+      color:#fff;background:#6941c6;
+      box-shadow:0 8px 16px rgba(105,65,198,.18);
+    }
+    .prep-primary:hover:not(:disabled){background:#5d36b8}
+    .secondary{
+      color:#344054;background:#fff;border-color:var(--line-strong);
+      box-shadow:var(--shadow-soft);
+    }
+    .secondary:hover:not(:disabled){background:#f9fafb;border-color:#b8c0cc}
+    button:disabled{opacity:.45;cursor:not-allowed;box-shadow:none}
+    .status{
+      display:none;
+      margin-top:16px;
+      padding:12px 14px;
+      border-radius:11px;
+      font-size:.93rem;
+      font-weight:650;
+    }
+    .status.warn{display:block;color:var(--warn);background:var(--warn-soft);border:1px solid var(--warn-line)}
+    .status.ok{display:block;color:var(--ok);background:var(--ok-soft);border:1px solid var(--ok-line)}
+    
+    .output-wrap{
+      margin-top:20px;
+      padding-top:20px;
+      border-top:1px solid var(--line);
+    }
+    .chat-note{
+      margin-top:14px;
+      padding:12px 14px;
+      border-radius:12px;
+      border:1px solid #f2d58a;
+      background:#fff8e6;
+      color:#6b4f00;
+      font-size:.94rem;
+      line-height:1.55;
+    }
+    .chat-note strong{color:#5b4300}
+    .textblock{
+      position:relative;
+    }
+    .copy-icon{
+      position:absolute;
+      top:10px;
+      right:10px;
+      z-index:3;
+      width:34px;
+      height:34px;
+      min-width:34px;
+      padding:0;
+      display:inline-grid;
+      place-items:center;
+      border-radius:9px;
+      color:#475467;
+      background:#fff;
+      border:1px solid var(--line-strong);
+      box-shadow:var(--shadow-soft);
+    }
+    .copy-icon:hover:not(:disabled){
+      color:var(--primary);
+      background:var(--primary-soft);
+      border-color:#c7d2fe;
+    }
+    .copy-icon svg{
+      width:17px;
+      height:17px;
+      display:block;
+      pointer-events:none;
+    }
+    .copy-icon.copied{
+      color:var(--ok);
+      background:var(--ok-soft);
+      border-color:var(--ok-line);
+    }
+    
+    @media(min-width:900px){
+      .panel:not(.prep-panel) .grid{grid-template-columns:1fr 1fr}
+      .panel:not(.prep-panel) .grid textarea{min-height:330px}
+    }
+    @media(max-width:700px){
+      .wrap{padding:22px 14px 40px}
+      header{padding:24px 20px;border-radius:20px}
+      .panel{padding:20px;border-radius:18px}
+      .actions{display:grid;grid-template-columns:1fr 1fr}
+      .actions button{width:100%}
+    }
+    @media(max-width:460px){
+      .actions{grid-template-columns:1fr}
+      h1{font-size:1.9rem}
+    }
+  </style>
+</head>
+<body>
+<main class="wrap">
+  <header>
+    <h1>Trình tạo câu lệnh nghiên cứu Phật học</h1>
+    <p class="subtitle">Ba bước: chuẩn hóa đề bài → tạo câu lệnh nghiên cứu → rà soát và hoàn thiện.</p>
+  </header>
+
+  <section class="panel prep-panel">
+    <div class="step-badge">① TỪ ĐỀ BÀI THÔ</div>
+    <h2>Nhờ AI soạn sẵn Ô 1 và Ô 2</h2>
+    <p class="subtitle">Nhập ý tưởng của bạn, rồi tạo câu lệnh để dán vào AI.</p>
+
+    <label for="rawTopic">Đề bài thô hoặc ý tưởng nghiên cứu</label>
+    <textarea id="rawTopic" placeholder="Ví dụ: Tôi muốn nghiên cứu trong Phật giáo sơ kỳ về bốn tầng thiền sắc giới, xem chỉ thực hành bốn thiền có đủ để chứng ngộ đạo quả hay không, đối tượng và phương pháp thực hành là gì, đồng thời cần đối chiếu Nikāya, A-hàm và Luật." spellcheck="false"></textarea>
+    <p class="hint">Viết tự nhiên, chưa cần cấu trúc.</p>
+
+    <div class="actions">
+      <button id="metaGenerate" class="prep-primary" type="button">Tạo câu lệnh nhờ AI soạn hai ô</button>
+      <button id="metaDownload" class="secondary" type="button" disabled>Tải .txt</button>
+      <button id="metaClear" class="secondary" type="button">Xóa phần này</button>
+    </div>
+
+    <div id="metaStatus" class="status" role="status" aria-live="polite"></div>
+
+    <div class="output-wrap">
+      <label for="metaOutput">Câu lệnh tạo Ô 1 và Ô 2</label>
+      <div class="textblock">
+        <button id="metaCopy" class="copy-icon" type="button" disabled aria-label="Sao chép câu lệnh" title="Sao chép">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <rect x="8" y="8" width="11" height="11" rx="2" stroke="currentColor" stroke-width="1.8"/>
+            <path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          </svg>
+        </button>
+        <textarea id="metaOutput" readonly placeholder="Câu lệnh chuẩn hóa sẽ xuất hiện ở đây."></textarea>
+      </div>
+    </div>
+
+    <div class="chat-note">
+      <strong>Khuyến nghị về hội thoại:</strong> sau khi dùng câu lệnh Stage A và nhận được Ô 1 + Ô 2, hãy quay lại bước ②. Khi chạy câu lệnh nghiên cứu Stage B, nên mở <strong>một chat mới</strong> thay vì tiếp tục hội thoại Stage A để giảm ảnh hưởng của đề bài thô và cách đóng khung ban đầu.
+    </div>
+  </section>
+
+  <section class="panel">
+    <div class="step-badge">② TẠO CÂU LỆNH NGHIÊN CỨU</div>
+    <h2>Nhập phạm vi và đề bài</h2>
+
+    <div class="grid">
+      <div>
+        <label for="corpus">1. Các bộ kinh hoặc văn bản được phép sử dụng</label>
+        <textarea id="corpus" placeholder="1. Dīgha Nikāya (Trường Bộ)&#10;2. Majjhima Nikāya (Trung Bộ)&#10;3. Saṃyutta Nikāya (Tương Ưng Bộ)&#10;4. Aṅguttara Nikāya (Tăng Chi Bộ)&#10;5. Dīrgha Āgama / Trường A-hàm&#10;6. Madhyama Āgama / Trung A-hàm&#10;7. Saṃyukta Āgama / Tạp A-hàm&#10;8. Ekottarika Āgama / Tăng Nhất A-hàm&#10;9. Theravāda Vinaya Piṭaka / Luật tạng Pāli, gồm Suttavibhaṅga và Khandhaka." spellcheck="false"></textarea>
+        <p class="hint">Nên ghi cả tên nguyên ngữ và tên Việt.</p>
+      </div>
+
+      <div>
+        <label for="task">2. Đề bài nghiên cứu hoặc yêu cầu viết</label>
+        <textarea id="task" placeholder="Ví dụ: Hãy khảo sát các đoạn nói về bốn tầng thiền sắc giới, phân tích phương pháp thực hành, quan hệ với trí tuệ và giải thoát, đồng thời tìm cả những đoạn có thể giới hạn giả thuyết rằng chỉ cần bốn tầng thiền là đủ để chứng ngộ." spellcheck="false"></textarea>
+        <p class="hint">Nêu rõ câu hỏi, yêu cầu đối chiếu và phản biện nếu cần.</p>
+      </div>
+    </div>
+
+    <div class="actions">
+      <button id="generate" class="primary" type="button">Tạo câu lệnh nghiên cứu hoàn chỉnh</button>
+      <button id="download" class="secondary" type="button" disabled>Tải xuống tệp văn bản</button>
+      <button id="clear" class="secondary" type="button">Xóa hai ô</button>
+    </div>
+
+    <div id="status" class="status" role="status" aria-live="polite"></div>
+
+    <div class="output-wrap">
+      <label for="output">Câu lệnh nghiên cứu hoàn chỉnh</label>
+      <div class="textblock">
+        <button id="copy" class="copy-icon" type="button" disabled aria-label="Sao chép câu lệnh nghiên cứu" title="Sao chép">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <rect x="8" y="8" width="11" height="11" rx="2" stroke="currentColor" stroke-width="1.8"/>
+            <path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          </svg>
+        </button>
+        <textarea id="output" readonly placeholder="Câu lệnh nghiên cứu sẽ xuất hiện ở đây sau khi bấm nút tạo."></textarea>
+      </div>
+    </div>
+
+    <div class="chat-note">
+      <strong>Khuyến nghị về hội thoại:</strong> nên chạy câu lệnh Stage B trong <strong>một chat mới</strong>, không tiếp tục chat Stage A. Khi Stage B đã tạo xong bài nghiên cứu, quay lại bước ③ và nên chạy Stage C trong <strong>một chat mới khác</strong> để việc hậu kiểm độc lập hơn, giảm hiệu ứng neo vào lập luận và kết luận của Stage B.
+    </div>
+  </section>
+
+  <section class="panel">
+    <div class="step-badge">③ RÀ SOÁT &amp; HOÀN THIỆN</div>
+    <h2>Hậu kiểm bài nghiên cứu</h2>
+    <p class="subtitle">Stage C dùng Ô 1 và Ô 2 ở bước ② làm phạm vi khóa. Dán bài nghiên cứu đã hoàn thành vào ô dưới đây để tạo câu lệnh rà soát học thuật và biên tập.</p>
+
+    <label for="reviewDraft">Bài nghiên cứu cần rà soát</label>
+    <textarea id="reviewDraft" placeholder="Dán toàn bộ bài nghiên cứu do Stage B tạo vào đây." spellcheck="false"></textarea>
+    <p class="hint">Stage C không nghiên cứu lại từ đầu; chỉ hậu kiểm nguồn, mức độ khẳng định, thuật ngữ và khả năng đọc.</p>
+
+    <div class="actions">
+      <button id="reviewGenerate" class="primary" type="button">Tạo câu lệnh rà soát &amp; hoàn thiện</button>
+      <button id="reviewDownload" class="secondary" type="button" disabled>Tải .txt</button>
+      <button id="reviewClear" class="secondary" type="button">Xóa phần này</button>
+    </div>
+
+    <div id="reviewStatus" class="status" role="status" aria-live="polite"></div>
+
+    <div class="output-wrap">
+      <label for="reviewOutput">Câu lệnh Stage C</label>
+      <div class="textblock">
+        <button id="reviewCopy" class="copy-icon" type="button" disabled aria-label="Sao chép câu lệnh Stage C" title="Sao chép">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <rect x="8" y="8" width="11" height="11" rx="2" stroke="currentColor" stroke-width="1.8"/>
+            <path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0 2 2v8a2 2 0 0 0 2 2h2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          </svg>
+        </button>
+        <textarea id="reviewOutput" readonly placeholder="Câu lệnh hậu kiểm sẽ xuất hiện ở đây sau khi bấm nút tạo."></textarea>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script>
+let NOI_DUNG_KY_NANG = "";
+
+const rawTopicEl=document.getElementById("rawTopic");
+const metaOutputEl=document.getElementById("metaOutput");
+const metaStatusEl=document.getElementById("metaStatus");
+const metaGenerateBtn=document.getElementById("metaGenerate");
+const metaCopyBtn=document.getElementById("metaCopy");
+const metaDownloadBtn=document.getElementById("metaDownload");
+const metaClearBtn=document.getElementById("metaClear");
+
+const corpusEl=document.getElementById("corpus");
+const taskEl=document.getElementById("task");
+const outputEl=document.getElementById("output");
+const statusEl=document.getElementById("status");
+const generateBtn=document.getElementById("generate");
+const copyBtn=document.getElementById("copy");
+const downloadBtn=document.getElementById("download");
+const clearBtn=document.getElementById("clear");
+
+const reviewDraftEl=document.getElementById("reviewDraft");
+const reviewOutputEl=document.getElementById("reviewOutput");
+const reviewStatusEl=document.getElementById("reviewStatus");
+const reviewGenerateBtn=document.getElementById("reviewGenerate");
+const reviewCopyBtn=document.getElementById("reviewCopy");
+const reviewDownloadBtn=document.getElementById("reviewDownload");
+const reviewClearBtn=document.getElementById("reviewClear");
+
+async function loadSkillContent(){
+  const stamp=Date.now();
+  const urls=[
+    `SKILL.md?v=${stamp}`,
+    `https://raw.githubusercontent.com/quoctran-2608/skill_Tao_pham_vi_nghien_cuu_Kinh_Phat/main/SKILL.md?v=${stamp}`
+  ];
+  let lastError=null;
+  for(const url of urls){
+    try{
+      const response=await fetch(url,{cache:"no-store"});
+      if(!response.ok) throw new Error(`HTTP ${response.status}`);
+      const text=await response.text();
+      if(!text.trim()) throw new Error("SKILL.md rỗng");
+      NOI_DUNG_KY_NANG=text;
+      return text;
+    }catch(error){
+      lastError=error;
+    }
+  }
+  throw lastError || new Error("Không tải được SKILL.md");
+}
+
+function setStatus(el,message,type){
+  el.textContent=message;
+  el.className="status "+type;
+}
+
+function showCopySuccess(button){
+  if(!button._copyIconMarkup) button._copyIconMarkup=button.innerHTML;
+  if(button._copyResetTimer) clearTimeout(button._copyResetTimer);
+
+  button.innerHTML=`
+    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <path d="M5 12.5l4.2 4.2L19 7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>`;
+  button.classList.add("copied");
+  button.title="Đã sao chép";
+  button.setAttribute("aria-label","Đã sao chép");
+
+  button._copyResetTimer=setTimeout(()=>{
+    button.innerHTML=button._copyIconMarkup;
+    button.classList.remove("copied");
+    button.title="Sao chép";
+    button.setAttribute("aria-label","Sao chép");
+    button._copyResetTimer=null;
+  },1200);
+}
+
+function buildPreparationPrompt(rawTopic){
+  return [
+"# NHIỆM VỤ",
+"Đọc ĐỀ BÀI THÔ và tạo đúng hai khối để người dùng điền vào form nghiên cứu Phật học. Không trả lời nội dung nghiên cứu ở bước này.",
+"",
+"# ĐỀ BÀI THÔ",
+rawTopic,
+"",
+"# NGUYÊN TẮC CHUNG",
+"- Hãy coi đây là bước biến một ý tưởng thô thành một đề bài nghiên cứu mà một người nghiên cứu cẩn thận sẽ tự soạn trước khi bắt đầu tra cứu.",
+"- Không làm nghèo câu hỏi của người dùng. Phải giữ các điều kiện quyết định như: “chỉ”, “đủ”, “cần”, “không cần thêm”, “trực tiếp”, “trước/sau”, “có phải cùng một thứ hay không”, nếu chúng có trong ý định ban đầu.",
+"- Không quyết định sẵn kết luận và không viết câu trả lời nghiên cứu.",
+"- Không tự tạo dữ kiện, nhan đề kinh, nguyên ngữ hay quan hệ văn bản chưa được xác minh.",
+"- Phải bảo toàn Ý ĐỊNH GỐC ở cấp đối tượng nghiên cứu. Không được tự thêm một hệ phái, truyền thống, giai đoạn lịch sử, nhân vật, địa vực hay quan hệ phát triển nếu đề bài thô chưa cho đủ tín hiệu để xác lập điều đó.",
+"",
+"# BẢO TOÀN Ý ĐỊNH GỐC VÀ CHỐNG SUY DIỄN THUẬT NGỮ MƠ HỒ",
+"- Nếu đề bài thô chứa một cụm từ không chuẩn, có thể là cách nói chưa chính xác, có lỗi diễn đạt, hoặc có nhiều cách hiểu học thuật khả dĩ, phải GIỮ NÓ Ở TRẠNG THÁI CHƯA ĐƯỢC GIẢI QUYẾT. Không được âm thầm chuẩn hóa nó thành một thuật ngữ chuyên môn cụ thể.",
+"- Đặc biệt, không được tự chuyển một cụm mơ hồ thành Theravāda, Sarvāstivāda, Mahāyāna, Proto-Mahāyāna, Vajrayāna, Early Buddhism, pre-sectarian Buddhism hay bất kỳ truyền thống/giai đoạn cụ thể nào nếu chính đề bài thô không có tín hiệu đủ rõ cho lựa chọn đó.",
+"- Một thuật ngữ chuyên môn do AI bổ sung mà làm HẸP đối tượng nghiên cứu phải được xem là một GIẢ THUYẾT CẦN KIỂM TRA, không phải dữ kiện đầu vào.",
+"- Không được tạo hiệu ứng neo bằng cách liệt kê chỉ các thuật ngữ ứng viên thuộc cùng một truyền thống rồi nói rằng “không tự động đồng nhất” chúng. Nếu cần nêu các cách hiểu khả dĩ, phải bao quát các hướng thực sự cạnh tranh và không ưu tiên trước một hướng.",
+"- Nếu sự mơ hồ có thể làm thay đổi đáng kể corpus, niên đại, hệ phái hoặc loại nguồn cần dùng, Ô 1 phải cho phép các nguồn học thuật cần thiết để GIẢI QUYẾT THUẬT NGỮ/PHÂN KỲ trước; Ô 2 phải đặt việc xác định nghĩa của thuật ngữ thành nhiệm vụ nghiên cứu đầu tiên.",
+"- Sau bước làm rõ, nếu chứng cứ chỉ ra một cách hiểu có cơ sở rõ rệt hơn, nghiên cứu có thể tiếp tục theo cách hiểu đó và phải giải thích vì sao. Nếu vẫn còn từ hai cách hiểu hợp lý trở lên, không được tự chọn một; phải tách chúng thành các nhánh phân tích hoặc nói rõ phạm vi chưa cho phép hợp nhất.",
+"- Nếu đề bài thô đã nêu rõ hệ phái/truyền thống/giai đoạn bằng tên xác định, các quy tắc chống suy diễn này không được dùng để làm mơ hồ ngược lại ý định rõ ràng của người dùng.",
+"",
+"# TRUNG LẬP HÓA GIẢ THUYẾT VÀ CHỐNG CONFIRMATION BIAS",
+"- Phân biệt rõ giữa ĐIỀU NGƯỜI DÙNG MUỐN KIỂM TRA và ĐIỀU ĐÃ ĐƯỢC XÁC LẬP. Một khẳng định nằm trong đề bài thô không tự động trở thành tiền đề đúng chỉ vì người dùng diễn đạt nó ở dạng khẳng định.",
+"- Nếu đề bài chứa một mệnh đề cần chứng minh hoặc đánh giá — chẳng hạn “X đúng/sai”, “X hiểu sai Y”, “A là nguyên nhân của B”, “A cổ hơn B”, “A là nguyên thủy hơn”, “chỉ A đủ/cần cho B”, “hãy chứng minh/cho thấy X” hoặc cấu trúc tương đương — phải chuyển mệnh đề ấy thành GIẢ THUYẾT/MỆNH ĐỀ CẦN KIỂM TRA, không thành kết luận cần bảo vệ.",
+"- Ô 2 phải đặt câu hỏi theo hướng trung tính: chứng cứ hiện có ủng hộ, giới hạn, bác bỏ hay chưa đủ để xác lập giả thuyết ở mức nào; không thiết kế nhiệm vụ theo hướng chỉ đi tìm luận cứ thuận.",
+"- Khi thực sự có nhiều cách giải thích cạnh tranh có ý nghĩa đối với câu hỏi, phải yêu cầu khảo sát cách giải thích mạnh nhất khác và dữ liệu có khả năng phân biệt giữa các cách hiểu. Không được tạo đối lập giả hoặc ép mọi đề tài phải có H1/H2/H3.",
+"- Nếu dữ liệu phù hợp một phần với giả thuyết nhưng cũng đòi hỏi sửa điều kiện, phạm vi, niên đại hoặc quan hệ nhân quả, Ô 2 phải cho phép kết luận THU HẸP hoặc TÁI MÔ TẢ giả thuyết thay vì chỉ “đúng/sai”.",
+"- Việc bảo toàn ý định gốc có nghĩa là giữ nguyên CÂU HỎI NGƯỜI DÙNG QUAN TÂM, không phải giữ nguyên kết luận mà người dùng có thể đang nghiêng về.",
+"",
+"# Ô 1 — CÁC BỘ KINH, VĂN BẢN HOẶC LOẠI NGUỒN ĐƯỢC PHÉP SỬ DỤNG",
+"Trước hết phải xác định người dùng đang KHÓA PHẠM VI hay chỉ đang GỢI Ý/ĐỊNH HƯỚNG nguồn.",
+"",
+"## Trường hợp A — Người dùng khóa phạm vi nghiêm ngặt",
+"- Chỉ coi là khóa phạm vi khi lời người dùng thể hiện rõ ý định giới hạn, chẳng hạn: “chỉ dùng…”, “chỉ tìm trong…”, “không dùng nguồn khác…”, “giới hạn trong…”, “tuyệt đối không sử dụng…”, hoặc một cách diễn đạt tương đương.",
+"- Khi đã có khóa phạm vi rõ ràng, giữ đúng các nguồn được cho phép và các loại nguồn bị loại trừ; không tự thêm nguồn sơ cấp, thứ cấp, truyền bản hay học giả khác.",
+"- Nếu người dùng khóa một nhóm nguồn rộng như Nikāya, A-hàm, Tạng luật hoặc một tập hợp xác định, có thể cụ thể hóa các thành phần nằm BÊN TRONG chính nhóm đó khi chắc chắn, nhưng không vượt ra ngoài ranh giới đã khóa.",
+"",
+"## Trường hợp B — Người dùng không khóa phạm vi nghiêm ngặt",
+"- Nếu người dùng chỉ nêu vài nguồn muốn tham khảo, kể tên một số bộ kinh như gợi ý, hoặc hoàn toàn chưa nêu nguồn, được phép và nên đề xuất thêm những nguồn cần thiết cho chính câu hỏi.",
+"- Có thể đề xuất thêm NGUỒN SƠ CẤP phù hợp: kinh, luật, luận hoặc văn bản cổ; các truyền bản song hành; bản Sanskrit, Pāli, Hán, Gāndhārī, Tây Tạng hoặc ngôn ngữ khác khi chúng thực sự liên quan đến đề tài.",
+"- Có thể đề xuất thêm NGUỒN THỨ CẤP khi câu hỏi cần nghiên cứu học thuật: chuyên khảo, bài báo phản biện chuyên môn, ấn bản phê bình, nghiên cứu văn bản học, công trình của học giả, handbook hoặc tài liệu học thuật chuyên ngành.",
+"- Nếu đề bài hỏi “các học giả”, “công trình nghiên cứu”, “đồng thuận học giới”, “lịch sử nghiên cứu”, “niên đại”, “quá trình hình thành văn bản” hoặc vấn đề tương tự, Ô 1 phải cho phép nguồn thứ cấp thích hợp; không được tự khóa nghiên cứu vào kinh điển sơ cấp nếu như vậy sẽ làm câu hỏi không thể trả lời.",
+"- Nguồn được bổ sung phải phục vụ trực tiếp một nhu cầu của đề tài. Không mở rộng chỉ vì nguồn đó nổi tiếng hoặc có liên hệ xa.",
+"- Nếu đề bài chứa một giả thuyết hoặc kết luận mong đợi, việc chọn nguồn không được thiên về những nguồn có khả năng ủng hộ giả thuyết đó. Ô 1 phải cho phép các nguồn sơ cấp và nghiên cứu học thuật trực tiếp có khả năng xác nhận, giới hạn, phản bác hoặc đưa ra cách giải thích cạnh tranh, miễn chúng thực sự liên quan và nằm trong ranh giới đề tài.",
+"- Nếu giả thuyết trung tâm là vấn đề đã có tranh luận học thuật trực tiếp, Ô 1 phải cho phép CẢ các công trình chuyên môn bàn vào chính tranh luận ấy, không chỉ các nguồn thứ cấp dùng để xác định thuật ngữ, niên đại hay phạm vi. Phải đủ chỗ cho những cách đọc học thuật mạnh nhất ở các phía thực sự cạnh tranh để bài nghiên cứu không bị lệch ngay từ khâu chọn tài liệu.",
+"- Nếu Ô 1 liệt kê các LOẠI CHỨNG CỨ hoặc trường hợp được ưu tiên tìm, danh sách phải cân bằng theo câu hỏi chứ không theo hướng khẳng định của người dùng: phải bao gồm cả loại trường hợp mạnh nhất có thể ủng hộ giả thuyết và loại trường hợp mạnh nhất có thể làm yếu/bác bỏ nó khi cả hai đều có ý nghĩa. Không được chỉ ưu tiên các trường hợp thuận với cách đóng khung ban đầu.",
+"- Nếu thuật ngữ trung tâm còn mơ hồ và cách hiểu khác nhau sẽ dẫn đến các corpus khác nhau, không được khóa Ô 1 vào một corpus/hệ phái cụ thể chỉ vì AI thấy một cách hiểu có vẻ quen thuộc. Trước hết phải cho phép nguồn thứ cấp trực tiếp về thuật ngữ, phân kỳ, lịch sử kinh điển hoặc lịch sử nghiên cứu cần thiết để xác định đối tượng; nguồn sơ cấp sau đó chỉ được chọn trong các nhóm mà chính bước xác định này cho thấy thực sự liên quan.",
+"",
+"## Cách tổ chức Ô 1 khi được phép đề xuất nguồn",
+"- Khi hữu ích, chia rõ: “Nguồn sơ cấp” và “Nguồn nghiên cứu học thuật/thứ cấp”.",
+"- Với nguồn sơ cấp, ưu tiên nêu đích danh bộ/văn bản hoặc nhóm truyền bản có quan hệ trực tiếp đến câu hỏi.",
+"- Với nguồn thứ cấp chưa thể biết trước từng tác giả/công trình trước khi nghiên cứu, được phép khóa theo LOẠI NGUỒN đủ rõ, ví dụ: chuyên khảo học thuật trực tiếp về đề tài; bài báo phản biện chuyên môn; ấn bản phê bình; nghiên cứu văn bản học. Không cần giả vờ biết trước toàn bộ tên học giả sẽ được phát hiện.",
+"- Có thể nêu tiêu chuẩn loại trừ như blog cá nhân, diễn đàn, nội dung phổ thông hoặc nguồn không truy được về công trình học thuật nếu điều đó cần để giữ chất lượng nguồn.",
+"",
+"## Yêu cầu chung cho Ô 1",
+"- Ô 1 phải là một phạm vi CÓ RANH GIỚI RÕ: hoặc danh sách nguồn cụ thể, hoặc danh sách loại nguồn được phép đủ chặt để nghiên cứu không mở rộng vô hạn.",
+"- Không để câu mở kiểu “có thể thêm bất kỳ nguồn nào nếu cần”.",
+"- Không tự tạo nhan đề, nguyên ngữ, tên học giả hay công trình chưa được xác minh.",
+"- Nếu người dùng đã loại trừ loại nguồn nào, phải giữ nguyên phần loại trừ đó.",
+"- Với đề tài có thuật ngữ chưa rõ, Ô 1 có thể tổ chức theo hai tầng: (a) nguồn học thuật dùng để xác định thuật ngữ/phân kỳ; (b) nguồn sơ cấp và nghiên cứu chuyên sâu chỉ dùng sau khi đã xác định nhánh nghĩa tương ứng. Nếu đề tài đồng thời có một giả thuyết hay tranh luận nội dung, tầng (b) phải cho phép cả các công trình học thuật trực tiếp về chính tranh luận đó; không được vô tình giới hạn secondary scholarship vào tầng (a). Cách viết này phải vẫn có ranh giới rõ, không được biến thành “mọi nguồn về Phật giáo”.",
+"",
+"# Ô 2 — ĐỀ BÀI NGHIÊN CỨU HOẶC YÊU CẦU VIẾT",
+"Ô 2 phải được viết như một ĐỀ BÀI NGHIÊN CỨU HOÀN CHỈNH, giàu nội dung và đủ cụ thể để một AI nghiên cứu sâu có thể làm việc hiệu quả. Không chỉ tóm tắt câu hỏi thô thành một đoạn ngắn.",
+"",
+"Thông thường, nếu đề tài đủ phức tạp, Ô 2 nên có cấu trúc sau:",
+"1. Một câu mở xác định chính xác vấn đề cần nghiên cứu bên trong phạm vi Ô 1.",
+"2. Mục “Câu hỏi trung tâm:” diễn đạt thành một câu hỏi rõ, hẹp và có thể kiểm chứng bằng văn bản.",
+"3. Mục “Yêu cầu nghiên cứu:” gồm các yêu cầu đánh số, được viết RIÊNG cho chính đề tài, thường khoảng 6–12 mục nếu cần.",
+"4. Cuối Ô 2, nếu đề tài đòi hỏi một phán đoán tổng hợp, phải có một câu hỏi kết luận riêng trả lời đúng trọng tâm ban đầu.",
+"",
+"## Cổng kiểm tra thuật ngữ trước khi triển khai nội dung",
+"- Nếu đề bài thô có thuật ngữ mơ hồ theo phần BẢO TOÀN Ý ĐỊNH GỐC, yêu cầu nghiên cứu đầu tiên trong Ô 2 phải xác định: thuật ngữ đó có phải thuật ngữ học thuật chuẩn không; trong văn liệu chuyên ngành nó có thể tương ứng với những cách phân kỳ/đối tượng nào; chứng cứ nào ủng hộ từng cách hiểu.",
+"- Không được viết các yêu cầu phía sau như thể một cách hiểu đã đúng trước khi cổng này được giải quyết. Có thể dùng cấu trúc điều kiện: “nếu nghiên cứu xác định thuật ngữ tương ứng với X thì khảo sát nhóm X; nếu tương ứng với Y thì khảo sát nhóm Y”.",
+"- Nếu một cách hiểu được chọn sau khi kiểm tra, Ô 2 phải yêu cầu bài nghiên cứu nêu rõ căn cứ của lựa chọn đó. Nếu chưa đủ căn cứ để chọn, phải giữ các nhánh riêng thay vì ép thành một đề tài duy nhất.",
+"",
+"## Cổng kiểm tra giả thuyết khi đề bài có sẵn một quan điểm",
+"- Chỉ kích hoạt cổng này khi đề bài thực sự chứa một mệnh đề cần kiểm định hoặc một kết luận mà người dùng đang nghiêng về. Với câu hỏi thuần mô tả, liệt kê, dịch thuật hoặc nhận diện, không ép thêm cấu trúc giả thuyết.",
+"- Xác định mệnh đề trung tâm cần kiểm tra nhưng không lặp nó như một sự kiện. Câu hỏi trung tâm nên hỏi dữ liệu và nghiên cứu hiện có cho phép đánh giá mệnh đề ấy như thế nào.",
+"- Yêu cầu thu thập cả dữ liệu thuận, dữ liệu làm yếu/phản bác, dữ liệu không đủ sức phân biệt và — khi có cơ sở — cách giải thích cạnh tranh mạnh nhất.",
+"- Nếu giả thuyết bị bác bỏ, chỉ đúng một phần, cần thu hẹp hoặc câu hỏi ban đầu đặt sai cấu trúc, kết quả nghiên cứu phải được phép nói thẳng điều đó.",
+"",
+"# CÁCH TẠO CÁC YÊU CẦU NGHIÊN CỨU TRONG Ô 2",
+"Không dùng một danh sách chung chung áp cho mọi đề tài. Hãy chuyển chính nội dung người dùng muốn biết thành các thao tác nghiên cứu cụ thể. Khi phù hợp, Ô 2 nên yêu cầu:",
+"- tìm và nhận diện các bài kinh/văn bản hoặc đoạn văn trực tiếp liên quan đến từng phần của câu hỏi;",
+"- với mỗi văn bản quan trọng, ghi đủ dữ liệu nhận diện như bộ kinh, mã/tên bài, vị trí và nội dung trực tiếp liên quan;",
+"- phân loại các trường hợp thành những nhóm có ý nghĩa đối với chính đề tài, thay vì chỉ liệt kê nguồn;",
+"- xác định định nghĩa, điều kiện, đối tượng, thành phần, trình tự, sự chuyển đổi hoặc kết quả nếu đó là điều câu hỏi đang khảo sát;",
+"- nếu có một tiến trình, phải làm rõ điều gì xảy ra trước, trong và sau; không được lược bỏ bước trung gian;",
+"- nếu câu hỏi hỏi một yếu tố có “đủ”, “cần”, “trực tiếp gây ra”, “đồng nhất với” hay không, phải tạo các phép kiểm tra bằng CHÍNH THUẬT NGỮ CỦA ĐỀ TÀI: tìm trường hợp có yếu tố ấy nhưng chưa có kết quả; có kết quả nhưng còn bước khác; có kết quả mà thiếu yếu tố ấy; hoặc văn bản nối hai bên bằng bước trung gian;",
+"- chủ động yêu cầu tìm các đoạn ủng hộ, các đoạn làm yếu, giới hạn hoặc phản bác cách hiểu đang xét, và cả những mô hình khác nếu có;",
+"- nếu có nhân vật hay câu chuyện tu tập cụ thể, yêu cầu phân tích chính xác trình tự để xem kết quả xảy ra do bước nào, không chỉ vì hai sự kiện đứng gần nhau trong văn bản;",
+"- nếu Ô 1 gồm nhiều truyền bản có thể đối chiếu, yêu cầu so sánh các đoạn tương ứng hoặc mô hình tương tự mà không mặc định truyền bản nào đúng hơn;",
+"- cho phép các phát hiện phụ quan trọng phát sinh từ chứng cứ nếu chúng thực sự giúp trả lời câu hỏi trung tâm;",
+"- phân biệt rõ điều văn bản nói trực tiếp, điều có thể suy ra và điều chưa thể xác lập, nếu sự phân biệt này quan trọng cho câu hỏi.",
+"",
+"# YÊU CẦU ĐẶC BIỆT CHO CÂU HỎI CÓ GIẢ THUYẾT HOẶC TÍNH ĐỦ/CẦN",
+"Nếu người dùng đang hỏi kiểu “chỉ A có đủ để đạt B không?”, Ô 2 phải giữ nguyên sức nặng của chữ “chỉ” và biến nó thành một chương trình kiểm tra thực sự. Cụ thể phải yêu cầu kiểm tra:",
+"- có văn bản nào nối A với B mà không nêu thêm bước trung gian hay không;",
+"- có văn bản nào cho thấy A xuất hiện nhưng B chưa xảy ra hay không;",
+"- có văn bản nào đặt một bước nhận thức, thực hành hoặc điều kiện khác giữa A và B hay không;",
+"- có nhiều mô hình khác nhau trong phạm vi hay không;",
+"- trường hợp nào là chứng cứ mạnh nhất ủng hộ và trường hợp nào gây khó nhất cho giả thuyết.",
+"Với các giả thuyết khác — về niên đại, nguồn gốc, ảnh hưởng, đồng nhất, nhân quả, tính nguyên thủy, cách hiểu đúng/sai hoặc quan hệ giữa các học giả/văn bản — hãy tạo các phép kiểm tra tương đương theo đúng nội dung đề tài: điều gì nếu đúng sẽ ủng hộ giả thuyết, điều gì có thể làm nó yếu đi, và dữ liệu nào có thể phân biệt nó với cách giải thích cạnh tranh.",
+"Trong Ô 2, phải thay A/B bằng chính thuật ngữ của đề tài; không xuất ký hiệu A/B/X/Y cho người dùng.",
+"",
+"# CÂU HỎI KẾT LUẬN",
+"Nếu phù hợp với đề tài, cuối Ô 2 hãy yêu cầu trả lời riêng câu hỏi trung tâm và đánh giá sức mạnh chứng cứ theo các mức: rất mạnh; mạnh; khả dĩ; yếu hoặc không chắc; không thể xác lập trong phạm vi. Chỉ dùng thang này khi nó giúp trả lời đúng loại câu hỏi đang đặt, không ép vào mọi đề tài.",
+"",
+"# NHỮNG GÌ KHÔNG ĐƯỢC NHÉT VÀO Ô 2",
+"- Không sao chép toàn bộ SKILL.md hoặc các quy tắc quản trị chung của form.",
+"- Không lặp dài dòng các cảnh báo về khóa nguồn, vượt phạm vi, cách dùng công cụ hay quy trình báo lỗi; form nghiên cứu sẽ tự thêm.",
+"- Không biến Ô 2 thành dàn bài của bài trả lời với kết luận đã được định trước.",
+"- Không dùng một mẫu 12 mục cứng cho mọi chủ đề. Số mục và nội dung phải do chính câu hỏi quyết định.",
+"- Không được để một thuật ngữ do AI tự bổ sung xuất hiện lặp đi lặp lại trong Ô 1/Ô 2 đến mức nó trở thành tiền đề ngầm, nếu thuật ngữ đó chưa có căn cứ rõ trong đề bài thô.",
+"",
+"Ô 2 có thể dài nếu đề tài phức tạp. Ưu tiên độ đầy đủ và khả năng định hướng nghiên cứu hơn sự ngắn gọn. Mục tiêu là tạo ra một đề bài có chất lượng tương đương với việc người dùng tự suy nghĩ kỹ và viết chi tiết trước khi nghiên cứu.",
+"",
+"# TỰ KIỂM TRA CHỐNG LỆCH Ý ĐỊNH TRƯỚC KHI XUẤT Ô 1 VÀ Ô 2",
+"- So sánh Ô 1 và Ô 2 với ĐỀ BÀI THÔ, rồi rà mọi từ/cụm từ mới có tác dụng làm hẹp đối tượng nghiên cứu.",
+"- Với mỗi yếu tố mới như tên hệ phái, truyền thống, giai đoạn, địa vực, mô hình lịch sử hoặc quan hệ phát triển, tự hỏi: “Người dùng đã nêu hoặc hàm ý đủ rõ điều này chưa, hay đây là suy đoán của AI?”",
+"- Nếu là suy đoán có ảnh hưởng đến phạm vi, phải xóa nó hoặc đổi thành câu hỏi/giả thuyết cần kiểm tra. Không được để suy đoán ấy đi vào Ô 1 như nguồn mặc định hoặc vào Ô 2 như tiền đề đã xác lập.",
+"- Kiểm tra riêng xem Ô 1/Ô 2 có vô tình biến một câu hỏi rộng thành câu hỏi về một truyền thống cụ thể không. Nếu có mà đề bài thô không cho phép, phải sửa trước khi trả lời.",
+"- Nếu đề bài chứa một giả thuyết, thử đảo cách đóng khung trong đầu: nếu người dùng nêu giả thuyết ngược lại, chương trình nghiên cứu cốt lõi có còn khảo sát cùng các nhóm dữ liệu và áp dụng cùng tiêu chuẩn chứng cứ không? Nếu không, phải cân bằng lại Ô 1/Ô 2 để tránh framing bias.",
+"- Kiểm tra riêng Ô 1: nếu đảo giả thuyết của người dùng, các LOẠI NGUỒN THỨ CẤP, các nhóm chứng cứ sơ cấp và các trường hợp được ưu tiên tìm có còn gần như giữ nguyên không? Nếu một phía được cấp nguồn học thuật trực tiếp hoặc loại chứng cứ mạnh mà phía kia không được cấp tương xứng, phải sửa Ô 1 trước khi xuất.",
+"",
+"# HÌNH THỨC TRẢ LỜI",
+"Trả về đúng hai khối, không thêm lời dẫn hay lời kết:",
+"Ô 1 — Các bộ kinh hoặc văn bản được phép sử dụng",
+"Ô 2 — Đề bài nghiên cứu hoặc yêu cầu viết",
+"",
+"Không nghiên cứu đề tài ở bước này."
+  ].join("\n");
+}
+
+function buildResearchPrompt(phamVi,deBai,skillContent){
+  return [
+"# BỐI CẢNH VÀ VAI TRÒ",
+"Bạn đang thực hiện một nhiệm vụ nghiên cứu Phật học theo phương pháp phạm vi văn bản đóng. Đây là yêu cầu phương pháp luận bắt buộc, không phải lời gợi ý.",
+"",
+"Mục tiêu của bạn là tìm kiếm, thu thập, tổng hợp, đối chiếu, phân tích, phản biện và viết kết quả nghiên cứu CHỈ dựa trên các nguồn được người dùng cho phép bên dưới.",
+"",
+"# PHẠM VI VĂN BẢN ĐƯỢC PHÉP — KHÓA PHẠM VI",
+phamVi,
+"",
+"Hãy coi danh sách trên là RANH GIỚI BẮT BUỘC của nghiên cứu. Không được tự ý dùng bất kỳ nguồn nào ngoài danh sách trên để làm chứng cứ, giải thích hộ văn bản hoặc lấp khoảng trống.",
+"",
+"Bạn được phép dùng công cụ tìm kiếm, cơ sở dữ liệu, thư mục hoặc trang mạng CHỈ để định vị, truy cập và kiểm tra đúng các nguồn thuộc phạm vi trên. Nội dung của nguồn trung gian không nằm trong phạm vi không được đưa vào lập luận.",
+"",
+"# ĐỀ BÀI NGHIÊN CỨU",
+deBai,
+"",
+"# NGÔN NGỮ VÀ DỮ LIỆU NHẬN DIỆN",
+"1. Viết bài nghiên cứu bằng tiếng Việt rõ nghĩa và có cấu trúc; ưu tiên độ chính xác của chứng cứ và lập luận hơn việc đánh bóng văn phong ở bước này.",
+"2. Giữ đầy đủ tên bộ kinh, bài kinh, thuật ngữ và dữ liệu nguyên ngữ Pāli, Sanskrit, Hán, Tạng hoặc ngôn ngữ gốc khác khi chúng có giá trị nhận diện, đối chiếu hoặc kiểm chứng; khi xác định được tên Việt tương ứng, nên nêu kèm.",
+"3. Không tự đoán hoặc tự tạo nguyên ngữ chưa được xác minh.",
+"4. Ghi lại đầy đủ mã văn bản, tên nguồn và locator tốt nhất có được trong quá trình nghiên cứu; lượt hậu kiểm sau sẽ rà tính nhất quán, độ đầy đủ của locator và độ dễ đọc.",
+"",
+"# CHỈ THỊ THỰC HIỆN BẮT BUỘC",
+"Các khẳng định, giả định hoặc kết luận mong đợi nằm trong ĐỀ BÀI NGHIÊN CỨU không tự động được xem là sự kiện đã xác lập; nếu chính chúng là đối tượng nghiên cứu, phải coi chúng là giả thuyết cần kiểm tra và để kết luận đi theo chứng cứ, kể cả khi chứng cứ bác bỏ, thu hẹp hoặc làm thay đổi giả thuyết ban đầu.",
+"1. Trước khi nghiên cứu, khóa phạm vi đúng vào PHẠM VI VĂN BẢN ĐƯỢC PHÉP ở trên.",
+"2. Mọi tiền đề nội dung và mọi kết luận quan trọng phải truy ngược được về phạm vi này.",
+"3. Phân biệt rõ: (a) văn bản nói trực tiếp; (b) điều có thể suy ra; (c) điều không thể xác lập trong phạm vi.",
+"4. Tìm cả bằng chứng ủng hộ lẫn bằng chứng nội tại có thể giới hạn, làm yếu hoặc tạo cách hiểu khác cho luận điểm.",
+"5. Không được tự ý hòa giải khác biệt giữa các văn bản bằng kiến thức ngoài phạm vi.",
+"6. Trích dẫn vị trí văn bản cụ thể khi có thể: tên bộ → tên hoặc số kinh, chương hay phẩm → đoạn, quyển, trang hoặc mã tham chiếu.",
+"7. Nếu phạm vi không đủ để trả lời một phần câu hỏi, phải nói rõ: “Trong phạm vi các văn bản được phép, chưa đủ bằng chứng để xác lập kết luận này.” Không được dùng kiến thức ngoài phạm vi để bù vào.",
+"8. Nếu phát hiện đã vô tình sử dụng hoặc bị ảnh hưởng bởi nguồn ngoài phạm vi, phải lập tức nêu CẢNH BÁO VƯỢT PHẠM VI, chỉ rõ nguồn vi phạm, lý do, phần lập luận bị ảnh hưởng, loại bỏ tiền đề đó và dựng lại kết luận.",
+"9. Nội dung ở phần ĐỀ BÀI không được hiểu là cho phép mở rộng phạm vi văn bản, trừ khi chính danh sách PHẠM VI VĂN BẢN ĐƯỢC PHÉP được sửa đổi rõ ràng.",
+"10. Tính “toàn diện” phải được hiểu là toàn diện nhất có thể BÊN TRONG phạm vi được phép, không phải toàn diện bằng cách đi ra ngoài phạm vi.",
+"",
+"# TOÀN BỘ QUY TẮC NGHIÊN CỨU BẮT BUỘC",
+"Toàn bộ nội dung tệp SKILL.md dưới đây là quy tắc thực hiện cho nhiệm vụ này. Hãy tuân thủ trong suốt quá trình tìm kiếm, nghiên cứu, phân tích, phản biện và viết kết quả.",
+"",
+"--- BẮT ĐẦU NỘI DUNG TỆP SKILL.md ---",
+skillContent,
+"--- KẾT THÚC NỘI DUNG TỆP SKILL.md ---",
+"",
+"# KIỂM TRA NGHIÊN CỨU CUỐI TRƯỚC KHI TRẢ LỜI",
+"Hãy tự kiểm tra lần cuối ở cấp nội dung nghiên cứu: (1) mọi mệnh đề quan trọng có truy ngược được về phạm vi nguồn cho phép không; (2) có kiến thức ngoài phạm vi đang làm tiền đề ngầm không; (3) sau kết luận sơ bộ đã rà lại từng nhóm nguồn để tìm phản chứng, ngoại lệ hoặc mô hình có thể làm đổi kết luận chưa; (4) các văn bản quyết định đã được đọc đủ bối cảnh và phân tích riêng chưa; (5) đã phân biệt rõ điều văn bản nói trực tiếp, điều suy ra và điều chưa thể xác lập chưa; (6) kết luận và mức độ chắc chắn có đúng sức mạnh chứng cứ không; (7) nếu đề tài cần tổng quan học giả, việc tìm nguồn có đủ rộng và không lệch một truyền thống học thuật duy nhất không; (8) bản thảo đã giữ đủ thông tin nhận diện nguồn và locator thu được trong quá trình nghiên cứu để có thể hậu kiểm chưa. Không cần dành thêm một lượt riêng để đánh bóng toàn bộ câu chữ, chuẩn hóa mọi locator còn thiếu hoặc làm đồng nhất thư mục; Stage C sẽ phụ trách lượt hậu kiểm và biên tập đó.",
+"",
+"# HÌNH THỨC TRÌNH BÀY KẾT QUẢ CUỐI CÙNG",
+"- Sau khi hoàn tất nghiên cứu và kiểm tra, đặt TOÀN BỘ bài nghiên cứu hoàn chỉnh trong MỘT writing block duy nhất với variant=\"document\".",
+"- Writing block phải có title bằng tiếng Việt phù hợp trực tiếp với đề tài nghiên cứu. Nếu người dùng đã cho một nhan đề rõ ràng, ưu tiên giữ nhan đề đó.",
+"- Toàn bộ nội dung có giá trị sử dụng của bài nghiên cứu phải nằm bên trong writing block: tiêu đề phần, phân tích, bảng, trích dẫn, chú thích, kết luận, giới hạn nghiên cứu và danh mục tài liệu nếu có.",
+"- Không chia bài thành nhiều writing block chỉ vì bài dài. Chỉ dùng nhiều writing block nếu chính người dùng yêu cầu nhiều tài liệu độc lập.",
+"- Không đặt một phiên bản tóm tắt hoặc một phần kết luận nghiên cứu riêng ở ngoài writing block. Ngoài writing block chỉ được có lời dẫn hoặc ghi chú giao diện thật ngắn nếu hệ thống bắt buộc.",
+"- Writing block chỉ là hình thức trình bày; không được vì chuyển sang writing block mà rút ngắn, giản lược hoặc bỏ bớt chứng cứ của bài nghiên cứu.",
+"",
+"Bây giờ hãy thực hiện đề bài theo đúng phạm vi và toàn bộ các quy tắc trên, rồi trình bày bài nghiên cứu cuối cùng theo đúng hình thức writing block vừa quy định."
+  ].join("\n");
+}
+
+function buildReviewPrompt(phamVi,deBai,baiNghienCuu){
+  return [
+"# NHIỆM VỤ",
+"Bạn đang thực hiện Stage C: hậu kiểm học thuật và biên tập một bài nghiên cứu Phật học đã hoàn thành. Không nghiên cứu lại đề tài từ đầu và không thay bài nghiên cứu bằng một bài mới.",
+"",
+"# PHẠM VI NGUỒN ĐÃ KHÓA",
+phamVi,
+"",
+"# ĐỀ BÀI NGHIÊN CỨU ĐÃ KHÓA",
+deBai,
+"",
+"# BẢN NGHIÊN CỨU CẦN RÀ SOÁT",
+baiNghienCuu,
+"",
+"# NGUYÊN TẮC BẢO TOÀN",
+"- Giữ nguyên phạm vi nguồn và câu hỏi nghiên cứu đã khóa. Không mở rộng phạm vi văn bản, không thêm học giả, văn bản hay học thuyết mới chỉ để làm bài có vẻ đầy đủ hơn.",
+"- Không thay đổi kết luận chính chỉ vì muốn văn phong trôi chảy hơn. Chỉ điều chỉnh kết luận hoặc mức độ khẳng định khi chính chứng cứ đã có hoặc việc xác minh lại nguồn trong phạm vi bắt buộc phải làm vậy.",
+"- Không xóa phản chứng, giới hạn, bất đồng học thuật hoặc các phân biệt cần thiết để làm bài ngắn và dễ đọc hơn.",
+"- Chỉ được truy cập lại các nguồn thuộc PHẠM VI NGUỒN ĐÃ KHÓA khi cần xác minh một lỗi cụ thể về câu quy quan điểm cho học giả, vị trí dẫn nguồn, thư mục, nguyên ngữ hoặc mức độ khẳng định. Không khởi động một cuộc khảo sát nguồn mới.",
+"- Không được đưa vào BẢN XUẤT bất kỳ học giả, công trình, văn bản hoặc nguồn chứng cứ mới nào chưa xuất hiện trong BẢN NGHIÊN CỨU CẦN RÀ SOÁT, kể cả khi tình cờ phát hiện trong lúc xác minh. Được phép dùng bản ghi thư mục, trang nhà xuất bản hoặc nguồn chuẩn chỉ để xác minh danh tính/metadata của một nguồn B đã dùng, nhưng không biến nguồn xác minh đó thành chứng cứ mới. Nếu một mệnh đề chỉ có thể cứu bằng nguồn mới, không thêm nguồn ấy; hãy hạ mức khẳng định hoặc nêu giới hạn.",
+"",
+"# LƯỢT 1 — KIỂM ĐỊNH HỌC THUẬT",
+"Rà toàn bài trước khi biên tập văn phong:",
+"1. Kiểm tra mọi câu kiểu “X cho rằng…”, “theo X…”, “X lập luận…”, “nghiên cứu của X…”, “một nghiên cứu cho thấy…”, “các học giả cho rằng…” và các cấu trúc tương đương.",
+"2. Với mỗi câu quy một quan điểm, lập luận, niên đại, phân kỳ hoặc kết luận quan trọng cho học giả, ưu tiên nguồn trực tiếp và bổ sung vị trí dẫn nguồn tốt nhất thực sự xác minh được: tác giả → công trình → năm → trang/chương/mục/đoạn hoặc vị trí ổn định tương đương.",
+"3. Không được đoán hoặc tự tạo vị trí dẫn nguồn. Nếu đã tìm hợp lý trong nguồn được phép mà vẫn không xác định được vị trí ổn định, phải ghi rõ ngay tại nhận định đó “chưa xác định được trang/phần trong bản truy cập” hoặc dùng vị trí tốt nhất thực sự có. Một khoảng trang rộng hoặc cụm “khoảng tr.” chỉ được xem là vùng tìm kiếm gần đúng, không được trình bày như vị trí chính xác của một mệnh đề nếu chưa kiểm tra đúng đoạn.",
+"4. Với mỗi chứng cứ sơ cấp có sức quyết định — đặc biệt khi lập luận phụ thuộc vào một từ, cụm từ, câu hoặc khác biệt truyền bản — phải ưu tiên truy về chính văn bản sơ cấp và ghi vị trí trực tiếp tốt nhất có thể: mã văn bản/kinh → chương, phẩm, đoạn, quyển, folio, Taishō trang-dòng, câu kệ hoặc vị trí ổn định tương đương tùy loại nguồn. Nguồn thứ cấp không thay thế việc kiểm chứng sơ cấp nếu chính văn bản nằm trong phạm vi và có thể truy cập.",
+"5. Nếu một nhận định quan trọng về văn bản sơ cấp hiện chỉ biết qua học giả hoặc nguồn trung gian, phải đánh dấu rõ đây là kiểm chứng gián tiếp; chỉ nâng thành “văn bản nói trực tiếp” sau khi đã kiểm tra chính vị trí văn bản sơ cấp.",
+"6. Nếu một nhận định chỉ dựa trên nguồn trung gian trong khi nguồn trực tiếp nằm trong phạm vi và có thể truy cập, ưu tiên kiểm lại nguồn trực tiếp. Nếu vẫn chỉ có dẫn gián tiếp, phải nói rõ đó là dẫn gián tiếp.",
+"7. Kiểm tra các câu về “đồng thuận học giới”, “đa số học giả”, “quan điểm phổ biến” hoặc tương đương: không để một nguồn đơn lẻ đại diện cho toàn bộ học giới.",
+"8. Kiểm tra sự trượt mức độ khẳng định: không biến “đề xuất”, “khả dĩ”, “có thể”, “chưa xác lập” thành “chứng minh”, “chắc chắn”, “đã xác lập”. Nếu câu trong bản thảo mạnh hơn nguồn, hạ nó về đúng mức.",
+"9. Giữ tách biệt: văn bản nói trực tiếp / điều có thể suy ra / giả thuyết lịch sử / điều chưa thể xác lập. Không biến tương đồng thành ảnh hưởng, ảnh hưởng khả dĩ thành vay mượn trực tiếp, hay sự im lặng thành phủ định.",
+"10. Với các từ như “tiếp xúc”, “tương tác”, “ảnh hưởng”, “vay mượn”, “phản ứng” hoặc tương đương, phải phân biệt quan hệ có thể thấy trực tiếp trong văn bản (đối thoại, tranh luận, tái định nghĩa, dùng chung từ vựng) với một quan hệ tiếp xúc lịch sử giữa tác giả/cộng đồng. Không gọi là “tiếp xúc lịch sử được chứng minh” nếu chứng cứ mới chỉ cho thấy hai diễn ngôn được đặt trong quan hệ tranh luận.",
+"11. Kiểm tra tên văn bản, học giả, năm xuất bản, nguyên ngữ và dữ liệu thư mục có nhất quán với chính nguồn đã dùng hay không.",
+"12. Mỗi nhãn mức độ kết luận phải khớp NGUYÊN VĂN với đúng MỘT giá trị của thang đã khóa; không được rút gọn, diễn đạt lại, tạo biến thể hoặc ghép hai mức. Nếu ĐỀ BÀI đã nêu một thang cụ thể, dùng nguyên văn thang đó. Nếu ĐỀ BÀI không liệt kê một thang riêng, dùng đúng thang chuẩn: “Rất mạnh” / “Mạnh” / “Khả dĩ” / “Yếu hoặc không chắc” / “Không thể xác lập trong phạm vi”. Nếu sức mạnh khác nhau giữa các văn bản, chọn một mức cho mệnh đề tổng quát rồi giải thích bằng văn xuôi trường hợp riêng nào mạnh hơn hoặc yếu hơn.",
+"13. Trước khi sang lượt biên tập, thực hiện một lượt quét riêng toàn bài đối với các cấu trúc “X cho rằng…”, “theo X…”, “X lập luận…”, “X kết luận…”, “nghiên cứu của X…”, “một nghiên cứu…”, “các học giả…”. Mỗi câu quy quan điểm quan trọng cho học giả trong BẢN XUẤT phải kết thúc ở đúng một trong ba trạng thái NGAY TẠI CÂU HOẶC ĐOẠN QUY QUAN ĐIỂM: (a) công trình trực tiếp + năm + vị trí kiểm chứng được; (b) ghi rõ “chưa xác định được trang/phần trong bản truy cập”; hoặc (c) ghi rõ là dẫn gián tiếp và nêu nguồn trung gian. Locator chỉ nằm ở danh mục tài liệu cuối bài không đáp ứng yêu cầu này. Một khoảng trang bao trùm toàn bài/chương chỉ là locator của mệnh đề nếu đã kiểm tra rằng chính mệnh đề nằm trong khoảng đó; nếu chưa, phải dùng trạng thái (b).",
+"14. Rà tính nhất quán của danh mục tài liệu với thân bài. Nếu thân bài đã dùng một ấn bản, bản dịch, công trình phê bình văn bản hoặc nghiên cứu cụ thể làm căn cứ kiểm chứng, phải đưa nguồn đó vào danh mục tài liệu đã dùng; nếu danh mục chỉ chủ ý liệt kê chọn lọc, đổi tiêu đề thành “Một số tài liệu trọng yếu” hoặc cách gọi tương đương để không tạo cảm giác danh mục đã đầy đủ.",
+"",
+"# LƯỢT 2 — BIÊN TẬP ĐỂ DỄ ĐỌC MÀ KHÔNG LÀM NGHÈO HỌC THUẬT",
+"1. Viết tiếng Việt tự nhiên, trực tiếp, sáng rõ; chia câu quá dài, bỏ lặp và sửa chuyển đoạn khó theo dõi.",
+"2. Tránh các từ/cụm tiếng Anh thông dụng chen vào câu Việt khi có cách diễn đạt tiếng Việt rõ ràng; nhưng phải giữ nguyên ngữ Pāli, Sanskrit, Hán, Tạng và nhan đề học thuật khi chúng có giá trị kiểm chứng.",
+"3. Với thuật ngữ chuyên môn khó nhưng cần thiết, không xóa thuật ngữ. Hãy giải thích ngắn bằng tiếng Việt ở lần xuất hiện đầu tiên rồi mới dùng thuật ngữ chuyên môn.",
+"4. Không dùng máy móc các cách nói dịch sát hoặc mơ hồ như “Phật giáo sớm”, “kinh điển Phật giáo sớm” nếu người đọc không biết đang nói về giai đoạn lịch sử hay nhóm văn bản nào. Nếu phạm vi thực tế là một nhóm văn bản xác định, ưu tiên gọi thẳng tên nhóm văn bản, ví dụ “các Nikāya và Āgama được khảo sát”. Nếu thực sự nói về một giai đoạn lịch sử và chứng cứ cho phép, ưu tiên cách nói tự nhiên như “Phật giáo thời kỳ đầu”. Không tự động đổi thành “Phật giáo nguyên thủy”, vì cách gọi đó có thể hàm chứa một khẳng định mạnh hơn về tính nguyên thủy hoặc thẩm quyền.",
+"5. Kiểm tra các nhãn thời kỳ, hệ phái và thuật ngữ dịch: nếu một cách gọi có thể khiến người đọc hiểu rộng hoặc chắc chắn hơn chứng cứ, hãy dùng cách diễn đạt cụ thể hơn.",
+"6. Thống nhất cách gọi trong toàn bài nhưng không dùng từ đồng nghĩa về văn phong để hòa lẫn những thuật ngữ học thuật thực ra cần phân biệt.",
+"7. Trước khi xuất bài, thực hiện một lượt quét chữ cuối cùng, không phân biệt hoa thường, đối với các chuỗi tiếng Anh kỹ thuật không cần thiết trong phần văn xuôi: “attribution”, “locus”, “corpus”, “certainty drift”, “apparatus”, “framework”, “output”. Nếu bất kỳ chuỗi nào còn xuất hiện do chính người viết tạo ra, phải thay bằng cách diễn đạt tiếng Việt rõ nghĩa, chẳng hạn “câu quy quan điểm cho học giả”, “vị trí văn bản/vị trí dẫn chứng”, “phạm vi hoặc nhóm văn bản”, “sự trượt mức độ khẳng định”, “bộ máy phê bình văn bản”. Chỉ được giữ nguyên khi chuỗi đó nằm trong nhan đề công trình, trích dẫn nguyên văn, tên riêng, mã nguồn/dữ liệu nhận diện, hoặc một thuật ngữ thật sự không nên dịch vì dịch sẽ làm sai nghĩa.",
+"",
+"# LƯỢT 3 — KIỂM TRA KỸ THUẬT ĐẦU RA TRƯỚC KHI XUẤT",
+"1. Sau khi hoàn tất nội dung và văn phong, đọc lại CHÍNH BẢN SẼ XUẤT RA, không chỉ dựa vào việc đã sửa ở các lượt trước. Xác nhận rằng các chuỗi tiếng Anh bị cấm ở Lượt 2 không còn sót trong phần văn xuôi ngoài các ngoại lệ đã nêu.",
+"2. Nếu dùng bảng Markdown, phải kiểm tra cấu trúc từng bảng trước khi xuất: hàng tiêu đề phải có dấu | phân tách rõ từng cột; ngay sau đó phải có hàng phân cách kiểu | --- | --- |; mọi hàng dữ liệu phải có cùng số cột với hàng tiêu đề. MỖI Ô TIÊU ĐỀ phải có nội dung riêng, không được để ô tiêu đề trống và không được dồn tên của nhiều cột vào một ô như “Câu hỏiMức chứng cứKết luận” hoặc “Vấn đềNikāya/ĀgamaNāgārjunaSarvāstivādaTheravāda”. Trước khi xuất, phải tự đếm số ô tiêu đề và xác nhận từng ô tương ứng đúng một cột dữ liệu. Nếu không xác nhận được từng ô tiêu đề riêng biệt hoặc bảng không thể bảo đảm cú pháp hợp lệ, bắt buộc chuyển bảng thành danh sách hoặc văn xuôi thay vì xuất bảng hỏng.",
+"3. Kiểm tra lần cuối thang mức độ trên CHÍNH BẢN SẼ XUẤT: mọi nhãn đánh giá trong ô bảng, tiêu đề nhỏ hoặc câu kết luận phải khớp nguyên văn với đúng một giá trị của thang áp dụng theo Lượt 1, mục 12; không rút gọn, không đổi cách diễn đạt và không ghép hai mức bằng “đến”, “/” hoặc dấu gạch nối.",
+"",
+"# GIỚI HẠN SỬA",
+"- Không tự thêm một luận điểm mới, một nguồn mới, một trường phái mới hoặc một kết luận mới.",
+"- Không viết lại nghiên cứu theo một hướng khác. Stage C là người kiểm định và biên tập bảo thủ, không phải Stage B lần hai.",
+"- Nếu phát hiện một vấn đề nội dung chỉ có thể giải quyết bằng nghiên cứu mới ngoài phạm vi, không tự giải quyết bằng kiến thức nền; phải hạ mức khẳng định hoặc nêu rõ giới hạn trong chính bài.",
+"- Không được làm mất dữ liệu có giá trị kiểm chứng chỉ để câu văn gọn hơn.",
+"",
+"# HÌNH THỨC KẾT QUẢ",
+"- Xuất toàn bộ BẢN NGHIÊN CỨU ĐÃ HOÀN THIỆN sau hậu kiểm, không chỉ liệt kê lỗi.",
+"- Đặt toàn bộ bài hoàn thiện trong MỘT writing block duy nhất với variant=\"document\" và title tiếng Việt phù hợp.",
+"- Không đặt một bản tóm tắt nghiên cứu riêng ngoài writing block.",
+"",
+"Bắt đầu hậu kiểm từ bản nghiên cứu đã cung cấp, sửa những gì có thể xác minh an toàn, rồi xuất bản hoàn thiện."
+  ].join("\n");
+}
+
+metaGenerateBtn.addEventListener("click",()=>{
+  const rawTopic=rawTopicEl.value.trim();
+  if(!rawTopic){
+    setStatus(metaStatusEl,"Vui lòng nhập đề bài thô hoặc ý tưởng nghiên cứu.","warn");
+    return;
+  }
+  metaOutputEl.value=buildPreparationPrompt(rawTopic);
+  metaCopyBtn.disabled=false;
+  metaDownloadBtn.disabled=false;
+  setStatus(metaStatusEl,"Đã tạo câu lệnh chuẩn hóa. Hãy sao chép và dán vào AI; AI phải trả về hai khối để điền vào Ô 1 và Ô 2.","ok");
+});
+
+metaCopyBtn.addEventListener("click",async()=>{
+  if(!metaOutputEl.value)return;
+  let copied=false;
+  try{
+    await navigator.clipboard.writeText(metaOutputEl.value);
+    copied=true;
+  }catch(e){
+    metaOutputEl.focus();
+    metaOutputEl.select();
+    copied=document.execCommand("copy");
+  }
+  if(!copied){
+    setStatus(metaStatusEl,"Không thể sao chép tự động. Vui lòng chọn và sao chép thủ công.","warn");
+    return;
+  }
+  showCopySuccess(metaCopyBtn);
+  setStatus(metaStatusEl,"Đã sao chép câu lệnh chuẩn hóa.","ok");
+});
+
+metaDownloadBtn.addEventListener("click",()=>{
+  if(!metaOutputEl.value)return;
+  const blob=new Blob([metaOutputEl.value],{type:"text/plain;charset=utf-8"});
+  const url=URL.createObjectURL(blob);
+  const a=document.createElement("a");
+  a.href=url;
+  a.download="cau-lenh-nho-ai-soan-hai-o.txt";
+  document.body.appendChild(a);a.click();a.remove();URL.revokeObjectURL(url);
+});
+
+metaClearBtn.addEventListener("click",()=>{
+  rawTopicEl.value="";
+  metaOutputEl.value="";
+  metaCopyBtn.disabled=true;
+  metaDownloadBtn.disabled=true;
+  metaStatusEl.className="status";
+  metaStatusEl.textContent="";
+  rawTopicEl.focus();
+});
+
+generateBtn.addEventListener("click",async()=>{
+  const phamVi=corpusEl.value.trim(), deBai=taskEl.value.trim();
+  if(!phamVi||!deBai){
+    setStatus(statusEl,"Vui lòng nhập đầy đủ cả hai mục: phạm vi nguồn được phép và đề bài nghiên cứu.","warn");
+    return;
+  }
+  generateBtn.disabled=true;
+  setStatus(statusEl,"Đang tải SKILL.md mới nhất...","ok");
+  try{
+    const skillContent=await loadSkillContent();
+    outputEl.value=buildResearchPrompt(phamVi,deBai,skillContent);
+    copyBtn.disabled=false;
+    downloadBtn.disabled=false;
+    setStatus(statusEl,"Đã tạo câu lệnh nghiên cứu hoàn chỉnh bằng SKILL.md mới nhất. Bạn có thể sao chép hoặc tải xuống.","ok");
+  }catch(error){
+    outputEl.value="";
+    copyBtn.disabled=true;
+    downloadBtn.disabled=true;
+    setStatus(statusEl,"Không tải được SKILL.md mới nhất. Vui lòng kiểm tra kết nối mạng hoặc mở form từ GitHub Pages rồi thử lại.","warn");
+  }finally{
+    generateBtn.disabled=false;
+  }
+});
+
+copyBtn.addEventListener("click",async()=>{
+  if(!outputEl.value)return;
+  let copied=false;
+  try{
+    await navigator.clipboard.writeText(outputEl.value);
+    copied=true;
+  }catch(e){
+    outputEl.focus();
+    outputEl.select();
+    copied=document.execCommand("copy");
+  }
+  if(!copied){
+    setStatus(statusEl,"Không thể sao chép tự động. Vui lòng chọn và sao chép thủ công.","warn");
+    return;
+  }
+  showCopySuccess(copyBtn);
+  setStatus(statusEl,"Đã sao chép câu lệnh nghiên cứu.","ok");
+});
+
+downloadBtn.addEventListener("click",()=>{
+  if(!outputEl.value)return;
+  const blob=new Blob([outputEl.value],{type:"text/plain;charset=utf-8"});
+  const url=URL.createObjectURL(blob);
+  const a=document.createElement("a");
+  a.href=url;
+  a.download="cau-lenh-nghien-cuu-phat-hoc-pham-vi-dong.txt";
+  document.body.appendChild(a);a.click();a.remove();URL.revokeObjectURL(url);
+});
+
+clearBtn.addEventListener("click",()=>{
+  corpusEl.value="";
+  taskEl.value="";
+  outputEl.value="";
+  copyBtn.disabled=true;
+  downloadBtn.disabled=true;
+  statusEl.className="status";
+  statusEl.textContent="";
+  corpusEl.focus();
+});
+
+reviewGenerateBtn.addEventListener("click",()=>{
+  const phamVi=corpusEl.value.trim();
+  const deBai=taskEl.value.trim();
+  const baiNghienCuu=reviewDraftEl.value.trim();
+  if(!phamVi||!deBai){
+    setStatus(reviewStatusEl,"Stage C cần Ô 1 và Ô 2 ở bước ② để giữ đúng phạm vi nghiên cứu.","warn");
+    return;
+  }
+  if(!baiNghienCuu){
+    setStatus(reviewStatusEl,"Vui lòng dán bài nghiên cứu cần rà soát.","warn");
+    return;
+  }
+  reviewOutputEl.value=buildReviewPrompt(phamVi,deBai,baiNghienCuu);
+  reviewCopyBtn.disabled=false;
+  reviewDownloadBtn.disabled=false;
+  setStatus(reviewStatusEl,"Đã tạo câu lệnh Stage C. Hãy sao chép và dán vào AI cùng phiên làm việc hoặc phiên mới để hậu kiểm bài nghiên cứu.","ok");
+});
+
+reviewCopyBtn.addEventListener("click",async()=>{
+  if(!reviewOutputEl.value)return;
+  let copied=false;
+  try{
+    await navigator.clipboard.writeText(reviewOutputEl.value);
+    copied=true;
+  }catch(e){
+    reviewOutputEl.focus();
+    reviewOutputEl.select();
+    copied=document.execCommand("copy");
+  }
+  if(!copied){
+    setStatus(reviewStatusEl,"Không thể sao chép tự động. Vui lòng chọn và sao chép thủ công.","warn");
+    return;
+  }
+  showCopySuccess(reviewCopyBtn);
+  setStatus(reviewStatusEl,"Đã sao chép câu lệnh Stage C.","ok");
+});
+
+reviewDownloadBtn.addEventListener("click",()=>{
+  if(!reviewOutputEl.value)return;
+  const blob=new Blob([reviewOutputEl.value],{type:"text/plain;charset=utf-8"});
+  const url=URL.createObjectURL(blob);
+  const a=document.createElement("a");
+  a.href=url;
+  a.download="cau-lenh-stage-c-ra-soat-hoan-thien.txt";
+  document.body.appendChild(a);a.click();a.remove();URL.revokeObjectURL(url);
+});
+
+reviewClearBtn.addEventListener("click",()=>{
+  reviewDraftEl.value="";
+  reviewOutputEl.value="";
+  reviewCopyBtn.disabled=true;
+  reviewDownloadBtn.disabled=true;
+  reviewStatusEl.className="status";
+  reviewStatusEl.textContent="";
+  reviewDraftEl.focus();
+});
+</script>
+</body>
+</html>
