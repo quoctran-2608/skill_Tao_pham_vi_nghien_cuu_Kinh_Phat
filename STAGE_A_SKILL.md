@@ -297,35 +297,40 @@ Nếu phạm vi đóng, phải giữ nguyên khóa người dùng.
 
 # TẠO Ô 2
 
-## 14. Ô 2 phải là đề bài nghiên cứu hoàn chỉnh
+## 14. Ô 2 phải là đề bài nghiên cứu hoàn chỉnh nhưng tối giản
 
-Ô 2 không phải tóm tắt vài dòng.
+Ô 2 phải đủ để Stage B hiểu **chính xác đề tài này cần nghiên cứu điều gì**, nhưng không được biến thành một bản sao thu nhỏ của Stage B Skill.
 
-Nếu đề tài phức tạp, nên có:
+Nếu đề tài phức tạp, Ô 2 có thể có:
 1. câu mở xác định vấn đề;
 2. **Câu hỏi trung tâm**;
-3. **Yêu cầu nghiên cứu** theo đúng đề tài;
+3. **Yêu cầu nghiên cứu đặc thù của chính đề tài**;
 4. câu hỏi kết luận nếu cần phán đoán tổng hợp.
 
-Không dùng một mẫu số lượng mục cứng.
+Không dùng một mẫu số lượng mục cứng. Không kéo dài Ô 2 chỉ để thể hiện đầy đủ mọi quy tắc phương pháp.
+
+### Quy tắc chống phình Ô 2
+
+- **Chỉ giữ những yêu cầu mà nếu bỏ đi thì Stage B có nguy cơ hiểu sai, bỏ sót hoặc đánh đồng một vấn đề đặc thù của đề tài.**
+- Không lặp lại chi tiết của Ô 1 nếu chỉ để nhắc lại danh sách nguồn, ngôn ngữ, hạ tầng hoặc điều kiện phạm vi đã được Ô 1 xác lập.
+- Không lặp lại các quy tắc phương pháp chung đã thuộc Stage B Skill, như: truy nguyên nguồn, tìm phản chứng, phân biệt trực tiếp/suy luận, kiểm mức truy cập, chống thiên lệch nguồn, ghi locator, không suy ảnh hưởng lịch sử từ tương đồng, hoặc kiểm giới hạn bao phủ — **trừ khi chính đề tài có một lý do đặc thù khiến quy tắc đó trở thành một phần của câu hỏi cần giải quyết**.
+- Khi hai yêu cầu có thể gộp mà không làm mất một phân biệt học thuật quan trọng, phải gộp.
+- Không biến Ô 2 thành checklist mô tả từng bước Stage B phải thực hiện.
+- Độ dài của Ô 2 phải do độ phức tạp **nội tại của câu hỏi**, không do số lượng quy tắc chung của pipeline.
 
 ---
 
-## 15. Các yêu cầu nghiên cứu thường cần
+## 15. Chọn yêu cầu nghiên cứu đặc thù
 
-Tùy đề tài, Ô 2 có thể yêu cầu:
-- nhận diện văn bản/đoạn trực tiếp liên quan;
-- ghi dữ liệu nhận diện và locator;
-- phân tầng văn bản;
-- đối chiếu song hành;
-- xác định nghĩa thuật ngữ;
-- phân biệt điều văn bản nói trực tiếp với suy luận;
-- tìm chứng cứ thuận và phản chứng;
-- tái dựng quan điểm từ nguồn nội bộ;
-- khảo sát cách đọc cạnh tranh;
-- phân biệt tác quyền/truyền thống quy gán;
-- kiểm tra điều kiện đủ/cần/nhân quả nếu câu hỏi có dạng đó;
+Tùy đề tài, Ô 2 chỉ nên giữ những yêu cầu thật sự quyết định, chẳng hạn:
+- làm rõ một thuật ngữ hoặc tiền đề mơ hồ của chính câu hỏi;
+- phân tầng những đối tượng đang bị so sánh không đồng cấp;
+- đối chiếu những truyền bản có khả năng làm đổi chính kết luận;
+- tái dựng một lập trường từ đúng tầng nguồn cần thiết;
+- kiểm tra một quan hệ đủ/cần/nhân quả/niên đại/ảnh hưởng/đồng nhất hoặc tiêu chí “gần hơn” khi đó là trọng tâm của câu hỏi;
 - cho phép tái mô tả câu hỏi nếu tiền đề ban đầu không đứng vững.
+
+Các thao tác nghiên cứu chung còn lại để Stage B Skill tự thực hiện.
 
 ---
 
@@ -383,13 +388,18 @@ Nếu phạm vi không bị khóa:
 - có bỏ một truyền thống học thuật quan trọng chỉ vì khó truy cập không;
 - có thêm đa ngôn ngữ chỉ để trang trí không.
 
-## 21. Kiểm tra chống xác nhận
+## 21. Kiểm tra chống xác nhận và chống phình Ô 2
 
 Thử đảo giả thuyết của người dùng trong đầu.
 
 Nếu người dùng nêu giả thuyết ngược lại, Ô 1 có còn cho phép gần như cùng nhóm nguồn và Ô 2 có còn áp cùng chuẩn chứng cứ không?
 
-Nếu không, phải cân bằng lại.
+Sau đó kiểm riêng Ô 2:
+- có mục nào chỉ đang lặp một quy tắc phương pháp chung của Stage B không;
+- có chi tiết nào chỉ lặp lại Ô 1 mà không tạo thêm nhiệm vụ nghiên cứu đặc thù không;
+- có thể gộp mục nào mà vẫn bảo toàn đầy đủ ý nghĩa học thuật không.
+
+Nếu có, phải tinh gọn trước khi xuất.
 
 ---
 
