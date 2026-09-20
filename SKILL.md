@@ -524,6 +524,23 @@ Khi viết, phải phân biệt rõ **bản đồ chứng cứ** với **phân t
 
 Đối với đề tài được yêu cầu nghiên cứu toàn diện, **ưu tiên sự đầy đủ và khả năng kiểm tra chứng cứ hơn sự ngắn gọn**. Nếu lượng chứng cứ lớn, câu trả lời được phép và nên dài tương xứng.
 
+### Bàn giao tối thiểu cho Stage C
+
+Ở cuối bản nghiên cứu, thêm một phụ lục kỹ thuật ngắn có tiêu đề **“Dấu vết nguồn cho Stage C”**. Phụ lục này không phải phần lập luận của bài và Stage D sẽ loại khỏi bản xuất cuối.
+
+Chỉ ghi **những nguồn thực sự đã được dùng để chống đỡ một mệnh đề quan trọng**; không ghi lịch sử tìm kiếm và không liệt kê nguồn đã tìm nhưng không dùng. Với mỗi nguồn, ghi ngắn gọn:
+
+- nhận diện nguồn/công trình;
+- vai trò: sơ cấp / thứ cấp / nguồn trung gian chỉ để định vị;
+- mức truy cập thực tế trong lượt nghiên cứu: **trực tiếp toàn văn / trực tiếp phần liên quan / gián tiếp qua nguồn khác / chỉ abstract-metadata-snippet**;
+- phần, chương, trang, đoạn hoặc locator thực sự đã đọc/dùng nếu có;
+- đường truy cập hoặc nền tảng dùng để tiếp cận nguồn;
+- giới hạn đáng kể của lần truy cập nếu có.
+
+Không được nâng mức truy cập cao hơn những gì thực sự đã thấy. Nếu không xác định chắc một trường, ghi rõ **“không xác định”** thay vì suy đoán.
+
+---
+
 ---
 
 ## 11. Quy trình xử lý vi phạm phạm vi
