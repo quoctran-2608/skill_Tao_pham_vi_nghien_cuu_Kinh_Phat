@@ -6,37 +6,33 @@
   <title>Trình tạo quy trình nghiên cứu Phật học</title>
   <style>
     :root{
-      --bg:#f5f7fb;
-      --bg-warm:#fbf8f2;
+      --bg:#f6f7f9;
       --surface:#ffffff;
-      --surface-soft:#fafbff;
+      --surface-soft:#f9fafb;
       --ink:#1f2937;
       --muted:#667085;
       --line:#e4e7ec;
       --line-strong:#d0d5dd;
-      --primary:#4f46e5;
-      --primary-hover:#4338ca;
-      --primary-soft:#eef2ff;
-      --violet-soft:#f5f3ff;
-      --violet-line:#ddd6fe;
-      --teal:#0f766e;
-      --teal-soft:#ecfdf8;
-      --teal-line:#a7f3d0;
-      --amber:#a15c07;
-      --amber-soft:#fff7e8;
-      --amber-line:#f3d39a;
+      --primary:#3157d5;
+      --primary-hover:#2447bd;
       --ok:#067647;
       --ok-soft:#ecfdf3;
       --ok-line:#abefc6;
       --warn:#b54708;
       --warn-soft:#fffaeb;
       --warn-line:#fedf89;
-      --shadow:0 14px 40px rgba(16,24,40,.08);
-      --shadow-soft:0 6px 18px rgba(16,24,40,.05);
-      --radius-xl:24px;
-      --radius-lg:16px;
-      --radius-md:12px;
+      --s1:#7c3aed;
+      --s1-soft:#f5f3ff;
+      --s2:#2563eb;
+      --s2-soft:#eff6ff;
+      --s3:#0f766e;
+      --s3-soft:#ecfdf8;
+      --s4:#a15c07;
+      --s4-soft:#fff7e8;
+      --shadow:0 8px 24px rgba(16,24,40,.055);
+      --radius:16px;
     }
+
     *{box-sizing:border-box}
     html{scroll-behavior:smooth}
     body{
@@ -44,259 +40,411 @@
       min-height:100vh;
       color:var(--ink);
       font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
-      line-height:1.6;
-      background:
-        radial-gradient(circle at 15% 0%, rgba(79,70,229,.08), transparent 30%),
-        radial-gradient(circle at 100% 10%, rgba(15,118,110,.07), transparent 25%),
-        linear-gradient(180deg,var(--bg) 0%,var(--bg-warm) 100%);
+      line-height:1.55;
+      background:var(--bg);
     }
     button,textarea{font:inherit}
-    .wrap{max-width:1080px;margin:0 auto;padding:32px 18px 52px}
-    header{
-      margin-bottom:24px;
-      padding:8px 2px 2px;
-    }
-    h1{margin:0 0 6px;font-size:clamp(1.8rem,4vw,2.55rem);line-height:1.12;letter-spacing:-.03em;max-width:900px}
-    h2{margin:0 0 8px;font-size:clamp(1.25rem,2vw,1.55rem);line-height:1.3;letter-spacing:-.015em}
-    .subtitle{margin:0;color:var(--muted);max-width:900px}
-    header .subtitle{color:var(--muted);font-size:.98rem;max-width:860px}
-    .step-badge{
-      display:inline-flex;
-      align-items:center;
-      padding:5px 9px;
-      margin-bottom:10px;
-      border-radius:999px;
-      font-size:.74rem;
-      font-weight:800;
-      letter-spacing:.04em;
-      color:var(--primary);
-      background:var(--primary-soft);
-      border:1px solid #c7d2fe;
-    }
-    .panel{
-      background:#fff;
+    a{color:inherit}
+    .wrap{max-width:1040px;margin:0 auto;padding:28px 18px 52px}
+
+    .hero{
+      margin-bottom:18px;
+      padding:28px;
+      background:var(--surface);
       border:1px solid var(--line);
-      border-radius:18px;
-      padding:24px;
-      box-shadow:0 8px 24px rgba(16,24,40,.05);
+      border-radius:20px;
+      box-shadow:var(--shadow);
     }
-    .panel + .panel{margin-top:18px}
-    .prep-panel{border-color:var(--violet-line);background:#fff}
-    .prep-panel .step-badge{background:var(--violet-soft);border-color:var(--violet-line);color:#6941c6}
-    .grid{display:grid;gap:20px}
-    label{display:block;margin-bottom:8px;font-weight:760;color:#344054}
-    .hint,.note{color:var(--muted);font-size:.9rem}
-    .hint{margin:7px 0 0}
-    .note{margin:18px 0 0}
-    
+    .eyebrow{
+      margin-bottom:7px;
+      color:var(--primary);
+      font-size:.76rem;
+      font-weight:800;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+    }
+    h1{
+      margin:0 0 8px;
+      font-size:clamp(1.8rem,4vw,2.45rem);
+      line-height:1.12;
+      letter-spacing:-.035em;
+    }
+    h2{
+      margin:0 0 5px;
+      font-size:clamp(1.28rem,2.3vw,1.58rem);
+      line-height:1.25;
+      letter-spacing:-.02em;
+    }
+    .subtitle{margin:0;color:var(--muted);font-size:.96rem}
+    .hero>.subtitle{max-width:760px}
+
+    .flow{
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      gap:8px;
+      margin-top:22px;
+    }
+    .flow a{
+      display:flex;
+      align-items:center;
+      gap:9px;
+      min-height:54px;
+      padding:10px 11px;
+      text-decoration:none;
+      background:var(--surface-soft);
+      border:1px solid var(--line);
+      border-radius:12px;
+      transition:border-color .15s ease,background .15s ease,transform .15s ease;
+    }
+    .flow a:hover{background:#fff;border-color:#b8c0cc;transform:translateY(-1px)}
+    .flow-num{
+      flex:0 0 28px;
+      width:28px;height:28px;
+      display:grid;place-items:center;
+      border-radius:50%;
+      color:#fff;
+      font-size:.8rem;
+      font-weight:800;
+    }
+    .flow strong{display:block;font-size:.86rem;line-height:1.18}
+    .flow span:last-child{display:block;margin-top:2px;color:var(--muted);font-size:.74rem;line-height:1.2}
+    .flow .f1 .flow-num{background:var(--s1)}
+    .flow .f2 .flow-num{background:var(--s2)}
+    .flow .f3 .flow-num{background:var(--s3)}
+    .flow .f4 .flow-num{background:var(--s4)}
+
+    .quick-guide{
+      display:flex;
+      gap:8px;
+      align-items:flex-start;
+      margin-top:14px;
+      padding:10px 12px;
+      border-radius:10px;
+      background:#f8fafc;
+      border:1px solid var(--line);
+      color:#475467;
+      font-size:.88rem;
+    }
+    .quick-guide strong{color:#344054;white-space:nowrap}
+
+    .panel{
+      position:relative;
+      margin-top:16px;
+      padding:22px;
+      overflow:hidden;
+      background:var(--surface);
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      scroll-margin-top:16px;
+    }
+    .panel::before{
+      content:"";
+      position:absolute;
+      left:0;top:0;bottom:0;
+      width:4px;
+      background:var(--stage-color);
+    }
+    .stage-1{--stage-color:var(--s1);--stage-soft:var(--s1-soft)}
+    .stage-2{--stage-color:var(--s2);--stage-soft:var(--s2-soft)}
+    .stage-3{--stage-color:var(--s3);--stage-soft:var(--s3-soft)}
+    .stage-4{--stage-color:var(--s4);--stage-soft:var(--s4-soft)}
+
+    .stage-head{
+      display:flex;
+      gap:13px;
+      align-items:flex-start;
+      margin-bottom:18px;
+    }
+    .stage-number{
+      flex:0 0 36px;
+      width:36px;height:36px;
+      display:grid;place-items:center;
+      border-radius:10px;
+      color:#fff;
+      background:var(--stage-color);
+      font-weight:850;
+      font-size:1rem;
+      box-shadow:0 5px 12px rgba(16,24,40,.1);
+    }
+    .stage-kicker{
+      margin:0 0 2px;
+      color:var(--stage-color);
+      font-size:.72rem;
+      line-height:1.2;
+      font-weight:850;
+      letter-spacing:.075em;
+      text-transform:uppercase;
+    }
+
+    .grid{display:grid;gap:16px}
+    .field-card{
+      padding:14px;
+      background:var(--surface-soft);
+      border:1px solid var(--line);
+      border-radius:12px;
+    }
+    label{
+      display:block;
+      margin-bottom:7px;
+      color:#344054;
+      font-size:.92rem;
+      font-weight:760;
+    }
+    .hint{margin:6px 0 0;color:var(--muted);font-size:.83rem}
+
     textarea{
       width:100%;
-      min-height:150px;
+      min-height:136px;
       resize:vertical;
-      padding:15px 16px;
+      padding:13px 14px;
       color:var(--ink);
       background:#fff;
       border:1px solid var(--line-strong);
-      border-radius:var(--radius-md);
+      border-radius:10px;
       outline:none;
-      box-shadow:inset 0 1px 2px rgba(16,24,40,.02);
-      transition:border-color .18s ease, box-shadow .18s ease, transform .18s ease;
+      transition:border-color .15s ease,box-shadow .15s ease;
     }
     textarea::placeholder{color:#98a2b3}
     textarea:focus{
-      border-color:#818cf8;
-      box-shadow:0 0 0 4px rgba(99,102,241,.12),inset 0 1px 2px rgba(16,24,40,.02);
+      border-color:var(--stage-color,var(--primary));
+      box-shadow:0 0 0 3px color-mix(in srgb,var(--stage-color,var(--primary)) 13%,transparent);
     }
-    #metaOutput,#output,#reviewOutput,#finalOutput{
-      min-height:380px;
-      padding-top:52px;
-      background:#0f172a;
-      color:#e5e7eb;
-      border-color:#1e293b;
-      font-family:"SFMono-Regular",Consolas,"Liberation Mono",Menlo,monospace;
-      font-size:.89rem;
-      line-height:1.55;
+    #reviewDraft{min-height:290px}
+    #auditResult{min-height:235px}
+
+    .actions{
+      display:flex;
+      flex-wrap:wrap;
+      align-items:center;
+      gap:8px;
+      margin-top:15px;
     }
-    #metaOutput::placeholder,#output::placeholder,#reviewOutput::placeholder,#finalOutput::placeholder{color:#94a3b8}\n    #reviewDraft{min-height:360px}\n    #auditResult{min-height:300px}
-    .actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
     button{
       appearance:none;
       border:1px solid transparent;
-      border-radius:11px;
-      padding:11px 16px;
+      border-radius:9px;
+      padding:10px 14px;
       font-weight:760;
       cursor:pointer;
-      transition:transform .15s ease,box-shadow .15s ease,background .15s ease,border-color .15s ease;
+      transition:transform .15s ease,background .15s ease,border-color .15s ease,box-shadow .15s ease;
     }
     button:hover:not(:disabled){transform:translateY(-1px)}
-    button:active:not(:disabled){transform:translateY(0)}
-    .primary{
-      color:#fff;background:var(--primary);
-      box-shadow:0 8px 16px rgba(79,70,229,.18);
+    button:active:not(:disabled){transform:none}
+    .primary,.prep-primary{
+      color:#fff;
+      background:var(--stage-color,var(--primary));
+      box-shadow:0 5px 12px rgba(16,24,40,.12);
     }
-    .primary:hover:not(:disabled){background:var(--primary-hover)}
-    .prep-primary{
-      color:#fff;background:#6941c6;
-      box-shadow:0 8px 16px rgba(105,65,198,.18);
-    }
-    .prep-primary:hover:not(:disabled){background:#5d36b8}
+    .primary:hover:not(:disabled),.prep-primary:hover:not(:disabled){filter:brightness(.95)}
     .secondary{
-      color:#344054;background:#fff;border-color:var(--line-strong);
-      box-shadow:var(--shadow-soft);
+      color:#475467;
+      background:#fff;
+      border-color:var(--line-strong);
     }
-    .secondary:hover:not(:disabled){background:#f9fafb;border-color:#b8c0cc}
-    button:disabled{opacity:.45;cursor:not-allowed;box-shadow:none}
+    .secondary:hover:not(:disabled){background:#f9fafb;border-color:#98a2b3}
+    button:disabled{opacity:.42;cursor:not-allowed;box-shadow:none}
+
     .status{
       display:none;
-      margin-top:16px;
-      padding:12px 14px;
-      border-radius:11px;
-      font-size:.93rem;
+      margin-top:12px;
+      padding:10px 12px;
+      border-radius:9px;
+      font-size:.87rem;
       font-weight:650;
     }
     .status.warn{display:block;color:var(--warn);background:var(--warn-soft);border:1px solid var(--warn-line)}
     .status.ok{display:block;color:var(--ok);background:var(--ok-soft);border:1px solid var(--ok-line)}
-    
+
     .output-wrap{
-      margin-top:20px;
-      padding-top:20px;
+      margin-top:16px;
+      padding-top:16px;
       border-top:1px solid var(--line);
     }
-    .chat-note{
-      margin-top:14px;
-      padding:12px 14px;
-      border-radius:12px;
-      border:1px solid #f2d58a;
-      background:#fff8e6;
-      color:#6b4f00;
-      font-size:.94rem;
-      line-height:1.55;
+    .output-title{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:10px;
+      margin-bottom:7px;
     }
-    .chat-note strong{color:#5b4300}
-    .textblock{
-      position:relative;
+    .output-title label{margin:0}
+    .textblock{position:relative}
+    #metaOutput,#output,#reviewOutput,#finalOutput{
+      min-height:285px;
+      padding:42px 14px 14px;
+      color:#e5e7eb;
+      background:#111827;
+      border-color:#1f2937;
+      font-family:"SFMono-Regular",Consolas,"Liberation Mono",Menlo,monospace;
+      font-size:.84rem;
+      line-height:1.5;
     }
+    #metaOutput::placeholder,#output::placeholder,#reviewOutput::placeholder,#finalOutput::placeholder{color:#94a3b8}
+
     .copy-icon{
       position:absolute;
-      top:10px;
-      right:10px;
-      z-index:3;
-      width:34px;
-      height:34px;
-      min-width:34px;
+      top:8px;right:8px;
+      z-index:2;
+      width:32px;height:32px;
+      min-width:32px;
       padding:0;
-      display:inline-grid;
-      place-items:center;
-      border-radius:9px;
+      display:grid;place-items:center;
       color:#475467;
       background:#fff;
       border:1px solid var(--line-strong);
-      box-shadow:var(--shadow-soft);
+      border-radius:8px;
+      box-shadow:0 3px 8px rgba(16,24,40,.08);
     }
-    .copy-icon:hover:not(:disabled){
-      color:var(--primary);
-      background:var(--primary-soft);
-      border-color:#c7d2fe;
+    .copy-icon:hover:not(:disabled){color:var(--stage-color,var(--primary));background:var(--stage-soft,#f8fafc)}
+    .copy-icon svg{width:16px;height:16px;pointer-events:none}
+    .copy-icon.copied{color:var(--ok);background:var(--ok-soft);border-color:var(--ok-line)}
+
+    .handoff{
+      display:flex;
+      gap:9px;
+      align-items:flex-start;
+      margin-top:14px;
+      padding:11px 12px;
+      color:#475467;
+      background:var(--stage-soft);
+      border:1px solid color-mix(in srgb,var(--stage-color) 20%,#e4e7ec);
+      border-radius:10px;
+      font-size:.87rem;
     }
-    .copy-icon svg{
-      width:17px;
-      height:17px;
-      display:block;
-      pointer-events:none;
+    .handoff strong{color:#344054;white-space:nowrap}
+
+    @media(min-width:820px){
+      .stage-2 .grid{grid-template-columns:1fr 1fr}
+      .stage-2 .grid textarea{min-height:220px}
     }
-    .copy-icon.copied{
-      color:var(--ok);
-      background:var(--ok-soft);
-      border-color:var(--ok-line);
+    @media(max-width:760px){
+      .wrap{padding:16px 12px 36px}
+      .hero{padding:20px}
+      .flow{grid-template-columns:1fr 1fr}
+      .panel{padding:18px}
+      .quick-guide{display:block}
+      .quick-guide strong{display:block;margin-bottom:3px}
     }
-    
-    @media(min-width:900px){
-      .panel:not(.prep-panel) .grid{grid-template-columns:1fr 1fr}
-      .panel:not(.prep-panel) .grid textarea{min-height:330px}
-    }
-    @media(max-width:700px){
-      .wrap{padding:22px 14px 40px}
-      header{padding:24px 20px;border-radius:20px}
-      .panel{padding:20px;border-radius:18px}
+    @media(max-width:480px){
+      .flow{grid-template-columns:1fr}
       .actions{display:grid;grid-template-columns:1fr 1fr}
+      .actions .primary,.actions .prep-primary{grid-column:1/-1}
       .actions button{width:100%}
-    }
-    @media(max-width:460px){
-      .actions{grid-template-columns:1fr}
-      h1{font-size:1.9rem}
+      .stage-head{gap:10px}
+      h1{font-size:1.85rem}
     }
   </style>
 </head>
 <body>
 <main class="wrap">
-  <header>
-    <h1>Trình tạo câu lệnh nghiên cứu Phật học</h1>
-    <p class="subtitle">Bốn bước: chuẩn hóa đề bài → nghiên cứu → kiểm toán nguồn → hậu kiểm và hoàn thiện.</p>
+  <header class="hero">
+    <div class="eyebrow">Quy trình nghiên cứu Phật học</div>
+    <h1>Từ đề bài thô đến bản nghiên cứu hoàn thiện</h1>
+    <p class="subtitle">Bốn bước tách biệt để dễ kiểm soát phạm vi, nguồn và chất lượng học thuật.</p>
+
+    <nav class="flow" aria-label="Bốn bước nghiên cứu">
+      <a class="f1" href="#step-1">
+        <span class="flow-num">1</span>
+        <span><strong>Chuẩn bị đề bài</strong><span>Tạo Ô 1 và Ô 2</span></span>
+      </a>
+      <a class="f2" href="#step-2">
+        <span class="flow-num">2</span>
+        <span><strong>Nghiên cứu</strong><span>Tạo bài nghiên cứu</span></span>
+      </a>
+      <a class="f3" href="#step-3">
+        <span class="flow-num">3</span>
+        <span><strong>Kiểm nguồn</strong><span>Rà nguồn và truy cập</span></span>
+      </a>
+      <a class="f4" href="#step-4">
+        <span class="flow-num">4</span>
+        <span><strong>Hoàn thiện</strong><span>Hậu kiểm và biên tập</span></span>
+      </a>
+    </nav>
+
+    <div class="quick-guide">
+      <strong>Cách dùng:</strong>
+      <span>Bước 2 mở một cuộc trò chuyện mới. Bước 3 tiếp tục ngay trong cuộc trò chuyện của bước 2. Bước 4 dùng bài nghiên cứu + báo cáo kiểm nguồn để tạo bản cuối.</span>
+    </div>
   </header>
 
-  <section class="panel prep-panel">
-    <div class="step-badge">① TỪ ĐỀ BÀI THÔ</div>
-    <h2>Nhờ AI soạn sẵn Ô 1 và Ô 2</h2>
-    <p class="subtitle">Nhập ý tưởng của bạn, rồi tạo câu lệnh để dán vào AI.</p>
+  <section id="step-1" class="panel stage-1">
+    <div class="stage-head">
+      <div class="stage-number">1</div>
+      <div>
+        <p class="stage-kicker">Chuẩn bị</p>
+        <h2>Chuẩn hóa đề bài</h2>
+        <p class="subtitle">Nhập ý tưởng thô để tạo câu lệnh giúp AI soạn Ô 1 (phạm vi nguồn) và Ô 2 (đề bài nghiên cứu).</p>
+      </div>
+    </div>
 
-    <label for="rawTopic">Đề bài thô hoặc ý tưởng nghiên cứu</label>
-    <textarea id="rawTopic" placeholder="Nhập đề bài thô hoặc ý tưởng nghiên cứu của bạn. Có thể viết tự nhiên, chưa cần chuẩn hóa thuật ngữ hay phạm vi nguồn." spellcheck="false"></textarea>
-    <p class="hint">Viết tự nhiên, chưa cần cấu trúc.</p>
+    <div class="field-card">
+      <label for="rawTopic">Đề bài hoặc ý tưởng ban đầu</label>
+      <textarea id="rawTopic" placeholder="Viết tự nhiên điều bạn muốn nghiên cứu; chưa cần chuẩn hóa thuật ngữ hay phạm vi nguồn." spellcheck="false"></textarea>
+      <p class="hint">Chỉ cần nêu đúng điều bạn muốn tìm hiểu.</p>
+    </div>
 
     <div class="actions">
-      <button id="metaGenerate" class="prep-primary" type="button">Tạo câu lệnh nhờ AI soạn hai ô</button>
-      <button id="metaDownload" class="secondary" type="button" disabled>Tải .txt</button>
-      <button id="metaClear" class="secondary" type="button">Xóa phần này</button>
+      <button id="metaGenerate" class="prep-primary" type="button">Tạo câu lệnh chuẩn bị</button>
+      <button id="metaDownload" class="secondary" type="button" disabled>Tải tệp</button>
+      <button id="metaClear" class="secondary" type="button">Xóa</button>
     </div>
 
     <div id="metaStatus" class="status" role="status" aria-live="polite"></div>
 
     <div class="output-wrap">
-      <label for="metaOutput">Câu lệnh tạo Ô 1 và Ô 2</label>
+      <label for="metaOutput">Câu lệnh chuẩn bị</label>
       <div class="textblock">
-        <button id="metaCopy" class="copy-icon" type="button" disabled aria-label="Sao chép câu lệnh" title="Sao chép">
+        <button id="metaCopy" class="copy-icon" type="button" disabled aria-label="Sao chép câu lệnh chuẩn bị" title="Sao chép">
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <rect x="8" y="8" width="11" height="11" rx="2" stroke="currentColor" stroke-width="1.8"/>
             <path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
           </svg>
         </button>
-        <textarea id="metaOutput" readonly placeholder="Câu lệnh chuẩn hóa sẽ xuất hiện ở đây."></textarea>
+        <textarea id="metaOutput" readonly placeholder="Câu lệnh sẽ xuất hiện ở đây."></textarea>
       </div>
     </div>
 
-    <div class="chat-note">
-      <strong>Khuyến nghị về hội thoại:</strong> sau khi dùng câu lệnh Stage A và nhận được Ô 1 + Ô 2, hãy quay lại bước ②. Khi chạy câu lệnh nghiên cứu Stage B, nên mở <strong>một chat mới</strong> thay vì tiếp tục hội thoại Stage A để giảm ảnh hưởng của đề bài thô và cách đóng khung ban đầu.
+    <div class="handoff">
+      <strong>Tiếp theo:</strong>
+      <span>Sao chép câu lệnh và chạy với AI. Khi nhận được Ô 1 và Ô 2, quay lại bước 2.</span>
     </div>
   </section>
 
-  <section class="panel">
-    <div class="step-badge">② TẠO CÂU LỆNH NGHIÊN CỨU</div>
-    <h2>Nhập phạm vi và đề bài</h2>
+  <section id="step-2" class="panel stage-2">
+    <div class="stage-head">
+      <div class="stage-number">2</div>
+      <div>
+        <p class="stage-kicker">Nghiên cứu</p>
+        <h2>Tạo câu lệnh nghiên cứu</h2>
+        <p class="subtitle">Dán hai ô từ bước 1. Hệ thống sẽ ghép chúng với kỹ năng nghiên cứu hiện hành.</p>
+      </div>
+    </div>
 
     <div class="grid">
-      <div>
-        <label for="corpus">1. Các bộ kinh hoặc văn bản được phép sử dụng</label>
-        <textarea id="corpus" placeholder="Dán Ô 1 do Stage A tạo: chế độ phạm vi, nguồn sơ cấp, nguồn nghiên cứu học thuật/thứ cấp, hạ tầng truy cập và các giới hạn nếu có." spellcheck="false"></textarea>
-        <p class="hint">Nên ghi cả tên nguyên ngữ và tên Việt.</p>
+      <div class="field-card">
+        <label for="corpus">Ô 1 — Phạm vi nguồn</label>
+        <textarea id="corpus" placeholder="Dán Ô 1: nguồn được phép dùng, chế độ phạm vi và các giới hạn." spellcheck="false"></textarea>
+        <p class="hint">Giữ nguyên nội dung Ô 1 do bước 1 tạo.</p>
       </div>
 
-      <div>
-        <label for="task">2. Đề bài nghiên cứu hoặc yêu cầu viết</label>
-        <textarea id="task" placeholder="Dán Ô 2 do Stage A tạo: câu hỏi trung tâm, các yêu cầu nghiên cứu đặc thù của đề tài và điều kiện kết luận nếu có." spellcheck="false"></textarea>
-        <p class="hint">Nêu rõ câu hỏi, yêu cầu đối chiếu và phản biện nếu cần.</p>
+      <div class="field-card">
+        <label for="task">Ô 2 — Đề bài nghiên cứu</label>
+        <textarea id="task" placeholder="Dán Ô 2: câu hỏi trung tâm và các yêu cầu riêng của đề tài." spellcheck="false"></textarea>
+        <p class="hint">Giữ nguyên nội dung Ô 2 do bước 1 tạo.</p>
       </div>
     </div>
 
     <div class="actions">
-      <button id="generate" class="primary" type="button">Tạo câu lệnh nghiên cứu hoàn chỉnh</button>
-      <button id="download" class="secondary" type="button" disabled>Tải xuống tệp văn bản</button>
-      <button id="clear" class="secondary" type="button">Xóa hai ô</button>
+      <button id="generate" class="primary" type="button">Tạo câu lệnh nghiên cứu</button>
+      <button id="download" class="secondary" type="button" disabled>Tải tệp</button>
+      <button id="clear" class="secondary" type="button">Xóa</button>
     </div>
 
     <div id="status" class="status" role="status" aria-live="polite"></div>
 
     <div class="output-wrap">
-      <label for="output">Câu lệnh nghiên cứu hoàn chỉnh</label>
+      <label for="output">Câu lệnh nghiên cứu</label>
       <div class="textblock">
         <button id="copy" class="copy-icon" type="button" disabled aria-label="Sao chép câu lệnh nghiên cứu" title="Sao chép">
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
@@ -304,78 +452,99 @@
             <path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
           </svg>
         </button>
-        <textarea id="output" readonly placeholder="Câu lệnh nghiên cứu sẽ xuất hiện ở đây sau khi bấm nút tạo."></textarea>
+        <textarea id="output" readonly placeholder="Câu lệnh sẽ xuất hiện ở đây."></textarea>
       </div>
     </div>
 
-    <div class="chat-note">
-      <strong>Khuyến nghị về hội thoại:</strong> nên chạy Stage B trong <strong>một chat mới</strong>, không tiếp tục chat Stage A. Sau khi Stage B trả bài, <strong>giữ nguyên chat đó</strong>; ở bước ③ chỉ tạo câu lệnh Stage C rồi quay lại chính khung chat Stage B đang mở và dán tiếp để chạy.
+    <div class="handoff">
+      <strong>Tiếp theo:</strong>
+      <span>Mở một cuộc trò chuyện mới để chạy câu lệnh nghiên cứu. Khi có bài, giữ nguyên cuộc trò chuyện đó để dùng tiếp ở bước 3.</span>
     </div>
   </section>
 
-  <section class="panel">
-    <div class="step-badge">③ KIỂM TOÁN NGUỒN</div>
-    <h2>Kiểm toán nguồn và trạng thái truy cập</h2>
-    <p class="subtitle">Dán bài nghiên cứu Stage B. Stage C chỉ kiểm nguồn, mức truy cập, đường dẫn chứng và giới hạn bao phủ; không viết lại bài.</p>
+  <section id="step-3" class="panel stage-3">
+    <div class="stage-head">
+      <div class="stage-number">3</div>
+      <div>
+        <p class="stage-kicker">Kiểm nguồn</p>
+        <h2>Kiểm toán nguồn và trạng thái truy cập</h2>
+        <p class="subtitle">Dán bài nghiên cứu từ bước 2. Bước này chỉ kiểm nguồn, đường dẫn chứng và giới hạn bao phủ; không viết lại bài.</p>
+      </div>
+    </div>
 
-    <label for="reviewDraft">Bài nghiên cứu Stage B</label>
-    <textarea id="reviewDraft" placeholder="Dán toàn bộ bài nghiên cứu do Stage B tạo, kể cả phụ lục Dấu vết nguồn cho Stage C nếu có." spellcheck="false"></textarea>
-    <p class="hint">Ô 1 và Ô 2 ở bước ② sẽ được dùng để kiểm ranh giới nguồn.</p>
+    <div class="field-card">
+      <label for="reviewDraft">Bài nghiên cứu từ bước 2</label>
+      <textarea id="reviewDraft" placeholder="Dán toàn bộ bài nghiên cứu, kể cả phần dấu vết nguồn nếu có." spellcheck="false"></textarea>
+      <p class="hint">Ô 1 và Ô 2 ở bước 2 được dùng tự động để kiểm đúng ranh giới nguồn.</p>
+    </div>
 
     <div class="actions">
-      <button id="reviewGenerate" class="primary" type="button">Tạo câu lệnh Stage C</button>
-      <button id="reviewDownload" class="secondary" type="button" disabled>Tải .txt</button>
-      <button id="reviewClear" class="secondary" type="button">Xóa phần này</button>
+      <button id="reviewGenerate" class="primary" type="button">Tạo câu lệnh kiểm nguồn</button>
+      <button id="reviewDownload" class="secondary" type="button" disabled>Tải tệp</button>
+      <button id="reviewClear" class="secondary" type="button">Xóa</button>
     </div>
 
     <div id="reviewStatus" class="status" role="status" aria-live="polite"></div>
 
     <div class="output-wrap">
-      <label for="reviewOutput">Câu lệnh Stage C — kiểm toán nguồn</label>
+      <label for="reviewOutput">Câu lệnh kiểm nguồn</label>
       <div class="textblock">
-        <button id="reviewCopy" class="copy-icon" type="button" disabled aria-label="Sao chép câu lệnh Stage C" title="Sao chép">
+        <button id="reviewCopy" class="copy-icon" type="button" disabled aria-label="Sao chép câu lệnh kiểm nguồn" title="Sao chép">
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <rect x="8" y="8" width="11" height="11" rx="2" stroke="currentColor" stroke-width="1.8"/>
             <path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
           </svg>
         </button>
-        <textarea id="reviewOutput" readonly placeholder="Câu lệnh kiểm toán nguồn sẽ xuất hiện ở đây."></textarea>
+        <textarea id="reviewOutput" readonly placeholder="Câu lệnh sẽ xuất hiện ở đây."></textarea>
       </div>
     </div>
 
-    <div class="chat-note">
-      <strong>Bàn giao:</strong> sau khi bấm tạo câu lệnh Stage C, quay lại <strong>khung chat Stage B đang mở</strong> và dán tiếp câu lệnh vào đó; không mở chat mới. Khi AI trả về <strong>Báo cáo Stage C — Kiểm toán nguồn và trạng thái truy cập</strong>, dán báo cáo vào bước ④.
+    <div class="handoff">
+      <strong>Tiếp theo:</strong>
+      <span>Quay lại chính cuộc trò chuyện đã chạy bước 2 và dán tiếp câu lệnh này. Không mở cuộc trò chuyện mới. Sau khi có báo cáo kiểm nguồn, dán báo cáo vào bước 4.</span>
     </div>
   </section>
 
-  <section class="panel">
-    <div class="step-badge">④ HẬU KIỂM &amp; HOÀN THIỆN</div>
-    <h2>Hậu kiểm học thuật và biên tập bản cuối</h2>
-    <p class="subtitle">Stage D dùng lại bài Stage B ở bước ③ cùng Báo cáo Stage C để sửa locator, attribution, mức độ khẳng định, thuật ngữ và văn phong; không nghiên cứu lại từ đầu.</p>
+  <section id="step-4" class="panel stage-4">
+    <div class="stage-head">
+      <div class="stage-number">4</div>
+      <div>
+        <p class="stage-kicker">Hoàn thiện</p>
+        <h2>Hậu kiểm và biên tập bản cuối</h2>
+        <p class="subtitle">Dùng lại bài nghiên cứu ở bước 3 cùng báo cáo kiểm nguồn để sửa dẫn nguồn, mức khẳng định, thuật ngữ và văn phong.</p>
+      </div>
+    </div>
 
-    <label for="auditResult">Báo cáo Stage C</label>
-    <textarea id="auditResult" placeholder="Dán toàn bộ Báo cáo Stage C — Kiểm toán nguồn và trạng thái truy cập vào đây." spellcheck="false"></textarea>
-    <p class="hint">Bài Stage B được lấy trực tiếp từ ô ở bước ③, nên không cần dán lại.</p>
+    <div class="field-card">
+      <label for="auditResult">Báo cáo kiểm nguồn</label>
+      <textarea id="auditResult" placeholder="Dán toàn bộ báo cáo kiểm nguồn từ bước 3." spellcheck="false"></textarea>
+      <p class="hint">Không cần dán lại bài nghiên cứu; hệ thống lấy trực tiếp từ bước 3.</p>
+    </div>
 
     <div class="actions">
-      <button id="finalGenerate" class="primary" type="button">Tạo câu lệnh Stage D</button>
-      <button id="finalDownload" class="secondary" type="button" disabled>Tải .txt</button>
-      <button id="finalClear" class="secondary" type="button">Xóa báo cáo Stage C</button>
+      <button id="finalGenerate" class="primary" type="button">Tạo câu lệnh hoàn thiện</button>
+      <button id="finalDownload" class="secondary" type="button" disabled>Tải tệp</button>
+      <button id="finalClear" class="secondary" type="button">Xóa</button>
     </div>
 
     <div id="finalStatus" class="status" role="status" aria-live="polite"></div>
 
     <div class="output-wrap">
-      <label for="finalOutput">Câu lệnh Stage D — hậu kiểm và hoàn thiện</label>
+      <label for="finalOutput">Câu lệnh hoàn thiện</label>
       <div class="textblock">
-        <button id="finalCopy" class="copy-icon" type="button" disabled aria-label="Sao chép câu lệnh Stage D" title="Sao chép">
+        <button id="finalCopy" class="copy-icon" type="button" disabled aria-label="Sao chép câu lệnh hoàn thiện" title="Sao chép">
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <rect x="8" y="8" width="11" height="11" rx="2" stroke="currentColor" stroke-width="1.8"/>
             <path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
           </svg>
         </button>
-        <textarea id="finalOutput" readonly placeholder="Câu lệnh Stage D sẽ xuất hiện ở đây."></textarea>
+        <textarea id="finalOutput" readonly placeholder="Câu lệnh sẽ xuất hiện ở đây."></textarea>
       </div>
+    </div>
+
+    <div class="handoff">
+      <strong>Cuối cùng:</strong>
+      <span>Chạy câu lệnh hoàn thiện trong một cuộc trò chuyện mới để nhận bản nghiên cứu đã hậu kiểm.</span>
     </div>
   </section>
 </main>
@@ -662,18 +831,18 @@ metaGenerateBtn.addEventListener("click",async()=>{
     return;
   }
   metaGenerateBtn.disabled=true;
-  setStatus(metaStatusEl,"Đang tải Stage A Skill và Buddhist Source Map...","ok");
+  setStatus(metaStatusEl,"Đang tải hướng dẫn chuẩn bị và bản đồ nguồn mới nhất...","ok");
   try{
     const context=await loadStageAContext(rawTopic);
     metaOutputEl.value=buildPreparationPrompt(rawTopic,context.stageASkill,context.sourceMap);
     metaCopyBtn.disabled=false;
     metaDownloadBtn.disabled=false;
-    setStatus(metaStatusEl,"Đã tạo câu lệnh Stage A bằng Skill và Buddhist Source Map mới nhất. Hãy sao chép và dán vào AI; AI phải trả về hai writing block riêng biệt để bạn sao chép vào Ô 1 và Ô 2.","ok");
+    setStatus(metaStatusEl,"Đã tạo câu lệnh chuẩn bị. Hãy sao chép và chạy với AI để nhận Ô 1 và Ô 2 riêng biệt.","ok");
   }catch(error){
     metaOutputEl.value="";
     metaCopyBtn.disabled=true;
     metaDownloadBtn.disabled=true;
-    setStatus(metaStatusEl,"Không tải được Stage A Skill hoặc Buddhist Source Map. Vui lòng kiểm tra kết nối mạng hoặc mở form từ GitHub Pages rồi thử lại.","warn");
+    setStatus(metaStatusEl,"Không tải được hướng dẫn chuẩn bị hoặc bản đồ nguồn. Vui lòng kiểm tra kết nối rồi thử lại.","warn");
   }finally{
     metaGenerateBtn.disabled=false;
   }
@@ -695,7 +864,7 @@ metaCopyBtn.addEventListener("click",async()=>{
     return;
   }
   showCopySuccess(metaCopyBtn);
-  setStatus(metaStatusEl,"Đã sao chép câu lệnh chuẩn hóa.","ok");
+  setStatus(metaStatusEl,"Đã sao chép câu lệnh chuẩn bị.","ok");
 });
 
 metaDownloadBtn.addEventListener("click",()=>{
@@ -725,18 +894,18 @@ generateBtn.addEventListener("click",async()=>{
     return;
   }
   generateBtn.disabled=true;
-  setStatus(statusEl,"Đang tải SKILL.md mới nhất...","ok");
+  setStatus(statusEl,"Đang tải hướng dẫn nghiên cứu mới nhất...","ok");
   try{
     const skillContent=await loadSkillContent();
     outputEl.value=buildResearchPrompt(phamVi,deBai,skillContent);
     copyBtn.disabled=false;
     downloadBtn.disabled=false;
-    setStatus(statusEl,"Đã tạo câu lệnh nghiên cứu hoàn chỉnh bằng SKILL.md mới nhất. Bạn có thể sao chép hoặc tải xuống.","ok");
+    setStatus(statusEl,"Đã tạo câu lệnh nghiên cứu. Bạn có thể sao chép hoặc tải tệp.","ok");
   }catch(error){
     outputEl.value="";
     copyBtn.disabled=true;
     downloadBtn.disabled=true;
-    setStatus(statusEl,"Không tải được SKILL.md mới nhất. Vui lòng kiểm tra kết nối mạng hoặc mở form từ GitHub Pages rồi thử lại.","warn");
+    setStatus(statusEl,"Không tải được hướng dẫn nghiên cứu. Vui lòng kiểm tra kết nối rồi thử lại.","warn");
   }finally{
     generateBtn.disabled=false;
   }
@@ -787,26 +956,26 @@ reviewGenerateBtn.addEventListener("click",async()=>{
   const deBai=taskEl.value.trim();
   const baiNghienCuu=reviewDraftEl.value.trim();
   if(!phamVi||!deBai){
-    setStatus(reviewStatusEl,"Stage C cần Ô 1 và Ô 2 ở bước ② để kiểm đúng ranh giới nguồn.","warn");
+    setStatus(reviewStatusEl,"Bước 3 cần Ô 1 và Ô 2 ở bước 2 để kiểm đúng ranh giới nguồn.","warn");
     return;
   }
   if(!baiNghienCuu){
-    setStatus(reviewStatusEl,"Vui lòng dán bài nghiên cứu Stage B.","warn");
+    setStatus(reviewStatusEl,"Vui lòng dán bài nghiên cứu từ bước 2.","warn");
     return;
   }
   reviewGenerateBtn.disabled=true;
-  setStatus(reviewStatusEl,"Đang tải STAGE_C_SKILL.md mới nhất...","ok");
+  setStatus(reviewStatusEl,"Đang tải hướng dẫn kiểm nguồn mới nhất...","ok");
   try{
     const stageCSkill=await loadStageAText("STAGE_C_SKILL.md");
     reviewOutputEl.value=buildSourceAuditPrompt(phamVi,deBai,baiNghienCuu,stageCSkill);
     reviewCopyBtn.disabled=false;
     reviewDownloadBtn.disabled=false;
-    setStatus(reviewStatusEl,"Đã tạo câu lệnh Stage C. Hãy chạy trong một chat mới, rồi dán báo cáo kiểm toán vào bước ④.","ok");
+    setStatus(reviewStatusEl,"Đã tạo câu lệnh kiểm nguồn. Hãy dán tiếp vào chính cuộc trò chuyện đã chạy bước 2, rồi đưa báo cáo sang bước 4.","ok");
   }catch(error){
     reviewOutputEl.value="";
     reviewCopyBtn.disabled=true;
     reviewDownloadBtn.disabled=true;
-    setStatus(reviewStatusEl,"Không tải được STAGE_C_SKILL.md. Vui lòng kiểm tra kết nối rồi thử lại.","warn");
+    setStatus(reviewStatusEl,"Không tải được hướng dẫn kiểm nguồn. Vui lòng kiểm tra kết nối rồi thử lại.","warn");
   }finally{
     reviewGenerateBtn.disabled=false;
   }
@@ -828,7 +997,7 @@ reviewCopyBtn.addEventListener("click",async()=>{
     return;
   }
   showCopySuccess(reviewCopyBtn);
-  setStatus(reviewStatusEl,"Đã sao chép câu lệnh Stage C.","ok");
+  setStatus(reviewStatusEl,"Đã sao chép câu lệnh kiểm nguồn.","ok");
 });
 
 reviewDownloadBtn.addEventListener("click",()=>{
@@ -857,30 +1026,30 @@ finalGenerateBtn.addEventListener("click",async()=>{
   const baiNghienCuu=reviewDraftEl.value.trim();
   const auditReport=auditResultEl.value.trim();
   if(!phamVi||!deBai){
-    setStatus(finalStatusEl,"Stage D cần Ô 1 và Ô 2 ở bước ②.","warn");
+    setStatus(finalStatusEl,"Bước 4 cần Ô 1 và Ô 2 ở bước 2.","warn");
     return;
   }
   if(!baiNghienCuu){
-    setStatus(finalStatusEl,"Vui lòng giữ hoặc dán bài Stage B ở bước ③.","warn");
+    setStatus(finalStatusEl,"Vui lòng giữ hoặc dán bài nghiên cứu ở bước 3.","warn");
     return;
   }
   if(!auditReport){
-    setStatus(finalStatusEl,"Vui lòng dán Báo cáo Stage C.","warn");
+    setStatus(finalStatusEl,"Vui lòng dán báo cáo kiểm nguồn.","warn");
     return;
   }
   finalGenerateBtn.disabled=true;
-  setStatus(finalStatusEl,"Đang tải STAGE_D_SKILL.md mới nhất...","ok");
+  setStatus(finalStatusEl,"Đang tải hướng dẫn hoàn thiện mới nhất...","ok");
   try{
     const stageDSkill=await loadStageAText("STAGE_D_SKILL.md");
     finalOutputEl.value=buildFinalReviewPrompt(phamVi,deBai,baiNghienCuu,auditReport,stageDSkill);
     finalCopyBtn.disabled=false;
     finalDownloadBtn.disabled=false;
-    setStatus(finalStatusEl,"Đã tạo câu lệnh Stage D. Hãy chạy trong một chat mới để hậu kiểm và xuất bản cuối.","ok");
+    setStatus(finalStatusEl,"Đã tạo câu lệnh hoàn thiện. Hãy chạy trong một cuộc trò chuyện mới để nhận bản cuối.","ok");
   }catch(error){
     finalOutputEl.value="";
     finalCopyBtn.disabled=true;
     finalDownloadBtn.disabled=true;
-    setStatus(finalStatusEl,"Không tải được STAGE_D_SKILL.md. Vui lòng kiểm tra kết nối rồi thử lại.","warn");
+    setStatus(finalStatusEl,"Không tải được hướng dẫn hoàn thiện. Vui lòng kiểm tra kết nối rồi thử lại.","warn");
   }finally{
     finalGenerateBtn.disabled=false;
   }
@@ -902,7 +1071,7 @@ finalCopyBtn.addEventListener("click",async()=>{
     return;
   }
   showCopySuccess(finalCopyBtn);
-  setStatus(finalStatusEl,"Đã sao chép câu lệnh Stage D.","ok");
+  setStatus(finalStatusEl,"Đã sao chép câu lệnh hoàn thiện.","ok");
 });
 
 finalDownloadBtn.addEventListener("click",()=>{
