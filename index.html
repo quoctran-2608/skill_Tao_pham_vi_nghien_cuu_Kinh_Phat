@@ -117,7 +117,7 @@
       font-size:.89rem;
       line-height:1.55;
     }
-    #metaOutput::placeholder,#output::placeholder,#reviewOutput::placeholder{color:#94a3b8}\n    #reviewDraft{min-height:360px}
+    #metaOutput::placeholder,#output::placeholder,#reviewOutput::placeholder,#finalOutput::placeholder{color:#94a3b8}\n    #reviewDraft{min-height:360px}\n    #auditResult{min-height:300px}
     .actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
     button{
       appearance:none;
@@ -282,7 +282,7 @@
 
       <div>
         <label for="task">2. Đề bài nghiên cứu hoặc yêu cầu viết</label>
-        <textarea id="task" placeholder="Ví dụ: Hãy khảo sát các đoạn nói về bốn tầng thiền sắc giới, phân tích phương pháp thực hành, quan hệ với trí tuệ và giải thoát, đồng thời tìm cả những đoạn có thể giới hạn giả thuyết rằng chỉ cần bốn tầng thiền là đủ để chứng ngộ." spellcheck="false"></textarea>
+        <textarea id="task" placeholder="Dán Ô 2 do Stage A tạo: câu hỏi trung tâm, các yêu cầu nghiên cứu đặc thù của đề tài và điều kiện kết luận nếu có." spellcheck="false"></textarea>
         <p class="hint">Nêu rõ câu hỏi, yêu cầu đối chiếu và phản biện nếu cần.</p>
       </div>
     </div>
@@ -668,7 +668,7 @@ metaGenerateBtn.addEventListener("click",async()=>{
     metaOutputEl.value=buildPreparationPrompt(rawTopic,context.stageASkill,context.sourceMap);
     metaCopyBtn.disabled=false;
     metaDownloadBtn.disabled=false;
-    setStatus(metaStatusEl,"Đã tạo câu lệnh Stage A bằng Skill và Buddhist Source Map mới nhất. Hãy sao chép và dán vào AI; AI phải trả về hai khối để điền vào Ô 1 và Ô 2.","ok");
+    setStatus(metaStatusEl,"Đã tạo câu lệnh Stage A bằng Skill và Buddhist Source Map mới nhất. Hãy sao chép và dán vào AI; AI phải trả về hai writing block riêng biệt để bạn sao chép vào Ô 1 và Ô 2.","ok");
   }catch(error){
     metaOutputEl.value="";
     metaCopyBtn.disabled=true;
