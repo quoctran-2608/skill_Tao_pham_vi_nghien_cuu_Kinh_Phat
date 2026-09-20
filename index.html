@@ -416,13 +416,39 @@ async function loadStageAText(path){
   throw lastError || new Error(`Không tải được ${path}`);
 }
 
-async function loadStageAContext(){
+function selectStageAModulePaths(rawTopic){
+  const topic=rawTopic.toLowerCase();
+  const modules=[];
+
+  const rules=[
+    {
+      path:"source-map/01_early_buddhism_nikaya_agama.md",
+      patterns:[/nikāya|nikaya|āgama|agama|a-hàm|a hàm|phật giáo thời kỳ đầu|phật giáo sơ kỳ|early buddh/i]
+    },
+    {
+      path:"source-map/02_sarvastivada_vaibhasika.md",
+      patterns:[/sarvāstivāda|sarvastivada|nhất thiết hữu|vaibhāṣika|vaibhasika|tỳ[- ]?bà[- ]?sa/i]
+    },
+    {
+      path:"source-map/03_nagarjuna_madhyamaka.md",
+      patterns:[/nāgārjuna|nagarjuna|long thọ|long tho|mūlamadhyamaka|mulamadhyamaka|madhyamaka|trung quán|trung quan|\bmmk\b/i]
+    },
+    {
+      path:"source-map/04_theravada_abhidhamma_commentarial.md",
+      patterns:[/theravāda|theravada|thượng tọa bộ|thuong toa bo|abhidhamma|buddhaghosa|visuddhimagga|atthasālinī|atthasalini/i]
+    }
+  ];
+
+  for(const rule of rules){
+    if(rule.patterns.some(pattern=>pattern.test(topic))) modules.push(rule.path);
+  }
+  return modules;
+}
+
+async function loadStageAContext(rawTopic){
   const sourceMapPaths=[
     "source-map/README.md",
-    "source-map/01_early_buddhism_nikaya_agama.md",
-    "source-map/02_sarvastivada_vaibhasika.md",
-    "source-map/03_nagarjuna_madhyamaka.md",
-    "source-map/04_theravada_abhidhamma_commentarial.md"
+    ...selectStageAModulePaths(rawTopic)
   ];
   const [stageASkill,...sourceMapParts]=await Promise.all([
     loadStageAText("STAGE_A_SKILL.md"),
@@ -583,14 +609,14 @@ baiNghienCuu,
 "1. Viết tiếng Việt tự nhiên, trực tiếp, sáng rõ; chia câu quá dài, bỏ lặp và sửa chuyển đoạn khó theo dõi.",
 "2. Tránh các từ/cụm tiếng Anh thông dụng chen vào câu Việt khi có cách diễn đạt tiếng Việt rõ ràng; nhưng phải giữ nguyên ngữ Pāli, Sanskrit, Hán, Tạng và nhan đề học thuật khi chúng có giá trị kiểm chứng.",
 "3. Với thuật ngữ chuyên môn khó nhưng cần thiết, không xóa thuật ngữ. Hãy giải thích ngắn bằng tiếng Việt ở lần xuất hiện đầu tiên rồi mới dùng thuật ngữ chuyên môn.",
-"4. Không dùng máy móc các cách nói dịch sát hoặc mơ hồ như “Phật giáo sớm”, “kinh điển Phật giáo sớm” nếu người đọc không biết đang nói về giai đoạn lịch sử hay nhóm văn bản nào. Nếu phạm vi thực tế là một nhóm văn bản xác định, ưu tiên gọi thẳng tên nhóm văn bản, ví dụ “các Nikāya và Āgama được khảo sát”. Nếu thực sự nói về một giai đoạn lịch sử và chứng cứ cho phép, ưu tiên cách nói tự nhiên như “Phật giáo thời kỳ đầu”. Không tự động đổi thành “Phật giáo nguyên thủy”, vì cách gọi đó có thể hàm chứa một khẳng định mạnh hơn về tính nguyên thủy hoặc thẩm quyền.",
+"4. Không dùng máy móc các nhãn thời kỳ, truyền thống hoặc nhóm văn bản mơ hồ nếu người đọc không biết chính xác chúng chỉ đối tượng nào. Nếu phạm vi thực tế là một nhóm văn bản xác định, ưu tiên gọi thẳng tên nhóm văn bản đó. Nếu thực sự nói về một giai đoạn lịch sử và chứng cứ cho phép, dùng nhãn thời kỳ phù hợp nhưng không tự nâng nó thành một khẳng định mạnh hơn về tính nguyên thủy, thẩm quyền hoặc niên đại.",
 "5. Kiểm tra các nhãn thời kỳ, hệ phái và thuật ngữ dịch: nếu một cách gọi có thể khiến người đọc hiểu rộng hoặc chắc chắn hơn chứng cứ, hãy dùng cách diễn đạt cụ thể hơn.",
 "6. Thống nhất cách gọi trong toàn bài nhưng không dùng từ đồng nghĩa về văn phong để hòa lẫn những thuật ngữ học thuật thực ra cần phân biệt.",
 "7. Trước khi xuất bài, thực hiện một lượt quét chữ cuối cùng, không phân biệt hoa thường, đối với các chuỗi tiếng Anh kỹ thuật không cần thiết trong phần văn xuôi: “attribution”, “locus”, “corpus”, “certainty drift”, “apparatus”, “framework”, “output”. Nếu bất kỳ chuỗi nào còn xuất hiện do chính người viết tạo ra, phải thay bằng cách diễn đạt tiếng Việt rõ nghĩa, chẳng hạn “câu quy quan điểm cho học giả”, “vị trí văn bản/vị trí dẫn chứng”, “phạm vi hoặc nhóm văn bản”, “sự trượt mức độ khẳng định”, “bộ máy phê bình văn bản”. Chỉ được giữ nguyên khi chuỗi đó nằm trong nhan đề công trình, trích dẫn nguyên văn, tên riêng, mã nguồn/dữ liệu nhận diện, hoặc một thuật ngữ thật sự không nên dịch vì dịch sẽ làm sai nghĩa.",
 "",
 "# LƯỢT 3 — KIỂM TRA KỸ THUẬT ĐẦU RA TRƯỚC KHI XUẤT",
 "1. Sau khi hoàn tất nội dung và văn phong, đọc lại CHÍNH BẢN SẼ XUẤT RA, không chỉ dựa vào việc đã sửa ở các lượt trước. Xác nhận rằng các chuỗi tiếng Anh bị cấm ở Lượt 2 không còn sót trong phần văn xuôi ngoài các ngoại lệ đã nêu.",
-"2. Nếu dùng bảng Markdown, phải kiểm tra cấu trúc từng bảng trước khi xuất: hàng tiêu đề phải có dấu | phân tách rõ từng cột; ngay sau đó phải có hàng phân cách kiểu | --- | --- |; mọi hàng dữ liệu phải có cùng số cột với hàng tiêu đề. MỖI Ô TIÊU ĐỀ phải có nội dung riêng, không được để ô tiêu đề trống và không được dồn tên của nhiều cột vào một ô như “Câu hỏiMức chứng cứKết luận” hoặc “Vấn đềNikāya/ĀgamaNāgārjunaSarvāstivādaTheravāda”. Trước khi xuất, phải tự đếm số ô tiêu đề và xác nhận từng ô tương ứng đúng một cột dữ liệu. Nếu không xác nhận được từng ô tiêu đề riêng biệt hoặc bảng không thể bảo đảm cú pháp hợp lệ, bắt buộc chuyển bảng thành danh sách hoặc văn xuôi thay vì xuất bảng hỏng.",
+"2. Nếu dùng bảng Markdown, phải kiểm tra cấu trúc từng bảng trước khi xuất: hàng tiêu đề phải có dấu | phân tách rõ từng cột; ngay sau đó phải có hàng phân cách kiểu | --- | --- |; mọi hàng dữ liệu phải có cùng số cột với hàng tiêu đề. MỖI Ô TIÊU ĐỀ phải có nội dung riêng, không được để ô tiêu đề trống và không được dồn tên của nhiều cột vào một ô như “Câu hỏiMức chứng cứKết luận” hoặc “Vấn đềNguồn ANguồn BNguồn C”. Trước khi xuất, phải tự đếm số ô tiêu đề và xác nhận từng ô tương ứng đúng một cột dữ liệu. Nếu không xác nhận được từng ô tiêu đề riêng biệt hoặc bảng không thể bảo đảm cú pháp hợp lệ, bắt buộc chuyển bảng thành danh sách hoặc văn xuôi thay vì xuất bảng hỏng.",
 "3. Kiểm tra lần cuối thang mức độ trên CHÍNH BẢN SẼ XUẤT: mọi nhãn đánh giá trong ô bảng, tiêu đề nhỏ hoặc câu kết luận phải khớp nguyên văn với đúng một giá trị của thang áp dụng theo Lượt 1, mục 12; không rút gọn, không đổi cách diễn đạt và không ghép hai mức bằng “đến”, “/” hoặc dấu gạch nối.",
 "",
 "# GIỚI HẠN SỬA",
@@ -617,7 +643,7 @@ metaGenerateBtn.addEventListener("click",async()=>{
   metaGenerateBtn.disabled=true;
   setStatus(metaStatusEl,"Đang tải Stage A Skill và Buddhist Source Map...","ok");
   try{
-    const context=await loadStageAContext();
+    const context=await loadStageAContext(rawTopic);
     metaOutputEl.value=buildPreparationPrompt(rawTopic,context.stageASkill,context.sourceMap);
     metaCopyBtn.disabled=false;
     metaDownloadBtn.disabled=false;
