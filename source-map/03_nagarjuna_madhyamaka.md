@@ -2,34 +2,27 @@
 
 ## A. Tín hiệu kích hoạt
 
-Dùng khi đề tài liên quan:
-- Nāgārjuna/Long Thọ;
-- Mūlamadhyamakakārikā (MMK);
-- śūnyatā;
-- svabhāva;
-- pratītyasamutpāda;
-- hai đế;
-- thời gian, nhân quả, sinh-diệt;
-- quan hệ Nāgārjuna với Abhidharma hoặc kinh sớm;
-- tác quyền các trước tác gán cho Nāgārjuna.
+Dùng module này khi đề tài trực tiếp liên quan đến Nāgārjuna, các tác phẩm gán cho ông, Madhyamaka, hoặc một vấn đề mà cần phân biệt tư tưởng của Nāgārjuna với diễn giải Madhyamaka hậu kỳ.
 
 ## B. Ranh giới khái niệm
 
-- Không đồng nhất “không” với “không tồn tại tuyệt đối”.
+- Không đồng nhất Nāgārjuna lịch sử với toàn bộ Madhyamaka về sau.
 - Không gán cho Nāgārjuna mọi tác phẩm truyền thống gắn tên ông mà không xét tác quyền.
-- Phải phân biệt Nāgārjuna lịch sử, MMK, Madhyamaka về sau và các truyền thống chú giải.
-- Không biến một diễn giải hiện đại thành lời nguyên văn của Nāgārjuna.
+- Không biến diễn giải của chú giải hậu kỳ hoặc học giả hiện đại thành lời trực tiếp của Nāgārjuna.
+- Khi một thuật ngữ kỹ thuật là trung tâm của câu hỏi, phải kiểm nghĩa theo đúng văn bản và ngữ cảnh.
 
 ## C. Tầng nguồn sơ cấp cần cân nhắc
 
-Tùy câu hỏi:
-- MMK như một điểm neo mạnh khi xác định tư tưởng Nāgārjuna;
-- các tác phẩm khác có mức xác lập tác quyền phù hợp;
+Tùy đề tài:
+- Mūlamadhyamakakārikā (MMK) khi câu hỏi liên quan đến nội dung được bảo tồn ở đó;
+- các tác phẩm khác gán cho Nāgārjuna với mức tác quyền được nêu rõ;
 - Sanskrit khi còn;
 - Hán dịch;
 - Tạng dịch;
-- chú giải Ấn Độ/Tạng/Hán chỉ khi phạm vi cho phép và phải phân biệt với chính Nāgārjuna;
-- nguồn đối thủ/đối thoại Abhidharma khi trực tiếp liên quan.
+- chú giải Ấn Độ, Hán hoặc Tạng khi phạm vi cho phép và khi cần nghiên cứu lịch sử diễn giải;
+- nguồn đối thoại hoặc đối thủ chỉ khi trực tiếp liên quan.
+
+Không phải mọi đề tài Nāgārjuna đều phải lấy MMK làm nguồn duy nhất hoặc mở toàn bộ văn học Madhyamaka.
 
 ## D. Ngôn ngữ và truyền bản
 
@@ -38,7 +31,7 @@ Có thể quan trọng:
 - Hán;
 - Tạng.
 
-Nếu vấn đề phụ thuộc một câu/kệ, phải mở khả năng đối chiếu truyền bản và edition.
+Nếu kết luận phụ thuộc một câu/kệ hoặc một thuật ngữ, phải mở khả năng đối chiếu truyền bản và ấn bản thích hợp.
 
 ## E. Hạ tầng truy cập/định vị
 
@@ -58,33 +51,43 @@ Tùy câu hỏi:
 - Sanskrit philology;
 - Madhyamaka studies;
 - lịch sử triết học Phật giáo Ấn Độ;
-- nghiên cứu Hán/Tạng về truyền bản/chú giải;
+- nghiên cứu tác quyền;
+- nghiên cứu Hán/Tạng về truyền bản và chú giải;
 - học giới Nhật/Hoa;
-- nghiên cứu Anh/Pháp/Đức/Nga/Ba Lan và các tuyến khác khi trực tiếp.
+- các truyền thống nghiên cứu khác khi trực tiếp.
 
-Stage A không chọn học giả cụ thể làm “chuẩn đúng” trước nghiên cứu.
+Stage A không chọn trước một học giả làm chuẩn diễn giải.
 
-## G. Các tranh luận định tuyến
+## G. Các vùng tranh luận định tuyến
 
-Phải mở đủ để Stage B kiểm:
-- tác quyền văn bản;
-- nghĩa kỹ thuật của svabhāva/śūnyatā trong đoạn cụ thể;
-- phạm vi phủ định;
-- quan hệ giữa quy ước và tối hậu;
-- Nāgārjuna đang đối thoại với nguồn/trường phái nào;
-- mức liên tục với Nikāya/Āgama là dữ liệu trực tiếp hay tái dựng hiện đại.
+Phải xác định vấn đề thật sự của đề tài trước khi chọn nguồn, chẳng hạn:
+- tác quyền;
+- nghĩa của thuật ngữ kỹ thuật;
+- cấu trúc phủ định;
+- duyên khởi;
+- nhân quả;
+- chuyển động;
+- ngôn ngữ và quy ước;
+- giải thoát;
+- quan hệ với Abhidharma hoặc kinh điển;
+- lịch sử diễn giải Madhyamaka.
+
+Không mặc định bất kỳ một vấn đề nào là trung tâm của mọi nghiên cứu Nāgārjuna.
 
 ## H. Lỗi định tuyến thường gặp
 
-- diễn giải Madhyamaka thành hư vô;
-- lấy một bản dịch tiếng Anh làm chuẩn tuyệt đối;
-- trộn Nāgārjuna với Buddhapālita/Bhāviveka/Candrakīrti;
-- dùng tác phẩm tác quyền tranh luận để xác định lập trường cốt lõi mà không cảnh báo;
-- coi tương đồng với kinh sớm là bằng chứng tự động của ảnh hưởng trực tiếp.
+- diễn giải Madhyamaka thành một khẩu hiệu đơn giản;
+- lấy một bản dịch hiện đại làm chuẩn tuyệt đối khi vấn đề phụ thuộc nguyên văn;
+- trộn Nāgārjuna với các nhà chú giải hậu kỳ;
+- dùng tác phẩm có tác quyền tranh luận mà không cảnh báo;
+- coi tương đồng khái niệm là bằng chứng tự động của ảnh hưởng lịch sử;
+- kéo vào các tranh luận nổi tiếng nhưng không trực tiếp trả lời đề bài.
 
 ## I. Giới hạn
 
 Module không quyết:
-- “Long Thọ thật sự chủ trương X” trước khi đọc văn bản;
-- tác phẩm nào chắc chắn thuộc Nāgārjuna ngoài những gì nghiên cứu cụ thể có thể xác lập;
-- Madhyamaka có “gần Phật” hơn trường phái khác hay không.
+- Nāgārjuna “thật sự chủ trương” gì trước khi nghiên cứu văn bản;
+- tác phẩm nào chắc chắn thuộc ông ngoài mức mà nghiên cứu chuyên môn xác lập;
+- diễn giải Madhyamaka nào đúng nhất.
+
+Nó chỉ định tuyến nguồn và cảnh báo các tầng cần phân biệt.
