@@ -103,17 +103,10 @@ Khi một văn bản có tên nguyên ngữ và tên Việt, phải ưu tiên tr
 
 Mẫu khuyến nghị:
 
-- **Dīgha Nikāya (Trường Bộ)**
-- **Majjhima Nikāya (Trung Bộ)**
-- **Saṃyutta Nikāya (Tương Ưng Bộ)**
-- **Aṅguttara Nikāya (Tăng Chi Bộ)**
-- **Dīrgha Āgama / Trường A-hàm**
-- **Madhyama Āgama / Trung A-hàm**
-- **Saṃyukta Āgama / Tạp A-hàm**
-- **Ekottarika Āgama / Tăng Nhất A-hàm**
-- **Theravāda Vinaya Piṭaka / Luật tạng Pāli**
+- **Tên nguyên ngữ (Tên Việt)**; hoặc
+- **Tên nguyên ngữ / Tên Việt**
 
-Đối với tên bài kinh cũng áp dụng nguyên tắc tương tự: nêu tên nguyên ngữ và tên Việt nếu có thể xác định chính xác.
+Đối với tên bài kinh, luật, luận hoặc phần văn bản cũng áp dụng nguyên tắc tương tự: nêu tên nguyên ngữ và tên Việt nếu có thể xác định chính xác.
 
 Nếu một văn bản được bảo tồn trong Hán văn, Tây Tạng hoặc ngôn ngữ khác và dạng nguyên ngữ ấy có giá trị cho việc nhận diện hoặc đối chiếu, có thể nêu thêm dạng chữ gốc.
 
