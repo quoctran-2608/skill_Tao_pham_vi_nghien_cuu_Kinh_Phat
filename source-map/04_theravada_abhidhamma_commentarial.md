@@ -2,40 +2,33 @@
 
 ## A. Tín hiệu kích hoạt
 
-Dùng khi đề tài liên quan:
-- Theravāda;
-- Pāli Nikāya trong quan hệ với Abhidhamma/chú giải;
-- Dhammasaṅgaṇī, Paṭṭhāna, Kathāvatthu;
-- Buddhaghosa/Atthasālinī/Visuddhimagga hoặc chú giải/hậu chú giải;
-- dhamma, sabhāva, paññatti, sát-na, thời gian, nhân quả;
-- câu hỏi “Theravāda nói gì” có nguy cơ trộn nhiều tầng.
+Dùng module này khi đề tài trực tiếp liên quan đến Theravāda, Pāli Canon, Abhidhamma, chú giải/hậu chú giải Theravāda, hoặc cần phân biệt các tầng lịch sử của truyền thống này.
 
 ## B. Ranh giới khái niệm
 
-- Nikāya Pāli thuộc truyền thống Theravāda nhưng không được đồng nhất với toàn bộ hệ thống Theravāda hậu kỳ.
-- Phải phân biệt ít nhất: Nikāya → canonical Abhidhamma → chú giải/hậu chú giải khi câu hỏi cần.
-- Không gán lý thuyết hậu kỳ nguyên dạng cho chính lời kinh nếu kinh không trực tiếp nói.
-- Không tự đồng nhất sabhāva Theravāda với mọi nghĩa của svabhāva trong Madhyamaka.
+- Không dùng “Theravāda” như một khối không phân tầng.
+- Phải phân biệt khi cần: Nikāya/Vinaya → canonical Abhidhamma → chú giải → hậu chú giải → hệ thống hóa hiện đại.
+- Không chiếu khái niệm của tầng chú giải ngược vào kinh nếu kinh không trực tiếp có.
+- Không mặc định thuật ngữ tương tự ở truyền thống khác mang cùng nghĩa.
 
 ## C. Tầng nguồn sơ cấp cần cân nhắc
 
 Tùy đề tài:
-- Nikāya Pāli;
-- Dhammasaṅgaṇī;
-- Vibhaṅga và các sách Abhidhamma thích hợp;
-- Paṭṭhāna;
-- Kathāvatthu;
-- chú giải như Atthasālinī khi câu hỏi thuộc tầng chú giải;
-- Visuddhimagga và hậu chú giải khi thực sự cần.
+- các Nikāya Pāli;
+- Vinaya Piṭaka;
+- các sách canonical Abhidhamma phù hợp;
+- chú giải;
+- hậu chú giải;
+- các văn bản hệ thống hóa khác của truyền thống khi trực tiếp cần.
 
-Không mở tất cả chỉ vì đề có chữ “Theravāda”; phạm vi phải theo câu hỏi.
+Không mở toàn bộ Pāli corpus chỉ vì đề tài có chữ “Theravāda”; phải chọn theo câu hỏi.
 
 ## D. Ngôn ngữ và truyền bản
 
 Trọng tâm:
 - Pāli;
-- các bản dịch hiện đại chỉ là hỗ trợ;
-- khi so sánh lịch sử rộng hơn, Hán/Sanskrit/Tạng chỉ được mở nếu Ô1 cho phép và câu hỏi thực sự cần.
+- các bản dịch hiện đại là hỗ trợ;
+- Hán/Sanskrit/Tạng hoặc ngôn ngữ khác chỉ khi đề tài so sánh hoặc lịch sử truyền bản thật sự cần và Ô 1 cho phép.
 
 ## E. Hạ tầng truy cập/định vị
 
@@ -44,42 +37,50 @@ Trọng tâm:
 - GRETIL — https://gretil.sub.uni-goettingen.de/ khi có e-text Pāli phù hợp.
 - JSTOR — https://www.jstor.org/ và các nhà xuất bản/tạp chí chuyên ngành cho nghiên cứu thứ cấp.
 
-Map không mặc định một website duy nhất là chuẩn cho toàn Pāli Canon.
+Không mặc định một website duy nhất là chuẩn cho toàn bộ Pāli Canon.
 
 ## F. Tuyến học giới cần thăm dò
 
 Tùy câu hỏi:
 - Pāli philology;
-- Theravāda Abhidhamma studies;
+- Theravāda studies;
+- Vinaya studies;
+- Abhidhamma studies;
 - lịch sử chú giải;
-- so sánh Abhidharma;
-- nghiên cứu Sri Lanka/Myanmar/Thái và các truyền thống học thuật quốc tế khi có đóng góp trực tiếp.
+- lịch sử truyền thừa ở các khu vực Theravāda;
+- các truyền thống học thuật quốc tế và khu vực có đóng góp trực tiếp.
 
-Không đồng nhất “nghiên cứu Theravāda” với văn liệu tiếng Anh đương đại.
+Không đồng nhất nghiên cứu Theravāda với văn liệu tiếng Anh đương đại.
 
-## G. Các tranh luận định tuyến
+## G. Các vùng tranh luận định tuyến
 
-Stage A phải mở đủ để Stage B kiểm:
-- điều gì thuộc Nikāya, điều gì là hệ thống hóa Abhidhamma;
-- sabhāva được dùng nghĩa nào trong từng lớp;
-- lý thuyết sát-na xuất hiện ở tầng nào;
-- paññatti/paramattha được trình bày ra sao;
-- Kathāvatthu phản biện quan điểm nào và chú giải định danh đối thủ thế nào;
-- mức liên tục giữa kinh và chú giải là trực tiếp hay tái dựng.
+Stage A phải xác định đúng vấn đề trước khi chọn tầng nguồn, chẳng hạn:
+- giáo lý trong Nikāya;
+- luật học;
+- Abhidhamma;
+- thiền và lộ trình tu tập;
+- thuật ngữ chú giải;
+- lịch sử văn bản;
+- lịch sử truyền thừa;
+- quan hệ giữa canonical và commentarial;
+- so sánh với truyền thống khác.
+
+Không mặc định một tranh luận hậu kỳ là cần thiết cho mọi đề tài Theravāda.
 
 ## H. Lỗi định tuyến thường gặp
 
 - dùng “Theravāda” như một khối không phân tầng;
-- chiếu Buddhaghosa ngược vào Nikāya;
+- chiếu chú giải muộn ngược vào kinh;
 - dùng giáo trình hiện đại thay cho nguồn canonical/chú giải khi câu hỏi hỏi chính truyền thống;
-- dịch sabhāva thành “bản thể thường hằng” mà không kiểm ngữ cảnh;
-- coi Nikāya và Theravāda là hai đối tượng hoàn toàn độc lập trong phép so sánh.
+- đồng nhất thuật ngữ với truyền thống khác chỉ vì hình thức từ giống nhau;
+- mở quá rộng toàn bộ Pāli corpus thay vì chọn nguồn theo câu hỏi;
+- kéo vào Abhidhamma/chú giải khi đề tài đã khóa chỉ ở tầng kinh.
 
 ## I. Giới hạn
 
 Module không quyết:
-- canonical Theravāda “gần kinh sớm” đến mức nào;
+- tầng nào “gần lời Phật” hơn;
 - chú giải có phản ánh trực tiếp quan điểm thời Đức Phật hay không;
-- cách dịch sabhāva nào đúng trong mọi văn cảnh.
+- một thuật ngữ có một nghĩa duy nhất trong toàn truyền thống.
 
-Những điều này thuộc nghiên cứu của Stage B.
+Những điều đó thuộc nghiên cứu cụ thể của Stage B.
