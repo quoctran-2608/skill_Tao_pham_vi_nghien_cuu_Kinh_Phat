@@ -1,14 +1,39 @@
-# KỸ NĂNG: Nghiên cứu Phật học theo phạm vi văn bản đóng
+# KỸ NĂNG: Nghiên cứu Phật học theo phạm vi nguồn được xác lập
+
+## 0. Chế độ phạm vi nguồn — quy tắc ưu tiên cao
+
+Trước khi áp dụng các quy tắc bên dưới, phải đọc **chế độ phạm vi** được ghi trong Ô 1 và giữ nguyên chế độ đó trong suốt nghiên cứu.
+
+Có ba chế độ:
+
+### A. Phạm vi đóng
+- Chỉ được dùng làm chứng cứ những nguồn cụ thể mà Ô 1 cho phép.
+- Không tự thêm văn bản, truyền thống, học giả hoặc loại nguồn mới.
+- Công cụ tìm kiếm và cơ sở dữ liệu chỉ dùng để định vị/truy cập đúng nguồn đã cho phép.
+
+### B. Phạm vi mở
+- Được phát hiện thêm nguồn mới trực tiếp liên quan đến câu hỏi.
+- Mọi nguồn mới phải được thẩm định về mức liên quan, độ trực tiếp, khả năng truy nguyên, mức truy cập và chất lượng chứng cứ trước khi dùng.
+- “Mở” không có nghĩa được dùng tùy ý mọi nguồn tìm thấy.
+
+### C. Phạm vi mở có kiểm soát
+- Được phát hiện thêm nguồn mới **chỉ bên trong ranh giới chủ đề, truyền thống, loại nguồn, ngôn ngữ/truyền bản và điều kiện mở** mà Ô 1 đã xác lập.
+- Một nguồn mới phù hợp với các loại nguồn hoặc nhánh mà Ô 1 đã cho phép có thể được thẩm định và dùng mà không cần xin mở lại phạm vi.
+- Nếu nguồn mới đòi hỏi mở sang một hệ phái, nhóm văn bản, giai đoạn, loại chứng cứ hoặc câu hỏi nằm ngoài ranh giới Ô 1, không được tự sử dụng làm chứng cứ; phải ghi nhận đó là nguồn ngoài phạm vi có khả năng liên quan.
+
+Nếu Ô 1 ghi rõ chế độ, **chế độ đó có quyền ưu tiên hơn mọi câu chữ chung bên dưới được viết cho trường hợp phạm vi đóng**. Không được biến “mở” hoặc “mở có kiểm soát” thành “đóng” chỉ vì tệp kỹ năng dùng ngôn ngữ khóa phạm vi.
+
+Nếu Ô 1 không ghi chế độ nhưng người dùng có từ khóa giới hạn rõ như “chỉ”, “giới hạn trong”, “không dùng nguồn khác”, phải hiểu là phạm vi đóng. Nếu không có dấu hiệu khóa rõ, giữ ranh giới nguồn mà Ô 1 đã mô tả và không tự mở vượt ra ngoài.
 
 ## 1. Mục tiêu
 
-Tệp hướng dẫn này dùng để nghiên cứu, tổng hợp, đối chiếu, phân tích, phản biện và viết một đề tài Phật học **chỉ trong phạm vi các bộ kinh hoặc văn bản do người dùng chỉ định**.
+Tệp hướng dẫn này dùng để nghiên cứu, tổng hợp, đối chiếu, phân tích, phản biện và viết một đề tài Phật học **trong đúng phạm vi nguồn và chế độ phạm vi đã được xác lập ở Ô 1**.
 
 Nguyên tắc tối cao:
 
-> **Mọi tiền đề nội dung, dẫn chứng, so sánh, lập luận và kết luận phải truy ngược được về phạm vi văn bản mà người dùng cho phép. Không được dùng tri thức nằm ngoài phạm vi ấy để lấp chỗ trống, giải thích hộ văn bản, củng cố kết luận hoặc mở rộng đề tài.**
+> **Mọi tiền đề nội dung, dẫn chứng, so sánh, lập luận và kết luận phải truy ngược được về nguồn được phép theo Ô 1. Nguồn mới chỉ được tham gia lập luận khi chế độ phạm vi cho phép và nguồn đó vượt qua bước thẩm định thích hợp. Không được dùng tri thức nằm ngoài ranh giới đã xác lập để lấp chỗ trống, giải thích hộ văn bản hoặc củng cố kết luận.**
 
-Phạm vi do người dùng quy định là ranh giới bắt buộc, không phải lời gợi ý.
+Phạm vi do Ô 1/người dùng xác lập là ranh giới phương pháp bắt buộc, không phải lời gợi ý.
 
 ---
 
@@ -131,34 +156,30 @@ Không cần thực hiện một lượt biên tập toàn văn chỉ để làm
 
 ---
 
-## 4. Khóa phạm vi văn bản
+## 4. Khóa ranh giới phạm vi nguồn
 
-Ngay khi nhận được **PHẠM VI VĂN BẢN ĐƯỢC PHÉP**, phải thiết lập khóa phạm vi.
+Ngay khi nhận được **PHẠM VI NGUỒN ĐƯỢC PHÉP / Ô 1**, phải khóa **ranh giới của chế độ đã xác lập**, không được tự đổi chế độ.
 
 ### 4.1. Nguồn được phép dùng làm chứng cứ
 
-Chỉ gồm:
+Tùy chế độ, gồm:
 
-1. chính các bộ kinh hoặc văn bản người dùng nêu;
-2. các bản song song, bản dịch hoặc ấn bản của **cùng chính văn bản đó**, nếu người dùng không cấm;
-3. dữ liệu tối thiểu cần để nhận diện vị trí văn bản, như số kinh, phẩm, chương, quyển, đoạn, trang hoặc mã tham chiếu.
+1. các bộ kinh, văn bản hoặc nguồn cụ thể mà Ô 1 nêu;
+2. các bản song hành, bản dịch, ấn bản hoặc truyền bản mà Ô 1 cho phép;
+3. các **loại nguồn học thuật/thứ cấp** mà Ô 1 cho phép, kể cả công trình mới được phát hiện trong quá trình nghiên cứu nếu chúng nằm đúng loại nguồn và ranh giới của chế độ mở/mở có kiểm soát;
+4. các nguồn mới trực tiếp liên quan chỉ khi chế độ Ô 1 cho phép mở và nguồn ấy vượt qua bước thẩm định;
+5. dữ liệu tối thiểu cần để nhận diện vị trí nguồn, như số kinh, phẩm, chương, quyển, đoạn, trang, DOI, mã thư mục hoặc mã tham chiếu.
 
-### 4.2. Nguồn không được phép dùng làm chứng cứ, trừ khi người dùng bổ sung rõ ràng vào phạm vi
+### 4.2. Nguồn không được phép dùng làm chứng cứ
 
-Bao gồm nhưng không giới hạn:
+Bao gồm:
 
-- kinh khác ngoài danh sách;
-- luật tạng ngoài danh sách;
-- luận thư và A-tỳ-đàm;
-- chú giải, sớ giải, phụ chú;
-- văn học Đại thừa hoặc ngoài Đại thừa không thuộc phạm vi;
-- sử liệu, bi ký, khảo cổ học;
-- từ điển, bách khoa, giáo trình;
-- công trình nghiên cứu hiện đại;
-- quan điểm của học giả;
-- truyền thống khẩu truyền;
-- kiến thức phổ thông;
-- kiến thức có sẵn trong hệ thống trí tuệ nhân tạo nhưng không thể truy ngược về phạm vi văn bản được phép.
+- bất kỳ nguồn nào vượt ranh giới Ô 1 hoặc điều kiện mở đã xác lập;
+- nguồn mới thuộc hệ phái, nhóm văn bản, giai đoạn hay loại chứng cứ mà Ô 1 không cho phép;
+- nguồn trung gian chỉ dùng để định vị nhưng bị nâng thành chứng cứ nội dung;
+- công trình chỉ biết qua tên/abstract/snippet nhưng bị trình bày như đã đọc trực tiếp;
+- kiến thức phổ thông hoặc kiến thức có sẵn trong hệ thống trí tuệ nhân tạo không thể truy ngược về nguồn được phép;
+- với phạm vi đóng: mọi nguồn cụ thể nằm ngoài danh sách đã khóa.
 
 ### 4.3. Quy tắc không nhiễm nguồn ngoài
 
@@ -213,7 +234,9 @@ Khi đề tài yêu cầu học giả, công trình nghiên cứu, lịch sử n
 - nếu một nhận định quan trọng chỉ được biết qua tác giả thứ ba, phải ghi rõ đây là **dẫn gián tiếp** và tiếp tục tìm nguồn trực tiếp nếu có thể;
 - không được biến việc “đã tìm thấy tên một công trình” thành bằng chứng rằng công trình ấy ủng hộ một mệnh đề cụ thể.
 
-Nếu câu hỏi yêu cầu **tổng quan học giả hoặc lịch sử nghiên cứu**, không được mặc định tài liệu tiếng Anh đại diện cho toàn bộ học giới. Khi phù hợp với đề tài và trong giới hạn truy cập, phải chủ động rà các truyền thống nghiên cứu/ngôn ngữ học thuật quan trọng có liên quan. Không đặt hạn ngạch cứng theo quốc gia hay ngôn ngữ; mục tiêu là tránh bỏ sót có hệ thống. Nếu không thể bao quát một truyền thống quan trọng vì giới hạn truy cập hoặc ngôn ngữ, phải nói rõ giới hạn đó.
+Nếu câu hỏi yêu cầu **tổng quan học giả hoặc lịch sử nghiên cứu**, không được mặc định tài liệu tiếng Anh đại diện cho toàn bộ học giới. Khi phù hợp với đề tài và trong giới hạn truy cập, phải chủ động rà các truyền thống nghiên cứu/ngôn ngữ học thuật quan trọng có liên quan. Không đặt hạn ngạch cứng theo quốc gia hay ngôn ngữ; mục tiêu là tránh bỏ sót có hệ thống.
+
+**Một nhánh học thuật/ngôn ngữ đã được Bước 2A xác định là trọng yếu không được coi là “đã rà” chỉ vì một công trình tiếng Anh tóm tắt hoặc nhắc đến học giới của nhánh đó.** Khi công cụ cho phép, phải thực hiện ít nhất một lượt tìm kiếm trực tiếp hướng vào chính nhánh ấy bằng tên nguyên ngữ, thuật ngữ chuyên ngành hoặc cơ sở dữ liệu phù hợp. Nếu không định vị hoặc không truy cập đủ nguồn trực tiếp, phải ghi nhánh đó là **GIỚI HẠN BAO PHỦ**; không được trình bày kết quả như thể nhánh ấy đã được khảo sát đầy đủ.
 
 ### 5.3. Khi công cụ trả về kết quả ngoài phạm vi
 
@@ -378,7 +401,7 @@ Không được:
 - bịa tên học giả hoặc công trình trước khi tra cứu xác minh;
 - coi cơ sở dữ liệu, thư viện số hoặc trang mạng dùng để định vị là chính chứng cứ học thuật nếu nguồn gốc thực sự của mệnh đề nằm ở văn bản hoặc công trình khác.
 
-Trước khi chuyển sang đọc sâu, phải thực hiện một lượt tìm kiếm thăm dò trên các nhánh **trọng yếu** của bản đồ này. Mục tiêu là biết những nguồn và tranh luận chính có thể tồn tại ở đâu, không phải đọc hết mọi thứ ngay lập tức. Nếu một nhánh quan trọng không thể truy cập vì giới hạn công cụ, ngôn ngữ hoặc quyền truy cập, phải ghi lại đó là **giới hạn bao phủ** và không được sau này trình bày kết quả như thể đã khảo sát đầy đủ nhánh ấy.
+Trước khi chuyển sang đọc sâu, phải thực hiện một lượt tìm kiếm thăm dò trên các nhánh **trọng yếu** của bản đồ này. Mục tiêu là biết những nguồn và tranh luận chính có thể tồn tại ở đâu, không phải đọc hết mọi thứ ngay lập tức. Với một nhánh học thuật/ngôn ngữ trọng yếu, lượt thăm dò phải hướng trực tiếp vào chính nhánh đó khi công cụ cho phép; một nguồn tiếng Anh thuật lại nhánh ấy không thay thế lượt rà trực tiếp. Nếu một nhánh quan trọng không thể truy cập vì giới hạn công cụ, ngôn ngữ hoặc quyền truy cập, phải ghi lại đó là **GIỚI HẠN BAO PHỦ** và không được sau này trình bày kết quả như thể đã khảo sát đầy đủ nhánh ấy.
 
 Bản đồ này là ghi chú làm việc nội bộ; không bắt buộc phải chép nguyên vào bài nghiên cứu cuối cùng. Sau bước này mới thực hiện các lượt tìm kiếm và đọc sâu dưới đây.
 
