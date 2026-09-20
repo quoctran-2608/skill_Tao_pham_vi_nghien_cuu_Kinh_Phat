@@ -10,6 +10,8 @@ Stage C nhận:
 
 Stage C **không viết lại bài nghiên cứu**, **không biên tập văn phong**, **không thay kết luận bằng một kết luận mới** và **không nghiên cứu lại đề tài từ đầu**.
 
+Stage C được phép dùng công cụ tìm kiếm, cơ sở dữ liệu, thư viện số, trang nhà xuất bản và kho văn bản **chỉ để xác minh nguồn đã xuất hiện trong Stage B, kiểm đường truy cập, edition/item, locator, trạng thái toàn văn/abstract/metadata và các tuyên bố về mức bao phủ**. Nếu trong lúc kiểm toán phát hiện một nguồn học thuật mới có thể cứu hoặc thay đổi lập luận, không được đưa nguồn mới đó vào lập luận; chỉ ghi rằng vấn đề cần nghiên cứu bổ sung ngoài Stage C.
+
 Nhiệm vụ duy nhất của Stage C là trả lời:
 
 > **Bài Stage B đang dựa vào những nguồn nào, các nguồn ấy thực sự được truy cập ở mức nào, đường dẫn chứng có sạch và truy nguyên được không, và có giới hạn bao phủ nào cần Stage D biết trước khi hậu kiểm bản cuối?**
