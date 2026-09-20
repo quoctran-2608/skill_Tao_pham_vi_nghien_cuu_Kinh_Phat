@@ -190,6 +190,18 @@ Mỗi hàng nên có:
 - Vấn đề hoặc giới hạn;
 - Việc Stage D cần làm.
 
+Nếu dùng bảng Markdown, phải xuất đúng **8 cột riêng biệt** với hàng tiêu đề theo cấu trúc:
+
+| Nguồn | Vai trò | Dấu vết Stage B | Stage C xác minh | Locator/phần liên quan | Đường truy cập/nguồn gốc item | Vấn đề hoặc giới hạn | Việc Stage D cần làm |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+
+Trước khi xuất:
+- tự đếm và xác nhận hàng tiêu đề có đúng 8 ô;
+- hàng phân cách phải có đúng 8 ô;
+- mọi hàng dữ liệu phải có đúng 8 ô tương ứng;
+- không được dồn tên nhiều cột vào một ô tiêu đề;
+- nếu không bảo đảm được cú pháp bảng hợp lệ, **không xuất bảng hỏng**; chuyển phần B thành danh sách theo từng nguồn, giữ đủ 8 trường thông tin ở trên.
+
 Chỉ ghi nguồn thực sự được dùng hoặc có vai trò quyết định; không biến bảng thành lịch sử tìm kiếm.
 
 ### C. Giới hạn bao phủ
