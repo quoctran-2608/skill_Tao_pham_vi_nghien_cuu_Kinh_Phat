@@ -21,6 +21,7 @@ Báo cáo Stage C là dữ liệu kiểm toán đầu vào quan trọng. Phải 
 - Không thay đổi kết luận chính chỉ vì muốn văn phong trôi chảy hơn. Chỉ điều chỉnh kết luận hoặc mức độ khẳng định khi chứng cứ đã có, Báo cáo Stage C, hoặc việc xác minh lại nguồn trong phạm vi bắt buộc phải làm vậy.
 - Không xóa phản chứng, giới hạn, bất đồng học thuật hoặc các phân biệt cần thiết để làm bài ngắn và dễ đọc hơn.
 - Chỉ truy cập lại các nguồn thuộc phạm vi khi cần xác minh một lỗi cụ thể về câu quy quan điểm, vị trí dẫn nguồn, thư mục, nguyên ngữ, trạng thái truy cập hoặc mức độ khẳng định.
+- Khi mở lại một nguồn đã có trong Stage B, chỉ được dùng nội dung vừa kiểm để: (a) xác minh hoặc sửa chính mệnh đề Stage B đã dùng; (b) sửa trích dẫn, locator, attribution, nguyên ngữ, provenance hoặc mức độ khẳng định của mệnh đề đó. **Không được khai thác thêm một dữ kiện, định nghĩa, đoạn văn, luận điểm hay tuyến lập luận mới chưa có trong Stage B chỉ vì Stage D tình cờ thấy nó trong cùng nguồn.** Ngoại lệ chỉ gồm dữ liệu thư mục/provenance tối thiểu hoặc một sửa chữa bắt buộc để tránh giữ lại một phát biểu sai.
 - Không khởi động một cuộc khảo sát nguồn mới.
 - Không đưa vào bản cuối học giả, công trình, văn bản hoặc nguồn chứng cứ mới chưa xuất hiện trong bản Stage B, trừ dữ liệu thư mục tối thiểu dùng để xác minh đúng danh tính của chính nguồn B đã dùng.
 - Nếu một mệnh đề chỉ có thể cứu bằng nguồn mới, không thêm nguồn ấy; hạ mức khẳng định hoặc nêu giới hạn.
@@ -49,7 +50,12 @@ Rà toàn bài trước khi biên tập văn phong:
 9. Giữ tách biệt: văn bản nói trực tiếp / điều có thể suy ra / giả thuyết lịch sử / điều chưa thể xác lập. Không biến tương đồng thành ảnh hưởng, ảnh hưởng khả dĩ thành vay mượn trực tiếp, hay sự im lặng thành phủ định.
 10. Với các từ như “tiếp xúc”, “tương tác”, “ảnh hưởng”, “vay mượn”, “phản ứng” hoặc tương đương, phải phân biệt quan hệ có thể thấy trực tiếp trong văn bản với một quan hệ tiếp xúc lịch sử giữa tác giả/cộng đồng.
 11. Kiểm tra tên văn bản, học giả, năm xuất bản, nguyên ngữ và dữ liệu thư mục có nhất quán với chính nguồn đã dùng hay không.
-12. Mỗi nhãn mức độ kết luận phải khớp nguyên văn với đúng một giá trị của thang đã khóa. Nếu Ô 2 đã nêu một thang cụ thể, dùng nguyên văn thang đó; nếu không, dùng: “Rất mạnh” / “Mạnh” / “Khả dĩ” / “Yếu hoặc không chắc” / “Không thể xác lập trong phạm vi”.
+12. Phải tách **phán định nội dung của mệnh đề** khỏi **mức độ chắc chắn của phán định**:
+   - Phán định nội dung có thể là các trạng thái như: được ủng hộ, bị phản bác, không chính xác, chỉ đúng khi thu hẹp, cần tái mô tả, hoặc không thể quyết định trong phạm vi.
+   - Thang khóa chỉ áp dụng khi đang ghi **mức độ chắc chắn/sức mạnh chứng cứ**, không được dùng nó để thay thế hoặc làm mất phán định nội dung.
+   - Nếu Stage B đã có một phán định nội dung rõ và Báo cáo Stage C không đưa ra bằng chứng buộc phải đổi, phải bảo toàn ý nghĩa đó.
+   - Khi cần trình bày cả hai, có thể tách thành hai cột/trường “Phán định” và “Mức chắc chắn”, hoặc viết rõ theo dạng “Bị phản bác; mức chắc chắn: Mạnh”.
+   - Với cột/trường **mức chắc chắn**, nếu Ô 2 đã nêu một thang cụ thể thì dùng nguyên văn thang đó; nếu không, dùng đúng một giá trị: “Rất mạnh” / “Mạnh” / “Khả dĩ” / “Yếu hoặc không chắc” / “Không thể xác lập trong phạm vi”.
 13. Quét riêng toàn bài đối với các câu quy quan điểm. Mỗi câu quan trọng trong bản cuối phải kết thúc ở một trong ba trạng thái: (a) công trình trực tiếp + năm + vị trí kiểm chứng được; (b) ghi rõ chưa xác định được trang/phần trong bản truy cập; hoặc (c) ghi rõ là dẫn gián tiếp và nêu nguồn trung gian.
 14. Rà tính nhất quán của danh mục tài liệu với thân bài. Nếu danh mục chỉ chủ ý liệt kê chọn lọc, đổi tiêu đề thành “Một số tài liệu trọng yếu” hoặc cách gọi tương đương.
 
@@ -71,7 +77,9 @@ Rà toàn bài trước khi biên tập văn phong:
 
 1. Đọc lại chính bản sẽ xuất ra, không chỉ dựa vào các lượt sửa trước.
 2. Nếu dùng bảng Markdown, kiểm tra hàng tiêu đề, hàng phân cách và số cột của mọi hàng; nếu không bảo đảm cú pháp, chuyển thành danh sách hoặc văn xuôi.
-3. Kiểm tra lần cuối thang mức độ: mọi nhãn phải khớp đúng một giá trị của thang áp dụng; không ghép hai mức bằng “đến”, “/” hoặc dấu gạch nối.
+3. Kiểm tra lần cuối hai trục riêng biệt:
+   - **Phán định nội dung** không được bị ép thành một nhãn của thang mức độ nếu việc đó làm đổi nghĩa, ví dụ biến “bị phản bác” thành “không thể xác lập”.
+   - Chỉ **mức chắc chắn/sức mạnh chứng cứ** mới phải khớp đúng một giá trị của thang áp dụng; không ghép hai mức bằng “đến”, “/” hoặc dấu gạch nối.
 4. Xóa khỏi bản xuất cuối phụ lục kỹ thuật **“Dấu vết nguồn cho Stage C”** và không chép Báo cáo Stage C vào bài. Chỉ giữ những chỉnh sửa học thuật cần thiết rút ra từ chúng.
 
 ---
@@ -79,6 +87,7 @@ Rà toàn bài trước khi biên tập văn phong:
 # GIỚI HẠN SỬA
 
 - Không tự thêm một luận điểm mới, một nguồn mới, một trường phái mới hoặc một kết luận mới.
+- **Nguồn cũ không phải giấy phép cho chứng cứ mới:** nếu khi hậu kiểm một nguồn đã có mà gặp nội dung chưa từng được Stage B dùng, không đưa nội dung đó vào bản cuối để làm giàu hay tăng sức mạnh lập luận. Chỉ dùng phần mới thấy khi nó cần thiết để sửa một sai sót của chính mệnh đề B đang hậu kiểm, và phải sửa tối thiểu.
 - Không viết lại nghiên cứu theo một hướng khác. Stage D là người kiểm định và biên tập bảo thủ, không phải Stage B lần hai.
 - Nếu vấn đề nội dung chỉ có thể giải quyết bằng nghiên cứu mới ngoài phạm vi, không tự giải quyết bằng kiến thức nền; hạ mức khẳng định hoặc nêu rõ giới hạn.
 - Không làm mất dữ liệu có giá trị kiểm chứng chỉ để câu văn gọn hơn.
