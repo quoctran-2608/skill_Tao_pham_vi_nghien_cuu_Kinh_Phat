@@ -326,7 +326,7 @@ Mỗi luận điểm quan trọng phải gắn với vị trí cụ thể trong 
 
 > **Tên bộ → mã số kinh/văn bản → tên bài kinh hoặc tên phần văn bản cụ thể → đoạn, quyển, trang hoặc mã tham chiếu khi xác định được.**
 
-**Ngay lần đầu tiên một bài kinh hoặc văn bản cụ thể được nhắc đến trong bài**, phải ghi đầy đủ nhất có thể: **mã số + tên nguyên ngữ xác định được + tên Việt nếu có**. Ví dụ, không chỉ viết “MN 36” nếu có thể xác định đáng tin cậy **MN 36 Mahāsaccaka Sutta (Đại kinh Saccaka)**. Từ những lần nhắc sau mới được dùng mã số rút gọn.
+**Ngay lần đầu tiên một bài kinh hoặc văn bản cụ thể được nhắc đến trong bài**, phải ghi đầy đủ nhất có thể: **mã số + tên nguyên ngữ xác định được + tên Việt nếu có**. Không chỉ ghi một mã số rút gọn nếu có thể xác định đáng tin cậy tên văn bản; từ những lần nhắc sau mới được dùng mã số rút gọn.
 
 Không chỉ ghi một mã số trơ nếu tên bài kinh hoặc tên phần văn bản có thể xác định đáng tin cậy. Nếu chưa chắc tên kinh, không được đoán.
 
