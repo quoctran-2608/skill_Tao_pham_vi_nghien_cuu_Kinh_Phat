@@ -29,6 +29,8 @@ Nó **không**:
 6. **Không đưa một học giả/công trình vào phạm vi chỉ vì nổi tiếng.**
 7. **Nguồn mới ngoài Map nhưng trong phạm vi vẫn được phép phát hiện và thẩm định.**
 8. **Một module phải nêu rõ giới hạn của chính nó.**
+9. **Module cấp truyền thống không được mang theo đề bài mẫu, kết luận mẫu hoặc checklist đặc thù của một ca regression.** Nội dung chỉ nên mô tả hệ nguồn, tầng văn bản, ngôn ngữ, hạ tầng, các vùng tranh luận và lỗi định tuyến có giá trị lặp lại cho nhiều đề tài trong cùng lĩnh vực.
+10. Nếu một vấn đề chuyên biệt cần tri thức định tuyến riêng, phải tách thành module chuyên biệt và chỉ nạp khi chính đề bài kích hoạt vấn đề đó; không nhét nó vào module cấp truyền thống.
 
 ## 3. Schema bắt buộc của mỗi module
 
