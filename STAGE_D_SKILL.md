@@ -66,10 +66,11 @@ Rà toàn bài trước khi biên tập văn phong:
 1. Viết tiếng Việt tự nhiên, trực tiếp, sáng rõ; chia câu quá dài, bỏ lặp và sửa chuyển đoạn khó theo dõi.
 2. Tránh từ/cụm tiếng Anh thông dụng chen vào câu Việt khi có cách diễn đạt tiếng Việt rõ ràng; giữ nguyên ngữ Pāli, Sanskrit, Hán, Tạng và nhan đề học thuật khi chúng có giá trị kiểm chứng.
 3. Với thuật ngữ chuyên môn khó nhưng cần thiết, không xóa thuật ngữ; giải thích ngắn bằng tiếng Việt ở lần xuất hiện đầu tiên rồi mới dùng.
-4. Không dùng máy móc các nhãn thời kỳ, truyền thống hoặc nhóm văn bản mơ hồ. Nếu phạm vi thực tế là một nhóm văn bản xác định, ưu tiên gọi thẳng tên nhóm đó.
-5. Kiểm tra các nhãn thời kỳ, hệ phái và thuật ngữ dịch: nếu cách gọi khiến người đọc hiểu rộng hoặc chắc chắn hơn chứng cứ, dùng cách diễn đạt cụ thể hơn.
-6. Thống nhất cách gọi trong toàn bài nhưng không hòa lẫn những thuật ngữ học thuật thực ra cần phân biệt.
-7. Quét các chuỗi tiếng Anh kỹ thuật không cần thiết trong phần văn xuôi và thay bằng tiếng Việt rõ nghĩa, trừ nhan đề công trình, trích dẫn nguyên văn, tên riêng, mã nguồn/dữ liệu nhận diện hoặc thuật ngữ thật sự không nên dịch.
+4. Với mỗi **kinh, luật, luận hoặc văn bản Phật học** được nhắc đến trong bản cuối, kiểm tra **lần xuất hiện đầu tiên**. Nếu đã xác định đáng tin cậy tên Việt, phải trình bày kèm tên nguyên ngữ hoặc tên văn bản gốc theo dạng như **mã số + tên nguyên ngữ (Tên Việt)** hoặc cách tương đương. Từ những lần sau có thể dùng tên rút gọn. Nếu chưa xác định được tên Việt đáng tin cậy, không tự chế hoặc dịch đoán.
+5. Không dùng máy móc các nhãn thời kỳ, truyền thống hoặc nhóm văn bản mơ hồ. Nếu phạm vi thực tế là một nhóm văn bản xác định, ưu tiên gọi thẳng tên nhóm đó.
+6. Kiểm tra các nhãn thời kỳ, hệ phái và thuật ngữ dịch: nếu cách gọi khiến người đọc hiểu rộng hoặc chắc chắn hơn chứng cứ, dùng cách diễn đạt cụ thể hơn.
+7. Thống nhất cách gọi trong toàn bài nhưng không hòa lẫn những thuật ngữ học thuật thực ra cần phân biệt.
+8. Quét các chuỗi tiếng Anh kỹ thuật không cần thiết trong phần văn xuôi và thay bằng tiếng Việt rõ nghĩa, trừ nhan đề công trình, trích dẫn nguyên văn, tên riêng, mã nguồn/dữ liệu nhận diện hoặc thuật ngữ thật sự không nên dịch.
 
 ---
 
@@ -80,7 +81,8 @@ Rà toàn bài trước khi biên tập văn phong:
 3. Kiểm tra lần cuối hai trục riêng biệt:
    - **Phán định nội dung** không được bị ép thành một nhãn của thang mức độ nếu việc đó làm đổi nghĩa, ví dụ biến “bị phản bác” thành “không thể xác lập”.
    - Chỉ **mức chắc chắn/sức mạnh chứng cứ** mới phải khớp đúng một giá trị của thang áp dụng; không ghép hai mức bằng “đến”, “/” hoặc dấu gạch nối.
-4. Xóa khỏi bản xuất cuối phụ lục kỹ thuật **“Dấu vết nguồn cho Stage C”** và không chép Báo cáo Stage C vào bài. Chỉ giữ những chỉnh sửa học thuật cần thiết rút ra từ chúng.
+4. Quét riêng **lần xuất hiện đầu tiên của từng tên kinh, luật, luận hoặc văn bản Phật học**: nếu tên Việt đã được xác định đáng tin cậy trong dữ liệu hiện có mà bản cuối chỉ còn mã số hoặc tên nguyên ngữ, phải bổ sung tên Việt; nếu chưa xác định chắc chắn thì giữ nguyên và không đoán.
+5. Xóa khỏi bản xuất cuối phụ lục kỹ thuật **“Dấu vết nguồn cho Stage C”** và không chép Báo cáo Stage C vào bài. Chỉ giữ những chỉnh sửa học thuật cần thiết rút ra từ chúng.
 
 ---
 
