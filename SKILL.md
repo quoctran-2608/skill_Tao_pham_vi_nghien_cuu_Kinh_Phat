@@ -359,16 +359,17 @@ Khi trích nguyên văn:
 
 ## 10. Quy trình nghiên cứu bắt buộc
 
-### Bước 1 — Xác nhận khóa phạm vi
+### Bước 1 — Xác nhận chế độ và ranh giới phạm vi
 
 Ghi rõ:
 
 - đề tài;
-- phạm vi văn bản được phép;
-- những nguồn bị cấm;
+- chế độ phạm vi;
+- ranh giới nguồn được phép;
+- những nguồn hoặc loại nguồn bị loại trừ;
 - phạm vi con nếu có.
 
-Không mở rộng phạm vi nếu người dùng chưa cho phép.
+Không tự đổi chế độ phạm vi. Với phạm vi đóng, không tự mở rộng. Với phạm vi mở hoặc mở có kiểm soát, chỉ phát hiện và đưa nguồn mới vào theo đúng điều kiện mở đã được Ô 1 xác lập.
 
 ### Bước 2 — Lập bản đồ nguồn rồi thu thập chứng cứ trong phạm vi
 
@@ -559,25 +560,21 @@ Sau đó có thể nêu:
 
 - phạm vi hiện tại nói được đến đâu;
 - điểm nào còn bỏ ngỏ;
-- bằng chứng nào còn thiếu, nhưng không được tự đi tìm ngoài phạm vi trừ khi người dùng mở rộng phạm vi.
+- bằng chứng nào còn thiếu;
+- với phạm vi đóng: không tự tìm nguồn ngoài danh sách đã khóa;
+- với phạm vi mở hoặc mở có kiểm soát: chỉ tìm thêm nguồn theo đúng điều kiện mở của Ô 1.
 
 Không được giả vờ chắc chắn để làm câu trả lời có vẻ đầy đủ.
 
 ---
 
-## 13. Khi người dùng thay đổi phạm vi
+## 13. Khi phạm vi cần thay đổi
 
-Chỉ cập nhật phạm vi khi người dùng **nói rõ** muốn thêm hoặc bớt văn bản.
+Với **phạm vi đóng**, chỉ thay đổi ranh giới khi người dùng nói rõ muốn thêm hoặc bớt nguồn.
 
-Không coi các câu như:
+Với **phạm vi mở hoặc mở có kiểm soát**, việc phát hiện thêm nguồn nằm đúng điều kiện mở không được coi là thay đổi phạm vi; nhưng mở sang loại nguồn, truyền thống, giai đoạn hoặc câu hỏi ngoài ranh giới Ô 1 vẫn cần quyết định phạm vi mới.
 
-- “nghiên cứu sâu hơn”;
-- “tìm thêm chứng cứ”;
-- “hãy toàn diện hơn”
-
-là cho phép mở rộng phạm vi.
-
-Những câu ấy chỉ có nghĩa là phải khai thác sâu hơn **bên trong phạm vi hiện tại**.
+Các yêu cầu như “nghiên cứu sâu hơn”, “tìm thêm chứng cứ” hay “hãy toàn diện hơn” không tự động cho phép phá ranh giới đã xác lập.
 
 ---
 
@@ -688,10 +685,10 @@ Quy tắc ngôn ngữ cũng có mức ưu tiên cao:
 
 Khi tệp hướng dẫn này được áp dụng, có thể dùng khung sau:
 
-> Tôi sẽ khóa phạm vi nghiên cứu vào đúng các văn bản bạn cung cấp. Mọi chứng cứ, phân tích, phản biện và kết luận sẽ chỉ dựa trên phạm vi đó. Nguồn bên ngoài, nếu được dùng để tìm vị trí văn bản, chỉ có chức năng định vị và không được đưa vào lập luận. Nếu phạm vi không đủ để xác lập một mệnh đề, tôi sẽ nói rõ điều đó thay vì dùng kiến thức ngoài phạm vi. Nếu phát hiện đã vượt phạm vi, tôi sẽ báo lỗi, nêu nguồn vi phạm, giải thích nguyên nhân và dựng lại kết luận sau khi loại bỏ phần đó. Toàn bộ phần diễn giải sẽ được viết bằng tiếng Việt tự nhiên, tránh lối nói nửa Việt nửa ngoại ngữ; đồng thời tên bộ kinh, tên bài kinh và thuật ngữ nguyên ngữ sẽ được nêu đầy đủ cùng tên Việt khi có thể xác định chính xác.
+> Tôi sẽ giữ đúng chế độ và ranh giới phạm vi đã được xác lập ở Ô 1. Với phạm vi đóng, tôi chỉ dùng các nguồn đã được cho phép; với phạm vi mở hoặc mở có kiểm soát, nguồn mới chỉ được đưa vào khi đáp ứng đúng điều kiện mở và vượt qua bước thẩm định. Mọi chứng cứ, phân tích, phản biện và kết luận phải truy ngược được về nguồn hợp lệ. Nếu phạm vi không đủ để xác lập một mệnh đề, tôi sẽ nói rõ giới hạn thay vì dùng kiến thức ngoài ranh giới. Nếu phát hiện đã vượt phạm vi, tôi sẽ báo lỗi, loại bỏ tiền đề vi phạm và dựng lại kết luận. Toàn bộ phần diễn giải sẽ được viết bằng tiếng Việt tự nhiên, đồng thời giữ nguyên ngữ học thuật khi có giá trị kiểm chứng.
 
 ---
 
 ## 20. Nguyên tắc cốt lõi rút gọn
 
-**PHẠM VI VĂN BẢN ĐÓNG → CHỨNG CỨ NỘI TẠI → LẬP LUẬN MINH BẠCH → PHẢN BIỆN NỘI TẠI → KIỂM TRA PHẠM VI → VĂN PHONG TIẾNG VIỆT + NGUYÊN NGỮ ĐẦY ĐỦ → KẾT LUẬN CÓ MỨC ĐỘ → BÁO LỖI NẾU VƯỢT PHẠM VI.**
+**XÁC NHẬN CHẾ ĐỘ VÀ RANH GIỚI PHẠM VI → TÌM VÀ THẨM ĐỊNH NGUỒN HỢP LỆ → CHỨNG CỨ TRUY NGUYÊN ĐƯỢC → LẬP LUẬN MINH BẠCH → PHẢN BIỆN TRONG PHẠM VI → KIỂM TRA GIỚI HẠN → VĂN PHONG TIẾNG VIỆT + NGUYÊN NGỮ ĐẦY ĐỦ → KẾT LUẬN CÓ MỨC ĐỘ → BÁO LỖI NẾU VƯỢT RANH GIỚI.**
