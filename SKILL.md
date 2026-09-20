@@ -283,17 +283,21 @@ Ngay cả khi biết một cách giải thích rất phổ biến, vẫn phải 
 
 ## 7. Quy tắc phản biện
 
-Phản biện trong phương pháp này phải là **phản biện nội tại**, không phải mượn học giả hay truyền thống bên ngoài.
+Phản biện phải diễn ra **bên trong phạm vi nguồn mà Ô 1 cho phép**.
+
+- Nếu Ô 1 chỉ cho phép nguồn sơ cấp, phản biện phải dựa vào chính các văn bản sơ cấp trong phạm vi.
+- Nếu Ô 1 cho phép nghiên cứu học thuật/thứ cấp, được và nên dùng các cách giải thích, phản biện và tranh luận học thuật nằm trong chính phạm vi ấy.
+- Không được mượn một học giả, truyền thống hay nguồn nằm ngoài ranh giới Ô 1 để cứu hoặc bác một luận điểm.
 
 Đối với mỗi luận điểm quan trọng:
 
 1. nêu bằng chứng mạnh nhất ủng hộ luận điểm;
-2. tìm các đoạn trong chính phạm vi được phép có thể giới hạn, làm yếu hoặc tạo cách hiểu khác;
-3. kiểm tra xem luận điểm có dựa trên một đoạn đơn lẻ hay được lặp lại ở nhiều nơi;
-4. phân biệt phát biểu rõ ràng với diễn giải;
+2. tìm chứng cứ trong phạm vi được phép có thể giới hạn, làm yếu hoặc tạo cách hiểu khác;
+3. kiểm tra xem luận điểm có dựa trên một chứng cứ đơn lẻ hay được hỗ trợ độc lập ở nhiều nơi;
+4. phân biệt phát biểu trực tiếp với diễn giải;
 5. nêu mức độ chắc chắn;
-6. nếu tồn tại nhiều cách hiểu đều phù hợp với phạm vi văn bản, phải trình bày chúng và không ép thành một kết luận duy nhất;
-7. trước khi chốt kết luận, chủ động tìm **văn bản hoặc trường hợp khó xử nhất đối với chính kết luận đang hình thành** và kiểm tra xem nó có buộc phải sửa, thu hẹp hoặc bỏ kết luận đó hay không.
+6. nếu tồn tại nhiều cách hiểu đều phù hợp với phạm vi, phải trình bày chúng và không ép thành một kết luận duy nhất;
+7. trước khi chốt kết luận, chủ động tìm **chứng cứ hoặc cách giải thích mạnh nhất có khả năng gây khó cho chính kết luận đang hình thành** và kiểm tra xem nó có buộc phải sửa, thu hẹp hoặc bỏ kết luận đó hay không.
 
 Không được dựng một quan điểm yếu giả tạo rồi bác bỏ để tạo cảm giác đã phản biện.
 
