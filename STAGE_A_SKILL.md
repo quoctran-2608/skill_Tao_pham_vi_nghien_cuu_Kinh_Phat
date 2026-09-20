@@ -233,29 +233,11 @@ Không đặt quota theo quốc gia/ngôn ngữ.
 
 ## 11. Hạ tầng truy cập không phải thẩm quyền chứng cứ
 
-Các nền tảng như:
-- SuttaCentral;
-- CBETA;
-- SAT;
-- GRETIL;
-- DSBC;
-- BDRC;
-- 84000;
-- Gandhari.org;
-- PTS;
-- INBUDS;
-- J-STAGE;
-- CiNii;
-- DLMBS;
-- DILA;
-- Airiti;
-- Persée;
-- OpenEdition;
-- JSTOR;
+Các cơ sở dữ liệu, thư viện số, mục lục, kho văn bản và nền tảng học thuật phù hợp với đề tài chỉ được dùng để **định vị, truy cập và kiểm tra nguồn**, không thay thế văn bản, ấn bản hoặc công trình thực tế.
 
-được dùng để **định vị/truy cập**, không thay thế văn bản/edition/công trình thực tế.
+Tên nền tảng cụ thể nên được lấy từ Source Map/module liên quan hoặc từ nhu cầu thực tế của đề tài, không hard-code thành một danh sách bắt buộc trong Skill chung.
 
-Stage A có thể đưa hạ tầng vào ghi chú định tuyến nếu hữu ích, nhưng không được biến chúng thành “nguồn sơ cấp” hoặc “chứng cứ”.
+Stage A có thể đưa hạ tầng vào ghi chú định tuyến nếu hữu ích, nhưng không được biến hạ tầng thành “nguồn sơ cấp” hoặc “chứng cứ”.
 
 ---
 
