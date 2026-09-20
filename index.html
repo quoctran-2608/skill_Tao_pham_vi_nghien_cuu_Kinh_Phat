@@ -309,7 +309,7 @@
     </div>
 
     <div class="chat-note">
-      <strong>Khuyến nghị về hội thoại:</strong> nên chạy Stage B trong <strong>một chat mới</strong>, không tiếp tục chat Stage A. Khi Stage B hoàn tất, quay lại bước ③ để kiểm toán nguồn; nên chạy Stage C trong <strong>một chat mới khác</strong> để việc xác minh nguồn độc lập hơn.
+      <strong>Khuyến nghị về hội thoại:</strong> nên chạy Stage B trong <strong>một chat mới</strong>, không tiếp tục chat Stage A. Khi Stage B hoàn tất, hãy chạy <strong>Stage C ngay trong chính chat Stage B</strong> để Stage C còn đối chiếu được lịch sử tra cứu và mức truy cập nguồn thực tế.
     </div>
   </section>
 
@@ -344,7 +344,7 @@
     </div>
 
     <div class="chat-note">
-      <strong>Bàn giao:</strong> chạy câu lệnh Stage C trong một chat mới. Khi AI trả về <strong>Báo cáo Stage C — Kiểm toán nguồn và trạng thái truy cập</strong>, dán báo cáo vào bước ④.
+      <strong>Bàn giao:</strong> ưu tiên dán câu lệnh Stage C vào <strong>chính chat đã chạy Stage B</strong>. Khi AI trả về <strong>Báo cáo Stage C — Kiểm toán nguồn và trạng thái truy cập</strong>, dán báo cáo vào bước ④. Chỉ dùng chat mới nếu không còn chat Stage B; khi đó Stage C phải ghi rõ những gì không thể xác lập về lịch sử truy cập cũ.
     </div>
   </section>
 
@@ -627,7 +627,7 @@ baiNghienCuu,
 "# KỸ NĂNG STAGE C BẮT BUỘC",
 stageCSkill,
 "",
-"Thực hiện kiểm toán theo đúng KỸ NĂNG STAGE C. Nếu bản Stage B không có hoặc không đủ Dấu vết nguồn, không suy đoán lịch sử truy cập của Stage B; ghi rõ phần nào không xác lập được và chỉ báo trạng thái Stage C có thể xác minh hiện tại."
+"Thực hiện kiểm toán theo đúng KỸ NĂNG STAGE C. Nếu đang ở chính chat Stage B, phải ưu tiên đối chiếu Dấu vết nguồn với lịch sử công cụ và nguồn đã thực sự truy cập trong hội thoại. Nếu đang ở chat mới hoặc bản Stage B không có/không đủ Dấu vết nguồn, không suy đoán lịch sử truy cập của Stage B; ghi rõ phần nào không xác lập được và chỉ báo trạng thái Stage C có thể xác minh hiện tại."
   ].join("\n");
 }
 
