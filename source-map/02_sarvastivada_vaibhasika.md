@@ -2,41 +2,36 @@
 
 ## A. Tín hiệu kích hoạt
 
-Dùng khi đề tài liên quan:
-- Sarvāstivāda;
-- Vaibhāṣika;
-- “tam thế thực hữu”;
-- pháp thể, tác dụng, svabhāva;
-- Abhidharma miền Tây Bắc Ấn/Central Asia;
-- tranh luận với Sautrāntika, Theravāda, Madhyamaka hoặc Yogācāra.
+Dùng module này khi đề tài trực tiếp liên quan đến Sarvāstivāda, Vaibhāṣika, Abhidharma của truyền thống này, các nguồn nội bộ của trường phái, hoặc một tranh luận mà việc tái dựng lập trường Sarvāstivāda/Vaibhāṣika là cần thiết.
 
 ## B. Ranh giới khái niệm
 
-- Không đồng nhất toàn bộ Sarvāstivāda với một khẩu hiệu duy nhất.
-- Phải phân biệt Sarvāstivāda rộng hơn với các hệ thống Vaibhāṣika khi câu hỏi cần.
-- Không mặc định mọi giải thích do đối thủ ghi lại là tự thuật của Sarvāstivāda.
-- Không biến “ba thời hữu” thành “mọi thứ bất biến vĩnh viễn” nếu nguồn nội bộ có các phân biệt sinh-diệt/tác dụng/trạng thái.
+- Không đồng nhất toàn bộ Sarvāstivāda với Vaibhāṣika trong mọi giai đoạn và mọi vấn đề.
+- Không giản lược một truyền thống rộng thành một khẩu hiệu học thuyết duy nhất.
+- Không mặc định lời mô tả của đối thủ là tự thuật của Sarvāstivāda.
+- Phải phân biệt nguồn canonical/Abhidharma, đại luận, chú giải và nguồn ngoại bộ khi câu hỏi cần.
 
 ## C. Tầng nguồn sơ cấp cần cân nhắc
 
 Tùy đề tài:
-- các Abhidharma Sarvāstivāda;
+- các Abhidharma Sarvāstivāda thích hợp;
 - Jñānaprasthāna và hệ văn bản liên quan;
-- Mahāvibhāṣā;
-- các nguồn Vaibhāṣika;
+- Mahāvibhāṣā và các nguồn Vaibhāṣika;
 - Sanskrit còn lại;
 - Hán dịch;
 - Tạng dịch khi có ý nghĩa;
-- nguồn đối thủ như Abhidharmakośabhāṣya chỉ với nhãn đúng và ưu tiên kiểm lại bằng nguồn nội bộ khi khả dụng.
+- nguồn ngoại bộ hoặc nguồn đối thủ chỉ với nhãn rõ ràng và phải kiểm lại bằng nguồn nội bộ khi khả dụng.
+
+Không phải mọi đề tài Sarvāstivāda đều cần toàn bộ các nguồn trên; phải chọn theo câu hỏi.
 
 ## D. Ngôn ngữ và truyền bản
 
 Đặc biệt quan trọng:
-- Hán, vì nhiều nguồn Sarvāstivāda/Abhidharma được bảo tồn quy mô lớn;
+- Hán, vì nhiều nguồn Abhidharma được bảo tồn quy mô lớn;
 - Sanskrit khi còn;
-- Tạng khi văn bản/trích đoạn liên quan.
+- Tạng khi văn bản hoặc trích đoạn liên quan.
 
-Stage A không được route đề Sarvāstivāda chỉ vào sách tiếng Anh.
+Không route đề tài chỉ vào nghiên cứu tiếng Anh nếu nguồn hoặc học giới ngôn ngữ khác có vai trò trực tiếp.
 
 ## E. Hạ tầng truy cập/định vị
 
@@ -50,40 +45,48 @@ Stage A không được route đề Sarvāstivāda chỉ vào sách tiếng Anh.
 - CiNii — https://cir.nii.ac.jp/
 - DLMBS — https://dlbs.liberal.ntu.edu.tw/
 
+Các nền tảng chỉ là hạ tầng truy cập/định vị; thẩm quyền nằm ở văn bản, ấn bản và công trình cụ thể.
+
 ## F. Tuyến học giới cần thăm dò
 
 Tùy câu hỏi:
 - Abhidharma studies;
 - Hán văn Phật học;
 - Sanskrit philology;
-- học giới Nhật về Abhidharma;
-- học giới Hoa ngữ;
-- các nghiên cứu Anh/Pháp/Đức và truyền thống khác khi trực tiếp.
+- nghiên cứu lịch sử bộ phái và truyền bản;
+- học giới Nhật/Hoa và các truyền thống khác có đóng góp trực tiếp;
+- nghiên cứu so sánh với trường phái khác chỉ khi câu hỏi đòi hỏi.
 
-Không dùng quốc tịch làm proxy chất lượng; route theo chuyên môn và nguồn mà công trình thực sự xử lý.
+Route theo chuyên môn và nguồn mà công trình thực sự xử lý, không theo quốc tịch hay danh tiếng.
 
-## G. Các tranh luận định tuyến
+## G. Các vùng tranh luận định tuyến
 
-Stage A phải mở đủ để Stage B kiểm:
-- “sarvāsti” nghĩa kỹ thuật đến đâu trong từng lớp;
-- quan hệ giữa pháp thể/tự tính và tác dụng;
-- khác biệt giữa các cách giải thích nội bộ về ba thời;
-- vai trò của nhân quả, nghiệp, ký ức, nhận thức quá khứ/vị lai;
-- mức liên tục/khác biệt với tầng kinh.
+Stage A phải xác định **đúng vấn đề đang được hỏi** rồi mới chọn nguồn, chẳng hạn:
+- cấu trúc dharma;
+- nhân quả và nghiệp;
+- nhận thức và đối tượng;
+- thời gian;
+- lộ trình tu tập;
+- quan hệ giữa kinh và Abhidharma;
+- khác biệt nội bộ giữa các nhánh.
+
+Không được mặc định một tranh luận nổi tiếng là trung tâm của mọi đề tài Sarvāstivāda.
 
 ## H. Lỗi định tuyến thường gặp
 
-- chỉ dùng lời phê bình của Vasubandhu/Nāgārjuna;
-- dùng khẩu hiệu “tam thế thực hữu” thay cho tái dựng kỹ thuật;
-- coi Sarvāstivāda là chủ nghĩa thường hằng đơn giản;
-- bỏ học giới Nhật/Hoa dù câu hỏi phụ thuộc Hán Abhidharma;
-- coi nguồn Hán là “thứ cấp” chỉ vì không phải Sanskrit.
+- chỉ dùng lời phê bình của đối thủ;
+- dùng một khẩu hiệu thay cho tái dựng kỹ thuật;
+- bỏ nguồn Hán dù văn bản quyết định được bảo tồn ở Hán;
+- bỏ học giới Nhật/Hoa khi trực tiếp liên quan;
+- coi nguồn Hán là “thứ cấp” chỉ vì không phải Sanskrit;
+- kéo vào các tranh luận không liên quan chỉ vì chúng nổi tiếng trong lịch sử trường phái.
 
 ## I. Giới hạn
 
-Module không quyết:
-- diễn giải nào của Sarvāstivāda đúng nhất;
-- trường phái gần lời Phật hơn;
-- công trình hiện đại nào nên thắng tranh luận.
+Module này không quyết:
+- diễn giải học thuyết nào đúng;
+- nhánh nội bộ nào đại diện toàn truyền thống;
+- trường phái nào gần một chuẩn mực hơn;
+- học giả nào nên thắng tranh luận.
 
-Nó chỉ buộc Stage A mở đúng hệ nguồn để Stage B có thể kiểm.
+Nó chỉ định tuyến hệ nguồn để Stage B nghiên cứu đúng câu hỏi.
