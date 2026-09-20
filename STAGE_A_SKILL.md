@@ -395,10 +395,18 @@ Nếu không, phải cân bằng lại.
 
 # HÌNH THỨC TRẢ LỜI
 
-Trả về **đúng hai khối**, không thêm lời dẫn hay lời kết:
+Trả về **đúng hai writing block riêng biệt**, không thêm lời dẫn, lời kết hoặc nội dung có giá trị sử dụng ở ngoài hai block.
 
-**Ô 1 — Các bộ kinh, văn bản hoặc loại nguồn được phép sử dụng**
+Writing block thứ nhất:
+- variant="document";
+- title="Ô 1 — Các bộ kinh, văn bản hoặc loại nguồn được phép sử dụng";
+- chứa **toàn bộ và chỉ** nội dung của Ô 1.
 
-**Ô 2 — Đề bài nghiên cứu hoặc yêu cầu viết**
+Writing block thứ hai:
+- variant="document";
+- title="Ô 2 — Đề bài nghiên cứu hoặc yêu cầu viết";
+- chứa **toàn bộ và chỉ** nội dung của Ô 2.
+
+Không gộp Ô 1 và Ô 2 vào cùng một writing block. Không chia một Ô thành nhiều writing block. Không lặp lại Ô 1 hoặc Ô 2 ở ngoài writing block.
 
 Không nghiên cứu nội dung đề tài ở Stage A.
