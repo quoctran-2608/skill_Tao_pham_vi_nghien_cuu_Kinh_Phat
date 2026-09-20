@@ -16,6 +16,18 @@ Nhiệm vụ duy nhất của Stage C là trả lời:
 
 > **Bài Stage B đang dựa vào những nguồn nào, các nguồn ấy thực sự được truy cập ở mức nào, đường dẫn chứng có sạch và truy nguyên được không, và có giới hạn bao phủ nào cần Stage D biết trước khi hậu kiểm bản cuối?**
 
+### Chế độ hội thoại ưu tiên
+
+**Ưu tiên chạy Stage C trong chính chat đã thực hiện Stage B.** Lý do: lịch sử tra cứu, công cụ đã gọi, trang đã mở và kết quả truy cập của Stage B là bằng chứng provenance mạnh hơn việc chỉ dựa vào bản tự khai “Dấu vết nguồn cho Stage C”.
+
+Khi chạy cùng chat Stage B:
+- đối chiếu phụ lục bàn giao với lịch sử công cụ và nguồn đã thực sự truy cập trong hội thoại;
+- nếu phụ lục nói mức truy cập cao hơn lịch sử công cụ cho thấy, phải hạ về mức xác minh được;
+- nếu lịch sử công cụ cho thấy nguồn đã được truy cập nhưng phụ lục bỏ sót, có thể ghi nhận nguồn đó nếu nó thực sự được dùng trong bài;
+- không suy từ việc một URL/kết quả tìm kiếm từng xuất hiện rằng nội dung nguồn đã được đọc đầy đủ.
+
+Chỉ chạy Stage C trong chat mới khi không còn chat Stage B hoặc khi chủ động chấp nhận rằng lịch sử truy cập cũ không còn kiểm được trực tiếp. Trong trường hợp đó, “Dấu vết nguồn cho Stage C” chỉ là dữ liệu bàn giao cần kiểm chứng; mọi điều về mức truy cập thực tế của Stage B mà không thể xác lập phải ghi rõ là **không xác lập được**.
+
 ---
 
 ## 2. Phân biệt hai loại sự kiện bắt buộc
