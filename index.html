@@ -309,7 +309,7 @@
     </div>
 
     <div class="chat-note">
-      <strong>Khuyến nghị về hội thoại:</strong> nên chạy Stage B trong <strong>một chat mới</strong>, không tiếp tục chat Stage A. Khi Stage B hoàn tất, hãy chạy <strong>Stage C ngay trong chính chat Stage B</strong> để Stage C còn đối chiếu được lịch sử tra cứu và mức truy cập nguồn thực tế.
+      <strong>Khuyến nghị về hội thoại:</strong> nên chạy Stage B trong <strong>một chat mới</strong>, không tiếp tục chat Stage A. Sau khi Stage B trả bài, <strong>giữ nguyên chat đó</strong>; ở bước ③ chỉ tạo câu lệnh Stage C rồi quay lại chính khung chat Stage B đang mở và dán tiếp để chạy.
     </div>
   </section>
 
@@ -344,7 +344,7 @@
     </div>
 
     <div class="chat-note">
-      <strong>Bàn giao:</strong> ưu tiên dán câu lệnh Stage C vào <strong>chính chat đã chạy Stage B</strong>. Khi AI trả về <strong>Báo cáo Stage C — Kiểm toán nguồn và trạng thái truy cập</strong>, dán báo cáo vào bước ④. Chỉ dùng chat mới nếu không còn chat Stage B; khi đó Stage C phải ghi rõ những gì không thể xác lập về lịch sử truy cập cũ.
+      <strong>Bàn giao:</strong> sau khi bấm tạo câu lệnh Stage C, quay lại <strong>khung chat Stage B đang mở</strong> và dán tiếp câu lệnh vào đó; không mở chat mới. Khi AI trả về <strong>Báo cáo Stage C — Kiểm toán nguồn và trạng thái truy cập</strong>, dán báo cáo vào bước ④.
     </div>
   </section>
 
@@ -627,7 +627,7 @@ baiNghienCuu,
 "# KỸ NĂNG STAGE C BẮT BUỘC",
 stageCSkill,
 "",
-"Thực hiện kiểm toán theo đúng KỸ NĂNG STAGE C. Nếu đang ở chính chat Stage B, phải ưu tiên đối chiếu Dấu vết nguồn với lịch sử công cụ và nguồn đã thực sự truy cập trong hội thoại. Nếu đang ở chat mới hoặc bản Stage B không có/không đủ Dấu vết nguồn, không suy đoán lịch sử truy cập của Stage B; ghi rõ phần nào không xác lập được và chỉ báo trạng thái Stage C có thể xác minh hiện tại."
+"Thực hiện kiểm toán theo đúng KỸ NĂNG STAGE C. Nếu lịch sử Stage B hiện diện trong cuộc trò chuyện hiện tại, phải đối chiếu Dấu vết nguồn với lịch sử công cụ và nguồn đã thực sự truy cập. Nếu lịch sử đó không hiện diện hoặc không đủ, không suy đoán mức truy cập cũ; ghi rõ phần nào không xác lập được và chỉ báo trạng thái Stage C có thể xác minh hiện tại."
   ].join("\n");
 }
 
