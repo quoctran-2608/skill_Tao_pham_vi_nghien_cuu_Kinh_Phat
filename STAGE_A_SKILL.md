@@ -70,15 +70,7 @@ Phải:
 3. nếu có, Ô 1 phải cho phép nguồn học thuật cần thiết để làm rõ thuật ngữ;
 4. Ô 2 phải đặt việc xác định thuật ngữ thành một nhiệm vụ nghiên cứu đầu tiên.
 
-Không được tự động chuyển một cụm mơ hồ thành:
-- Theravāda;
-- Sarvāstivāda;
-- Mahāyāna;
-- Proto-Mahāyāna;
-- Vajrayāna;
-- Phật giáo thời kỳ đầu;
-- Phật giáo tiền bộ phái;
-- hay một hệ phái/giai đoạn khác nếu đề bài chưa đủ tín hiệu.
+Không được tự động chuyển một cụm mơ hồ thành tên của một hệ phái, truyền thống, giai đoạn lịch sử, địa vực, nhân vật hoặc mô hình phát triển cụ thể nếu đề bài chưa đủ tín hiệu. Nếu có nhiều cách hiểu học thuật khả dĩ, phải giữ chúng như các khả năng cần kiểm tra thay vì chọn trước một cách hiểu.
 
 ---
 
@@ -188,11 +180,11 @@ Khi phù hợp, phải tách:
 - truyền bản khác;
 - nghiên cứu hiện đại.
 
-Ví dụ:
-- không tự coi Nikāya là một khối hoàn toàn bên ngoài Theravāda;
-- không tự đồng nhất Nāgārjuna với toàn bộ Madhyamaka hậu kỳ;
-- không tự đồng nhất Sarvāstivāda với mọi diễn giải Vaibhāṣika;
-- không chiếu chú giải muộn ngược vào kinh.
+Các nguyên tắc tổng quát:
+- không coi các tầng văn bản khác thời kỳ là những khối đồng cấp nếu lịch sử truyền thừa của chúng khác nhau;
+- không đồng nhất một tác giả với toàn bộ truyền thống phát triển về sau;
+- không đồng nhất một truyền thống rộng với mọi nhánh nội bộ hoặc mọi cách giải thích hậu kỳ;
+- không chiếu chú giải muộn ngược vào văn bản sớm hơn.
 
 Stage A chỉ tạo cấu trúc để Stage B kiểm; không tự giải quyết tranh luận.
 
