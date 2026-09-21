@@ -235,9 +235,13 @@ Không đặt quota theo quốc gia/ngôn ngữ.
 
 Các cơ sở dữ liệu, thư viện số, mục lục, kho văn bản và nền tảng học thuật phù hợp với đề tài chỉ được dùng để **định vị, truy cập và kiểm tra nguồn**, không thay thế văn bản, ấn bản hoặc công trình thực tế.
 
-Tên nền tảng cụ thể nên được lấy từ Source Map/module liên quan hoặc từ nhu cầu thực tế của đề tài, không hard-code thành một danh sách bắt buộc trong Skill chung.
+Tên nền tảng cụ thể phải được lấy từ Source Map/module liên quan, từ ưu tiên người dùng đã nêu, hoặc từ nhu cầu thực tế của đề tài; không hard-code thành một danh sách bắt buộc trong Skill chung.
 
-Stage A có thể đưa hạ tầng vào ghi chú định tuyến nếu hữu ích, nhưng không được biến hạ tầng thành “nguồn sơ cấp” hoặc “chứng cứ”.
+Nếu Source Map/module đang được nạp có các hạ tầng **trực tiếp phù hợp với những tầng nguồn, ngôn ngữ hoặc truyền bản mà Ô 1 đã mở**, Stage A phải truyền các lựa chọn phù hợp đó xuống Ô 1 trong mục **“Hạ tầng truy cập/định vị ưu tiên”**.
+
+Chỉ chọn những nền tảng thực sự hữu ích cho đề tài; không sao chép toàn bộ danh sách của module. Nếu người dùng đã nêu một nền tảng cần ưu tiên và nó phù hợp phạm vi, phải bảo toàn ưu tiên đó. Nếu không có hạ tầng cụ thể nào được xác định đáng tin cậy, được phép bỏ mục này thay vì bịa.
+
+Các hạ tầng được nêu chỉ là **điểm ưu tiên để tìm và truy cập**, không phải whitelist bắt buộc và không phải “nguồn sơ cấp” hay “chứng cứ”. Stage B vẫn được dùng hạ tầng phù hợp khác khi cần và khi không phá ranh giới Ô 1.
 
 ---
 
@@ -266,8 +270,10 @@ Nêu theo **loại nguồn đủ rõ**, ví dụ:
 
 Không cần giả vờ biết trước toàn bộ học giả sẽ được phát hiện.
 
-### Nguồn trung gian/hạ tầng
-Chỉ nêu khi giúp Stage B định vị và phải ghi rõ đây không phải thẩm quyền chứng cứ.
+### Hạ tầng truy cập/định vị ưu tiên
+Khi Source Map/module liên quan đã xác định được nền tảng phù hợp trực tiếp với các nhánh nguồn của Ô 1, nêu ngắn gọn những lựa chọn nên ưu tiên để Stage B tìm và truy cập đúng nguồn. Không cần liệt kê toàn bộ hạ tầng có trong Map.
+
+Phải ghi rõ: đây là **hạ tầng truy cập/định vị**, không phải thẩm quyền chứng cứ và không phải danh sách đóng.
 
 ### Loại trừ
 Nếu cần, nêu các loại không được dùng làm chứng cứ quyết định:
@@ -288,7 +294,8 @@ Nếu cần, nêu các loại không được dùng làm chứng cứ quyết đ
 - đủ hẹp để Stage B không mở vô hạn;
 - không thiên về nguồn thuận với giả thuyết;
 - không bị một ngôn ngữ duy nhất chi phối nếu đề tài cần đa truyền bản;
-- không biến Source Map thành whitelist;
+- không biến Source Map hoặc danh sách hạ tầng ưu tiên thành whitelist;
+- nếu module liên quan có hạ tầng trực tiếp phù hợp với các nhánh nguồn đã mở, không được làm rơi mất toàn bộ thông tin định tuyến đó khỏi Ô 1;
 - không đưa kết luận vào phạm vi.
 
 Nếu phạm vi đóng, phải giữ nguyên khóa người dùng.
